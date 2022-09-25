@@ -1,0 +1,5014 @@
+{
+    "08cms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"08cms",
+                "member/index.php?ugid31=",
+                "typeof(_08cms)"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "1024cms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by 1024 cms",
+                "content=\"1024 cms"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "1039家校通":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "teacherphone/teacherlogin.aspx",
+                "webphone/phonelogin.aspx",
+                "student/studentlogin.aspx"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "360天擎":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>360天擎终端安全管理系统</title>",
+                "<img class=\"au-icon\" src = \"/index/logo\"/>"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "360天机":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "src=\"/resource/img/login/logo_403.png\" alt=\"360天机\"/></a>"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "365webcall":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "src='http://www.365webcall.com/imme1.aspx?"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "35mail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "class=\"user_define_img_btn6\" href=\"http://help.mail.35.com/mailman/81.html",
+                "images/mail/35pushmail.app.png",
+                "switchingserverpopup"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "53KF":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by 53kf",
+                "chat.53kf.com/company.php",
+                "chat.53kf.com/kf.php",
+                "tb.53kf.com/code/"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "78oa":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "78oa办公系统",
+                "<script type=\"text/javascript\">$(function(){(new selibray()).launch([\"login\"]);});i",
+                "license.78oa.com"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "74cms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"74cms.com",
+                "content=\"骑士cms",
+                "powered by <a href=\"http://www.74cms.com/\""
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/data/install.lock":{},
+            "/index.php?m=admin&c=index&a=login":{}
+        }
+    },
+
+    "阿里企业邮箱":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<meta name=\"keywords\" content=\"阿里企业邮箱",
+                "/alimail/error/browserLog"
+            ]
+        },
+        "Icon_Hash":[
+            39641584
+        ],
+        "SensitivePath": {}
+    },
+
+    "宝塔Linux面板":{
+        "Headers":{
+            "Set-Cookie": "BT_PANEL_6"
+        },
+        "Body":{
+            "/":[
+                "<title>宝塔Linux面板</title>",
+                "https://www.bt.cn/download/app.html"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/pma":{}
+        }
+
+    },
+
+    "宝塔Windows面板":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>宝塔Windows面板 - Windows版</title>",
+                "<div class=\"rlogo\">宝塔Windows面板</div>",
+                "http://www.bt.cn/bbs/thread-4697-1-1.html"
+            ]
+        },
+        "Icon_Hash":[
+            -386189083
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/pma":{}
+        }
+    },
+
+    "腾讯企业邮箱":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "腾讯企业邮箱-登录入口",
+                "登录腾讯企业邮箱",
+                "/cgi-bin/getinvestigate?flowid="
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "大汉应用":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/col/col"
+            ],
+            "/vc/":[
+                "vclogin.do",
+                "\"setup/login.do\">控制面板"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "方正云舒书刊制作云平台":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/PodCloud/resources/images/logo_pic.png",
+                "方正云舒书刊制作云平台 :: 登录"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "泛微OA":{
+        "Headers":{
+            "Set-Cookie":"ecology_JSessionid"
+        },
+        "Body":{
+            "/":[
+                "/wui/index.html",
+                "/wui/common/page/sysRemind.jsp"
+            ]
+        },
+        "Icon_Hash":[
+            1578525679,
+            2004556082
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/weaver/ln.FileDownload?fpath=../ecology/WEB-INF/web.xml":{},
+            "/messager/users.data":{},
+            "/UserSelect/":{},
+            "/mysql_config.ini":{},
+            "/weaver/bsh.servlet.BshServlet/": {},
+            "/mobile/DBconfigReader.jsp": {}
+        }
+    },
+
+    "泛微E-Bridge":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<meta name=\"searchtitle\" content=\"泛微云桥e-Bridge\">",
+                "www.weaver.com.cn",
+                "/main/base/randomcode"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "泛微E-Mobile":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"Weaver E-mobile",
+                "Weaver E-Mobile Dev Group",
+                "window.apiPrifix = \"/emp",
+                "weaver,e-mobile",
+                "e-mobile&nbsp",
+                "/m1/verifylogin.do",
+                "/images/login_logo@2x.png",
+                "移动管理平台-企业管理"
+            ]
+        },
+        "Icon_Hash":[
+            -2144394026,
+            -1539046809,
+            -943299580,
+            2062026853
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "泛微E-Message":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "帆软BI":{
+        "Headers":{
+        
+        },
+        
+        "Body":{
+            "/":[
+                ">FineBI商业智能",
+                "decision/file?path=/com/fr/web/core/css/leaflet.css&type=plain&parser=plain"
+            ]
+        },
+
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "广州图创图书馆群集管理系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "self.location.href=\"../interlib/common/\""
+            ],
+            "/lnterlib/common/":[
+                "广州图创计算机软件开发有限公司",
+                "3RD Auto System Interlib",
+                "/interlib/common/Login"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/interlib/report/ShowImage?localPath=C:\\Windows\\system.ini":{}
+        }
+    },
+
+    "孚盟云":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "孚盟云 - 用户登录",
+                "id=\"TypeProdcutName\" value=\"孚盟云\" />",
+                "url: \"/Ajax/AjaxMethod.ashx\"",
+                "indexUrl = \"/PageStructure/Mail/default.aspx\";",
+                "Copyright © 2015 Shanghai Fumasoft co.,Ltd. "
+            ]
+        },
+        "Icon_Hash":[
+            997023004
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            "http://47.97.171.0:9090/",
+            "http://59.61.78.108:9090/"
+        ],
+        "SensitivePath":{
+            "/Ajax/AjaxMethod.ashx?action=getEmpByname&Name=Y%27":{}
+        }
+    },
+
+    "护卫神":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "http://www.huweishen.com/?host",
+                "护卫神.荣誉出品"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"ASP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "华夏ERP":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "www.huaxiaerp.com"
+            ]
+        },
+        "Icon_Hash":[
+            978514697
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "华天动力OA":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/OAapp/WebObjects/OAapp.woa",
+                "<body LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 ONLOAD=onLoad(); >",
+                "\"/htoa/css/CN/BLUE/login.css\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "汇文图书馆书目检索系统-PHP版":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "./opac/presearch.php",
+                "Jiangsu Huiwen Software Ltd. 江苏汇文软件有限公司"
+            ]
+        },
+        "Icon_Hash":[
+            1805953451
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/include/config.properties":{}
+        }
+    },
+
+    // l
+    "零视科技H5S视频平台": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "<title>H5S视频平台|WEB</title>",
+                "© linkingvision.com"
+            ]
+        },
+        "Icon_Hash": [
+            1018965904
+        ],
+        "SensitivePath": {}
+    },
+
+    "浪潮ClusterEngine":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<a href=\"#\">ClusterEngine",
+                "0x17c)](_0x57c36b);continue;}break;}}());"
+            ]
+        },
+        "Icon_Hash":[
+            -676689456
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "绿盟UTS综合威胁探针":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>UTS 综合威胁探针</title>",
+                "<h1 _ngcontent-fon-c538=\"\">UTS 综合威胁探针</h1>",
+                "<uts-web-auth _ngcontent-fon-c538=\"\"></uts-web-auth>"
+            ]
+        },
+        "Icon_Hash":[
+            1566499661
+        ],
+        "Tips":"默认口令：admin/Nsfocus@123 或 auditor/auditor",
+        "SensitivePath": {}
+    },
+
+
+    // x
+    "新点OA":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "window.location.href='/EpointOA'",
+                "\"/EpointOA/Css/Main.css\"",
+                "/EpointOA/WebResource.axd?"
+            ]
+        },
+        "Language":"ASP.NET",
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/ExcelExport/人员列表.xls":{}
+        }
+    },
+
+    "蓝海卓越计费管理系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<script language='javascript'>window.parent.location.href='login.php';</script>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "金蝶EAS":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>EAS Cloud系统登录</title>",
+                "\"/eassso/skin/blue/img/icoETAG-217-1321345706087.png\"",
+                "<input type=\"hidden\" id=\"clientHostIP\" name=\"clientHostIP\" value=\"\">",
+                "usbkeyPinVerifyResult"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            "https://182.136.9.211/eassso/login?service=http%3A%2F%2F182.136.9.211%3A80%2Fshr%2F"
+        ],
+        "SensitivePath":{
+            "/appmonitor/protected/selector/server_file/files?folder=/&suffix=":{},
+            "/appmonitor/protected/selector/server_file/files?folder=C://&suffix=":{}
+        }
+    },
+
+    "金和OA":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "金和协同管理平台",
+                "Jhsoft.Web.login/PassWord.aspx",
+                "C6/Jhsoft.Web.login/PassWord.aspx",
+                "JHSoft.UI.Lib/skin/style_default.css",
+                "jhsoft.web.addmenu",
+                "C6/Jhsoft.Web.login/PassWordSlide.aspx",
+                "jinher network"
+            ]
+        },
+        "Icon_Hash":[
+            1528278373
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/C6/Jhsoft.Web.module/testbill/dj/download.asp?filename=/c6/web.config":{}
+        }
+
+    },
+
+    "金蝶OA":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/oa/themes/mskin/login/new/images/login_bg_1.jpg",
+                "/oa/upload/IndexPictureSrc",
+                "OAHelperOfficeAddIn.Detector"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "金蝶政务GSiS":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/kdgs/script/kdgs.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // k
+    "科达网络键盘控制台":{
+        "Headers":{},
+        "Body":{
+            "/": [
+                "//2015-12-23 zml del for SDM-00047219 end"
+            ]
+        },
+        "Icon_Hash":[
+            -803417989,
+            -178184445
+        ],
+        "Example":[
+            
+        ],
+        "Dork":{
+            "Fofa":"网络键盘控制台"
+        },
+        "SensitivePath": {}
+    },
+
+    "科达MTS转码服务器":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>MTS转码服务器——苏州科达科技股份有限公司</title>",
+                "版本所有@1995-2013苏州科达科技股份有限公司",
+                " DD_belatedPNG.fix('img')",
+                "客服热线：400-828-2866 800-828-2866"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "Dork":{
+            "Fofa":"app=\"MTS转码服务器\""
+        },
+        "SensitivePath": {}
+    },
+    "科迈RAS":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<link href=\"pic/ras.ico\"",
+                "http://www.comexe.cn/"
+            ]
+        },
+        "Icon_Hash":[
+            373882900,
+            -188658849
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "Dork":{
+            "Fofa":"app=\"科迈-RAS系统\""
+        },
+        "SensitivePath": {}
+    },
+
+    "联软网络智能防御系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>网络准入控制</title>",
+                "\"/portal/redirect/nacc/\"",
+                "/portal/resources/css/auth_login.css",
+                "本系统由深圳市联软科技股份有限公司提供技术支持",
+                "/portal/resources/jquery-easyui/themes/gray/"
+            ]
+        },
+        "Icon_Hash":[
+            -2130980754
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "蓝凌OA":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/resource/customization/images/login_single_random/favicon.ico",
+                "Com_IncludeFile(\"jquery.fullscreenr.js|custom.js\", \"style/default/login_single_random/js/\");",
+                "sys/ui/extend/theme/default/style/common.css",
+                "sys/ui/extend/theme/default/style/profile.css",
+                "/sys/organization/sys_org_retrieve_password/validateUser.jsp",
+                "蓝凌软件 版权所有"
+            ]
+        },
+        "Icon_Hash":[
+            831854882
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/WEB-INF/KmssConfig/admin.properties":{},
+            "/admin.do":{}
+        }
+
+    },
+
+    "蓝凌EIS智慧协同平台":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/scripts/jquery.landray.common.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "迈普安全网关":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/webui/images/maipu/login",
+                "/webui/js/jquerylib/"
+            ]
+        },
+        "Icon_Hash":[
+            -269982424
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "若依-管理系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "content=\"若依后台管理框架\"",
+                "你若不离不弃，我必生死相依</p>-->",
+                "/ajax/libs/validate/jquery.validate.min.js",
+                "/ruoyi/js/",
+                "若依管理系统"
+            ]
+        },
+        "Icon_Hash":[
+            -1231872293
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "深信服EDR":{
+        "Headers":{},
+        "Body":{
+            "/ui/login.php":[
+                "<title>SANGFOR终端检测响应平台</title>",
+                "/download/linux_edr_installer.tar.gz"
+            ]
+        },
+        "Icon_Hash":[
+            1227061597
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "启明星辰天清汉马USG":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "欢迎使用天清汉马USG",
+                "天清汉马USG | 登录",
+                "/cgi-bin/webui?op=get_product_model"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "九思协同办公系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/jsoa/wap.do",
+                "/jsoa/quitapp.command",
+                "<title>九思协同办公系统</title>",
+                "/jsoa/webmail/",
+                "/jsoa/CheckUser.do",
+                "/jsoa/login.jsp",
+                "\"jsoaDomainAccount\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/jsoa/public/edit/admin/":{}
+        }
+    },
+
+    "通达OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "www.tongda2000.com/download/",
+                "/images/tongda.ico",
+                "您的电脑可能感染了病毒或木马程序，请联系OA软件开发商寻求解决办法或下载360安全卫士查杀",
+                "紧急通知：今日10点停电",
+                "oa提示：不能登录oa",
+                "<a href='http://www.tongda2000.com/' target='_black'>通达官网</a>"
+            ]
+        },
+        "Icon_Hash":[
+            -759108386
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/mobile/inc/get_contactlist.php?P=1&KWORD=%25&isuser_info=3":{},
+            "/inc/expired.php":{}
+        }
+    },
+
+    "拓尔思-WCM":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<a href=\"http://www.trs.com.cn\">(TRS)",
+                "TRS在线技术支持",
+                "WCMV6/login.jsp",
+                "请先关闭可能的拦截工具，如：Windows IE窗口拦截设置、google bar、\\n",
+                "/wcm\" target=\"_blank\">管理",
+                "forum.trs.com.cn",
+                "window.location.href = \"/wcm\";",
+                "0;url=/wcm",
+                "/wcm/app/js",
+                "/wcm\" target=\"_blank\">网站管理"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "好视通-fastmeeting":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "resources/commonImage/favicon.ico"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "启莱OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "启莱西安OA系统最好的选择",
+                "(LoginBg/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "万户OA":{
+        "Headers":{
+            "Location": "/defaultroot/portal.jsp?access=oa"
+        },
+        "Body":{
+            "/":[
+                "万户ezOFFICE协同管理平台",
+                "/defaultroot/js/cookie.js",
+                "/defaultroot/templates",
+                "defaultroot/public/edit/",
+                "whirRootPath = \"/defaultroot",
+                "ezofficeusername"
+            ]
+        },
+        "Icon_Hash":[
+            -1827521324
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/defaultroot/extension/smartUpload.jsp?path=information&fileName=infoPicName&saveName=infoPicSaveName&tableName=infoPicTable&fileMaxSize=0&fileMaxNum=0&fileType=gif,jpg,bmp,jsp,png&fileMinWidth=0&fileMinHeight=0&fileMaxWidth=0&fileMaxHeight=0":{},
+            "/defaultroot/download_old.jsp?path=..&name=x&FileName=index.jsp":{}
+        }
+
+    },
+
+    "网易企业邮箱":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "//mimghz.qiye.163.com",
+                "content=\"网易企业邮箱"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "协众OA":{
+        "Headers":{
+            "Set-Cookie":"CNOAOASESSID"
+        },
+        "Body":{
+            "/":[
+                "admin@cnoa.cn",
+                "Powered by 协众OA",
+                "powered by cnoa.cn",
+                "scripts/cnoa.extra.js",
+                "https://itunes.apple.com/cn/app/oa-ban-gong-xi-tong/id871815687?mt=8"
+            ]
+        },
+        "Icon_Hash":[
+            -1466673461
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "爱快路由器":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>登录爱快流控路由</title>",
+                "www.ikuai8.com"
+            ]
+        },
+        "Icon_Hash":[],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "齐治堡垒机":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                // "//xfpverifyExec.jsp;" // 和H3C-SecPath有冲突
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "齐博cms":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/images/v7/cms.css\">"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/do/job.php?job=download&url=ZGF0YS9jb25maWcucGg8":{}
+        }
+    },
+
+    "奇安信VPN":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>奇安信VPN</title>"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // 红帆OA 也叫 红帆ioffice
+    "红帆iOffice":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>iOffice.net</title>",
+                "iOffice.net Hospital Edition Trial",
+                "/iOffice/prg/welcome/welcomeShow.aspx?mode=login"
+            ]
+        },
+        "Icon_Hash":[
+            -1791325588
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            "http://121.9.248.182/"
+        ],
+        "SensitivePath":{
+            "/ioffice/prg/set/iocom/ioFileExport.aspx?url=/ioffice/Login.aspx&filename=test.txt&ContentType=application/octet-stream":{}
+        }
+    },
+
+    "亿赛通电子文档安全管理系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>电子文档安全管理系统</title>",
+                "/CDGServer3/SysConfig.jsp",
+                "/CDGServer3/help/getEditionInfo.jsp"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "永中dcs":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>永中文档在线预览DCS</title>",
+                "www.yozodcs.com"
+            ]
+        },
+        "Icon_Hash":[],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "金山v8终端安全系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "class=\"anouncetext\">为了更好的保障企业内网的安全公司决定从即日起全面部署金山企业安全终端防护优化系统",
+                "在线安装-v8+终端安全系统web控制台"
+            ]
+        },
+        "Icon_Hash":[],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // s
+    "三汇SMG网关管理软件":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>网关管理软件</title>",
+                "this.src='conn/identifyingcode.php?'",
+                "<p class=\"ml300\"><a href=\"index.php?Language=1\" >中文</a> | <a href=\"en/index.php?Language=0\" >English</a></p>"
+            ]
+        },
+        "Icon_Hash":[
+            -228956981
+        ],
+        "Example":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/debug.php":{}
+        }
+    },
+
+    "用友FE":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "FE协作办公平台",
+                "Project :FE system",
+                "../images/fe_loginti.png",
+                "<a href=\"#this\" onclick=\"openDownloadWin();",
+                "\"/js35/jquery-1.4.2.min.js\"",
+                "\"/js35/BaseFunc.js\""
+            ]
+        },
+        "Icon_Hash":[
+            415886423
+        ],
+        "Language":"JSP",
+        "Example":[
+            "http://120.82.178.130:9090"
+        ],
+        "SensitivePath":{
+            "/system/mediafile/templateOfTaohong_manager.jsp?path=/../../../":{}
+        }
+    },
+
+    "用友NC":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "logo/images/ufida_nc.png",
+                "//直接跳到nc登录页",
+                "<title>YONYOU NC</title>",
+                "../Client/Uclient/UClient.dmg"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "Example":[
+        ],
+        "SensitivePath": {}
+    },
+    
+    "用友UFIDA NC":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "ufida_nc.png"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "致翔OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                ".login-password{background:url(../images/icon-password.png) no-repeat;position:absolute;width:15px;height:18px;left:20px;margin-top:22px}",
+                "<input type=\"submit\" name=\"Button1\" value=\"登 录\" onclick=\"javascript:return checkfrom();\" id=\"Button1\" class=\"submit-text\" />"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"ASP.NET",
+        "Example":[
+            "http://14.18.233.55/"
+        ],
+        "SensitivePath":{
+            "/mainpage/msglog.aspx?user=1":{}
+        }
+    },
+
+    "向日葵":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "\"Verification failure\""
+            ]
+        },
+        "Icon_Hash":[],
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/cgi-bin/rpc?action=verify-haras":{}
+        }
+    },
+
+    "智慧校园管理系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "'../DC_Login/Login'"
+            ]
+        },
+        "Icon_Hash":[
+            -511895113,
+            -1452341240
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // j
+    "吉拉科技LVS精益价值管理系统": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "Supperd By 吉拉科技",
+                "/ajax/LVS.Core.Common.STSResult,LVS.Core.Common.ashx",
+                "<img src=\"../SourceFiles/Images/Login/gllogo_down.png\"",
+                "/ajax/LVS.Web.UserLogin,LVS.Web.ashx",
+                "$.cookie('lvs_username'"
+            ]
+        },
+        "Icon_Hash": [
+            -1162557027
+        ],
+        "SensitivePath": {}
+    },
+
+    "金笛短信中间件":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "金笛短信中间件(WEB版)",
+                "\"background: url(img/login_dl_bt1.jpg); color: #fff\"",
+                "<img alt=\"\" src=\"randomCode.jsp\">",
+                "url=\"/languageAction?action=languageChange&language=\"+language;"
+            ]
+        },
+        "Icon_Hash":[
+            -1262013834,
+            2082194418
+        ],
+        "Example":[
+            "http://222.174.158.195:8090 admin admin"
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "宏景eHR":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/templates/index/hrlogon.do?logon.x=link",
+                "/general/sys/hjaxmanage.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "一米OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<script src=\"js/logo_show.js\"",
+                "http://www.yimihome.com",
+                "/oa/skin/bluethink\"){if(\"8fb06097631f44ba4952b5808a6571ca",
+                "\"activex/yimioa.apk\""
+            ]
+        },
+        "Icon_Hash":[
+            -924054604
+        ],
+        "Language":"JSP",
+        "Example":[
+            "http://218.3.152.98:8080"
+        ],
+        "SensitivePath":{
+            "/public/getfile.jsp?user=1&prop=activex&filename=../public/getfile&extname=jsp ":{}
+        }
+    },
+
+    "正方教务系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "copy;1999-2012 <a href=\"http://www.zfsoft.com"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "信呼OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<div style=\"font-size:30px\"><b>信呼协同办公系统</b></div>",
+                "<script type=\"text/javascript\" src=\"webmain/login/loginscript.js\"></script>",
+                "http://www.rockoa.com/",
+                "homepage:www.rockoa.com"
+            ]
+        },
+        "Icon_Hash":[
+            1652488516,
+            1885233811
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // z
+    "泽元cms":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "App=ZCMS"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "中科汇联easysite":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "中科汇联承办，easysite内容管理系统，portal门户，舆情监测，搜索引擎，政府门户，信息公开，电子政务",
+                "http://www.huilan.com",
+                "/eportal/ui?moduleId",
+                "/eportal/fileDir/",
+                "generator\" content=\"easysite",
+                "copyright 2009 by huilan",
+                "_desktopmodules_picturenews"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "致远OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/yyoa/",
+                "/seeyon/USER-DATA/IMAGES/LOGIN/login.gif",
+                "/seeyon/skin/dist/components/",
+                "var _ctxPath = '/seeyon'",
+                "seeyonproductid",
+                "/seeyon/common/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/seeyon/management/index.jsp":{},
+            "/seeyon/logs/login.log":{},
+            "/seeyon/logs/ctp.log":{},
+            "/seeyon/logs/uc.log":{},
+            "/seeyon/webmail.do?method=doDownloadAtt&filename=test.txt&filePath=../conf/datasourceCtp.properties":{},
+            "/yyoa/ext/https/getSessionList.jsp?cmd=getAll":{},
+            "/seeyon/thirdpartyController.do.css/..;/ajax.do":{},
+            "/yyoa/ext/trafaxserver/SystemManage/config.jsp":{},
+            "/yyoa/assess/js/initDataAssess.jsp":{},
+            "/yyoa/DownExcelBeanServlet?contenttype=username&contentvalue=&state=1&per_id=0":{},
+            "/yyoa/createMysql.jsp":{},
+            "/yyoa/ext/createMysql.jsp":{},
+            "/seeyon/htmlofficeservlet":{},
+            "/seeyon/management/status.jsp":{},
+            "/seeyon/logs/v3x.log":{}
+        }
+
+    },
+
+    "浙大恩特客户资源管理系统（EnterCRM）":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "欢迎使用浙大恩特客户资源管理系统",
+                "script/Ent.plug-in.js",
+                "浙大恩特网络科技有限公司"
+            ]
+        },
+        "Icon_Hash":[
+            -807731456
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "蝉知cms":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "title='cms系统，首选蝉知cms",
+                "chanzhi.js",
+                "poweredby'><a href='http://www.chanzhi.org"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "中庆教育云":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/default/portal/home/index",
+                "/default/portal/resource/",
+                "门户首页 - 教育云平台"
+            ]
+        },
+        "Icon_Hash":[
+            -1474228802
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "中腾OA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "zt_webframe"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    // A
+    "Alibaba Canal":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Canal Admin</title>",
+                "Canal Admin Login"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/api/v1/canal/config/1/0":{}
+        }
+    },
+
+    "Apache APISIX":{
+        "Headers": {
+            "Server": "APISIX"
+        },
+        "Body": {
+            "/": [
+                "\"error_msg\":\"404 Route Not Found\"}",
+            ]
+        },
+        "Icon_Hash": [],
+        "SensitivePath": {
+            "/apisix/admin/routes":[]
+        }
+    },
+
+    "Apache MinIO": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "<title>MinIO Browser</title>",
+                "href=\"/minio/loader.css\"",
+                "src=\"/minio/logo.svg\"",
+                "\"/minio/index_bundle",
+                "MinIO server is unreachable"
+            ]
+        },
+        "Icon_Hash": [],
+        "Language": "GO",
+        "SensitivePath": {}
+    },
+
+    "Apache ShenYu": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "Apache ShenYu Gateway Management System",
+                "<title>ShenYu Gateway</title>",
+                "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyBjbGFzcz0iaWNvbiIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjQuMDBweCIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiMxOTkwRkYiIGQ9Ik04MjUuMDE1IDQ4My4yODhjNi44NzItNTYuNzI3IDguMTY0LTEyMS4wMDkgMS40MjctMTk0LjQ5OWwtMC45MDYtOS43MzgtMzE0LjI1NS04OS41NjYtMzA2LjEwMiA4OS40OTEtMS4zNCA5LjA1OWMtMC4yMDMgMS4zOC01LjcyNSA0Mi4xOTUtNC42MjEgMTAyLjIxNy04Mi4wMiAxMS4xOTgtMTI4LjY2NiAzNi4wMjQtMTM0LjU1OSA3Mi4xNTktNi4zNDEgMzguOTE0IDM1LjY2OCA4MC4wOTIgMTIxLjQ5NyAxMTkuMTU3IDE0LjMyMSA2LjUxMyAyOS44NzIgMTIuNzYgNDUuOTUxIDE4Ljg2NyAzNy40MTggMTE2LjYyNiAxMTQuODczIDIzMy4zNTggMjcxLjcwMSAyODUuNDI0bDMuMzQgMS4wOTUgMy40NTQtMC41NjZjMi40MTMtMC4zOTkgMTYwLjE0Mi0yOC44MTcgMjUzLjM1MS0yMDAuNjM5IDE0Ljc3Ny0wLjcxNyAyOS4wMTMtMS43ODYgNDIuNjE3LTMuMjE1IDkzLjc1Ni05Ljc3NiAxNDYuNjcyLTM1LjU1NSAxNTIuOTk1LTc0LjQ2OSA4LjMzLTUxLjA3Ny02NS40NjQtOTUuMDk5LTEzNC41NS0xMjQuNzc3eiBtLTYyNy4xNzcgNzIuNTc3Yy04Mi4yNDQtMzcuNDA0LTEwOC4zNDQtNzAuNDY4LTEwNS4zMjQtODguOTI0IDIuNzE1LTE2LjYyNCAzMi45MDgtMzcuNjU0IDEwNy43MTYtNDguMjkzIDIuMjc2IDQzLjg4OSA4LjM1OCA5NS4wMiAyMS45MjIgMTQ3LjU5My04LjMxMy0zLjQxNS0xNi41NTgtNi44NDctMjQuMzE0LTEwLjM3NnogbTMxMS41MTkgMzAxLjY4NmMtMTM0LjExMS00NS43NzEtMjA1LjM0My0xNDMuMzU4LTI0Mi43MDItMjQ0Ljc1IDY2LjAzMyAyMi4yNzQgMTQyLjc0NyA0MS4wNTggMjI0IDU0LjI5NCAzLjQzOSAwLjU1OSA2Ljc5OSAwLjkzNyAxMC4yMjkgMS40NzJ2MTEuODUyYzAgNy44ODggNi4zOTggMTQuMzA1IDE0LjMwNSAxNC4zMDVzMTQuMzA1LTYuNDE2IDE0LjMwNS0xNC4zMDV2LTcuNzMzYzY2LjM0MiA5LjE3MiAxMzAuNDczIDE0LjE0OSAxODguMjI4IDE0LjE0OSA1LjE1IDAgOS45MTUtMC4yNzQgMTQuOTYzLTAuMzQ5LTc5LjE5OSAxMzUuOTQ3LTIwMC4zOTkgMTY2LjQyNS0yMjMuMzI4IDE3MS4wNjV6IG0yMzguNDc1LTE5OS41NzdjLTY1LjAwNyAyLjAyNC0xMzkuODktMi41ODgtMjE4LjMzOS0xMy42MjNWNTI2LjM0OWg5NC40NTRjNy44ODggMCAxNC4zMDUtNi40MTcgMTQuMzA1LTE0LjMwNXMtNi40MTYtMTQuMzA1LTE0LjMwNS0xNC4zMDVoLTk0LjQ1NFY0MjcuOGMwLTcuODg4LTYuMzk4LTE0LjMwNS0xNC4zMDUtMTQuMzA1cy0xNC4zMDUgNi40MTYtMTQuMzA1IDE0LjMwNXY2OS45MzloLTk0LjQ1NGMtNy44ODggMC0xNC4zMDUgNi40MTYtMTQuMzA1IDE0LjMwNSAwIDcuODg4IDYuNDE2IDE0LjMwNSAxNC4zMDUgMTQuMzA1aDk0LjQ1NFY2NDAuMDljLTEuOTA4LTAuMzA0LTMuNzg2LTAuNTM4LTUuNjk5LTAuODQ5LTg4LjE0MS0xNC4zNDMtMTcwLjgxNy0zNS4yMjItMjM5LjQ2Ni02MC4wNTMtMzYuNjExLTEyMy4zNC0yOC4xMjYtMjQ0LjU1Ni0yNC42MjgtMjc4LjAxOWwyODAuMzA1LTgxLjk0MiAyODcuNDE5IDgxLjk0MmMxMy4zNDUgMTYwLjQxOS0xMS4yMzggMjc0Ljk3Ni01MC45ODIgMzU2LjgwNXogbTU1Ljc5NC0zLjQ4NWMtOC4xMTMgMC44NDItMTYuNjUyIDEuNDM5LTI1LjIxMyAyLjAxOSAxOC41MjUtNDAuNjIyIDMzLjQzNC04OC4yNTUgNDIuNTY2LTE0NC4wNzggODUuNCAzOC4wMTUgMTEzLjc5MyA3Mi4zODYgMTEwLjczMSA5MS4xMDQtMy4wMDEgMTguNDU4LTM4LjIxNiA0MS41NTctMTI4LjA4NCA1MC45NTV6TTM5MS43MDcgMzE3Ljg1N2gtMTAwLjA4YTExLjY4MiAxMS42ODIgMCAwIDAtOC4zOTggMy41NiAxMS44OTMgMTEuODkzIDAgMCAwLTMuMzMzIDguNTQ3bDMuMTA5IDE1Mi41MTZjMC4xNDkgNi40NjYgNS4zNjIgMTEuNjMgMTEuNzI5IDExLjYzaDAuMjVjNi40NjgtMC4xNTEgMTEuNjMtNS41NjUgMTEuNDgxLTEyLjEzbC0yLjg4My0xNDAuMzg2aDg4LjEyNWM2LjQ2NiAwIDExLjcwNS01LjMxMiAxMS43MDUtMTEuODggMC02LjU0Mi01LjIzOS0xMS44NTctMTEuNzA1LTExLjg1N3oiICAvPjwvc3ZnPg=="
+            ]
+        },
+        "Icon_Hash": [
+            -273027152
+        ],
+        "SensitivePath": {
+            "/dashboardUser": {}
+        }
+    },
+
+    "appcms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powerd by appcms"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "Apache Shiro":{
+        "Headers":{
+            "Set-Cookie":"deleteMe"
+        },
+        "Body":{
+
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Aspcms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"aspcms",
+                "www.aspcms.com",
+                "/inc/aspcms_advjs.asp"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/admin_aspcms/login.asp":{},
+            "/member/login.asp":{},
+            "/data/%23aspcms252.asp":{},
+            "/data/%23data.asp":{},
+            "/plug/comment/commentList.asp?id=-1%20unmasterion%20semasterlect%20top%201%20UserID,GroupID,LoginName,Password,now(),null,1%20%20frmasterom%20{prefix}user":{}
+        }
+
+    },
+
+    "AnyMacro邮件系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "document.aa.f_email"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "AfterLogic":{
+        "Headers":{
+            "Set-Cookie":"phpwebmailsessid"
+        },
+        "Body":{
+            "/":[
+                "afterlogic/",
+                "afterlogic webmail"
+            ]
+        },
+        "Icon_Hash":[
+            -194791768
+        ],
+        "Language":"PHP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "Apusic":{
+        "Headers":{
+            "Server": "Apusic Application"
+        },
+        "Body":{
+            "/":[
+                "欢迎使用apusic应用服",
+                "<td>管理apusic应用服务器</td>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath":{
+            "/admin/":{},
+            "/admin/protected/selector/server_file/files?folder=/":{}
+        }
+
+    },
+
+    "AMH 云主机面板":{
+        "Headers":{},
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+            1822002133
+        ],
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "ASP.NET API":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<div class=\"jumbotron\">",
+                "<nav class=\"navbar navbar-expand",
+                "ASP.NET Web API",
+                "<p class=\"intro\">支持下列操作。有关正式定义，请查看"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "Example":[
+            
+        ],
+        "SensitivePath": {
+            "/Help": {},
+            "/Service.asmx": {}
+        }
+    },
+
+    "ActiveMQ":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Apache ActiveMQ</title>",
+                "activemq_log",
+                "Manage ActiveMQ broker",
+                "activemq_logo"
+            ]
+        },
+        "Icon_Hash":[
+            -78120454,
+            1766699363
+        ],
+        "Language":"JSP",
+        "Example":[
+            
+        ],
+        "SensitivePath": {}
+
+    },
+
+    "Atlassian Jira":{
+        "Headers":{
+            "Set-Cookie":"atlassian.xsrf.token",
+            "Location": "/secure/SetupMode!default.jspa"
+        },
+        "Body":{
+            "/":[
+                "jira-help",
+                "/secure/credits/AroundTheWorld!default.jspa",
+                "JiraVersion",
+                "jira.webresources"
+            ],
+            "/robots.txt":[
+                "/configurereport.jspa"
+            ]
+        },
+        "Icon_Hash":[
+            981867722,
+            552727997,
+            -1581907337
+        ],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/s/cfx/_/;/WEB-INF/web.xml":{},
+            "/secure/ViewUserHover.jspa?username=admin":{},
+            "/s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml":{},
+            "/rest/api/latest/groupuserpicker?query=admin&maxResults=50&showAvatar=false":{},
+            "/plugins/servlet/gadgets/makeRequest?url=http://www.baidu.com/robots.txt":{},
+            "/secure/popups/UserPickerBrowser.jspa": {},
+            "/rest/api/2/screens": {},
+            "/rest/api/2/resolution": {},
+            "/rest/api/2/project?maxResults=100": {},
+            "/rest/api/2/projectCategory?maxResults=1000": {},
+            "/rest/config/1.0/directory": {},
+            "/rest/api/2/dashboard?maxResults=100": {},
+            "/rest/menu/latest/admin": {}
+        }
+
+    },
+
+    "Apache Ambari":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Ambari</title>",
+                "ambari-title",
+                "ambari-header"
+            ]
+        },
+        "Icon_Hash":[
+            -534489365
+        ],
+        "SensitivePath": {}
+    },
+
+    "Apache_ofbiz":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<span>Powered by OFBiz</span>"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "Apache ColdFusion": {
+        "Headers": {
+            "Set-Cookie": "CFTOKEN="
+        },
+        "Body": {
+            "/": [
+                "coldfusion.runtime",
+                "coldfusion.filter",
+                "coldfusion.bootstrap",
+                "coldfusion.monitor",
+                "coldfusion.CfmServlet",
+                "_CF_checkSimpSearch",
+                "_CF_error_messages"
+            ]
+        },
+        "Icon_Hash": [],
+        "Language": "ASP.NET",
+        "SensitivePath": {
+            "/cf_scripts/scripts/ajax/ckeditor/plugins/filemanager/upload.cfm": {},
+            "/flex2gateway/amf": {}
+        }
+    },
+
+    "ACME Mini_httpd": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "mini httpd/",
+                "mini_httpd/"
+            ]
+        },
+        "Icon_Hash": []
+    },
+
+    "Apache Tomcat":{
+        "Headers":{
+            "Server":"Apache-Coyote/1.1"
+        },
+        "Body":{
+            "/":[
+                "user username=\"tomcat\" password=",
+                "href=\"tomcat.css",
+                "this is the default tomcat home page",
+                "org.apache.tomcat.",
+                "/manager/status",
+                "H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}"
+            ]
+        },
+        "Icon_Hash":[
+            -297069493
+        ],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/manager/html":{}
+        }
+    },
+
+    "Apache Unomi":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Welcome to Apache Unomi",
+                "Logo Apache Unomi"
+            ]
+        },
+        "Icon_Hash":[
+            2128800015
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Apache Spark":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Spark Master at spark"
+            ]
+        },
+        "Icon_Hash":[
+            856048515
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Apache Airflow":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Airflow - Login",
+                "/admin/airflow/login",
+                "Sign in to Airflow"
+            ]
+        },
+        "Icon_Hash":[
+            2134173038,
+            -1625254865
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Apache Kylin":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "content=\"1;url=kylin\""
+            ],
+            "/kylin/login":[
+                "<title>Kylin</title>",
+                "/kylin/"
+            ]
+        },
+        "Icon_Hash":[
+            -186961397
+        ],
+        "Language":"JSP",
+        "SensitivePath": {},
+        "Tips": "默认口令 admin/KYLIN"
+
+    },
+
+    "Apache Flink":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Apache Flink Web Dashboard</title>",
+                "Apache Flink Dashboard"
+            ]
+        },
+        "Icon_Hash":[
+            -929003724
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Apache Solr":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "welcome to solr",
+                "Solr Admin"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Apache Dubbo":{
+        "Headers":{
+            "Www-Authenticate": "Basic realm=\"dubbo\""
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Apache Druid":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Apache Druid</title>",
+                "Apache Druid console",
+                "Druid Stat Index",
+                "content=\"Apache Druid console\""
+            ],
+            "/console-config.js":[
+                "https://druid.apache.org/data/example-manifests.tsv"
+            ]
+        },
+        "Icon_Hash":[
+            1677530847
+        ],
+        "SensitivePath": {}
+    },
+
+    "Axis2":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Welcome to the new generation of Axis",
+                "Axis 2 - Home",
+                "axis2-web/css/axis-style.css"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "Atmail":{
+        "Headers":{
+            "Set-Cookie":"atmail6"
+        },
+        "Body":{
+            "/":[
+                "Powered by Atmail",
+                "/index.php/mail/auth/processlogin",
+                "<input id=\"mailserverinput"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "Atlassian Confluence":{
+        "Headers":{
+            "Location": "/login.action?os_destination=",
+            "X-Confluence-Request-Time":"1"
+        },
+        "Body":{
+            "/":[
+                "confluence-context-path",
+                "id=\"com-atlassian-confluence",
+                "name=\"confluence-base-url\""
+            ]
+        },
+        "Icon_Hash":[
+            -305179312,
+            -1642532491
+        ],
+        "SensitivePath": {}
+    },
+
+    // B
+    "Bitbucket":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>Log in - Bitbucket</title>",
+                "bitbucket.server",
+                "bitbucket.page",
+                "Learn about what&#39;s new in Bitbucket",
+                "bitbucket/internal/"
+            ]
+        },
+        "Icon_Hash":[
+            667017222
+        ],
+        "SensitivePath":{
+            "/admin%20/mail-server":{},
+            "/admin%20/db":{},
+            "/admin%20/db/edit":{},
+            "/admin%20/license":{},
+            "/admin%20/logging":{},
+            "/admin%20/server-settings":{},
+            "/admin%20/authentication":{},
+            "/admin%20/avatars":{}
+        }
+    },
+
+    "b2evolution":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"b2evolution",
+                "powered by b2evolution",
+                "/powered-by-b2evolution-150t.gif"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "bossmail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "href=\"http://apps.microsoft.com/windows/zh-cn/app/bossmail/24f4bdb3-1bca-467e-9dd9-15a5d278aec6",
+                "<span class=\"footer_t\">powered by bossmail</span>"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "B2Bbuilder":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+            492941040
+        ],
+        "SensitivePath": {}
+    },
+
+    // C
+    "Casbin":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/casdoor/",
+                "cdn.casdoor.com",
+                "<title>Casdoor</title>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/api/get-users?p=123&pageSize=123":{},
+            "/api/get-organizations?p=123&pageSize=123&value=cfx&sortField=&sortOrder=&field=updatexml(null,version(),null)":{}
+        }
+    },
+
+    "Citrix_XenMobile":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "XenMobile - ",
+                " XenMobile。",
+                "\"img/zenprise.ico\""
+            ]
+        },
+        "SensitivePath":{
+            "/jsp/help-sb-download.jsp?sbFileName=../../../etc/passwd":{}
+        },
+        "Icon_Hash":[
+            2109995841
+        ],
+        "Language":"JSP"
+    },
+
+    "CCLive在线客服系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/admin/login/index.html":[
+                "<title>CCLive在线客服系统登录</title>",
+                "url: data.form.action,"
+            ]
+        },
+        "Icon_Hash":[
+            1843534472
+        ],
+        "SensitivePath": {}
+    },
+
+    "Cacti":{
+        "Headers":{
+            "CactiEZ":"www.cactiez.com",
+            "Cactiez":"www.cactiez.com",
+            "Set-Cookie":"Cacti="
+        },
+        "Body":{
+            "/index.php":[
+                "Login to Cacti",
+                "/cacti/images",
+                "Please enter your Cacti user name and password below",
+                "cactiLoginLogo",
+                "登录到Cacti",
+                "The Cacti Group",
+                "/plugins/jqueryskin/include/login.css"
+            ]
+        },
+        "Icon_Hash":[
+            -575536139,
+            -1797138069
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+
+    },
+
+    "Coremail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/coremail/common",
+                "Coremail 电子邮件系统",
+                "/coremail/index.jsp?cus=",
+                "/coremail/bundle/",
+                "action=\"/coremail/index.jsp",
+                "<a href=\"http://www.coremail.cn\" target=\"_blank\">",
+                "fmt_logoalt: \"coremail 电子邮件系统"
+            ]
+        },
+        "Icon_Hash":[
+            541942600
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "CmsEasy":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"cmseasy",
+                "/index.php?case=archive&act=list&catid="
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/index.php?case=admin&act=login&admin_dir=admin&site=default":{},
+            "/index.php?case=crossall&act=execsql&sql=Ud-ZGLMFKBOhqavNJNK5WRCu9igJtYN1rVCO8hMFRM8NIKe6qmhRfWexXUiOqRN4aCe9aUie4Rtw5":{}
+        }
+
+    },
+
+    "CouchDB":{
+        "Headers":{
+            "Server":"couchdb",
+            "x-couchdb-body-time": "0"
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+            
+        ],
+        "SensitivePath": {}
+    },
+
+    "CPanel":{
+        "Headers":{
+            "Cookie": "cprelogin="
+        },
+        "Body":{
+            "/":[
+                "<title>cPanel 登录</title>",
+                "/cPanel_",
+                "/cpanel/"
+            ]
+        },
+        "Icon_Hash":[
+            1728684029
+        ],
+        "SensitivePath": {}
+    },
+
+    "CmsTop":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by cmstop",
+                "?app=system&controller=admin&action=login",
+                "/css/cmstop-common.css",
+                "/js/cmstop-common.js",
+                "<a class=\"poweredby\" href=\"http://www.cmstop.com\"",
+                "cmstop-list-text.css"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/?app=system&controller=admin&action=login":{}
+        }
+
+    },
+
+    "CGI":{
+        "Headers":{
+        },
+        "Body":{
+            "/cgi-bin/test-cgi":[
+                "CGI/1.0 test script report"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "CKEditor":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/ckeditor/",
+                "/ckeditor.js",
+                "https://ckeditor.com/",
+                "CKEDITOR_BASEPATH",
+                "CKEDITOR_GETURL",
+                "CKEDITOR.event",
+                "CKEDITOR.editor",
+                "CKSource - Frederico Knabben"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "Citrix":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "citrix login",
+                "citrix systems",
+                "citrix_login",
+                "/admin_ui/common/css/ns/ui.css",
+                "\"/vpn/resources/{lang}\"",
+                "class=\"citrixreceiverlogoaboutbox\"",
+                "href=\"/vpn/images/accessgateway.ico",
+                "cloud.ottoworkfroce.eu/vpn/index.html",
+                "receiver/images/common/icon_vpn.ico"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    // D
+    "dokuwiki":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by dokuwiki",
+                "content=\"dokuwiki",
+                "<div id=\"dokuwiki"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Dvwa":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "dvwa/css/login.css",
+                "dvwa/images/login_logo.png"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Discuz":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"discuz",
+                "discuz_uid",
+                "id=\"discuz_tips",
+                "powered by <strong><a href=\"http://www.discuz.net",
+                "Comsenz"
+            ]
+        },
+        "Icon_Hash":[
+            -505448917
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/admin.php":{},
+            "/forum.php": {},
+            "/uc_server/admin.php?m=user&a=login&iframe=&sid=":{},
+            "/config/config_global.php~":{}
+        }
+    },
+
+    "DzzOffice":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"DzzOffice\""
+            ]
+        },
+        "Icon_Hash":[
+            -1961736892
+        ],
+        "SensitivePath": {}
+    },
+
+    "Drupal":{
+        "Headers":{
+            "Set-Cookie": "DrupalVisitorMobile"
+        },
+        "Body":{
+            "/":[
+                "content=\"drupal",
+                "data-drupal",
+                "drupal cookie",
+                "powered by drupal",
+                "/misc/drupal.js",
+                "Powered by <a href=\"https://www.drupal.org\">Drupal</a>",
+                "Drupal.settings",
+                "jquery.extend(drupal.settings"
+            ]
+        },
+        "Icon_Hash":[
+            1174841451,
+            -167656799
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Django":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "django administration",
+                "__admin_media_prefix__",
+                "Django tried these URL patterns, in this order:"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"Python",
+        "SensitivePath": {}
+    },
+
+    "Digitalized DCP":{
+        "Headers":{
+            "Set-Cookie":"dcp_cas_hash"
+        },
+        "Body":{
+            "/":[
+                "pwd/html/pwdForget.jsp",
+                "var cookiename = \"dcpcascookie\";"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Dedecms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/templets/default/style/dedecms.css",
+                "<a href=http://www.dedecms.com target='_blank'>Power by DedeCms</a>",
+                "power by dedecms",
+                "<div><h3>dedecms error warning!</h3>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/admin/login.php":{},
+            "/dede/login.php":{},
+            "/data/mysql_err_trace.inc":{}
+        },
+        "Language":"PHP"
+    },
+
+    "Destoon":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "destoon_moduleid",
+                "content=\"destoon"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    // E
+    "ewebeditor":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/ewebeditor.htm?",
+                "/ewebeditor/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/ewebeditor/admin/":{},
+            "/admin/ewebeditor/admin/":{},
+            "/edit/admin/":{},
+            "/edit/ewebeditor/admin/":{},
+            "/System/ewebeditor/admin/":{},
+            "/editor/ewebeditor/admin/":{},
+            "/webeditor/admin/":{}
+        }
+    },
+
+    "Ecshop":{
+        "Headers":{
+            "set-cookie": "ECS_ID="
+        },
+        "Body":{
+            "/":[
+                "content=\"ecshop",
+                "id=\"ecs_cartinfo\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Exchange":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/owa/auth/"
+            ]
+        },
+        "Icon_Hash":[
+            1768726119
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "ezEIP":{
+        "Headers":{
+            "X-Powered-By": "ezEIP"
+        },
+        "Body":{
+            "/":[
+                "ezEip v",
+                "+=============oOO====(_)================+",
+                "/TenderAnnouncement/"
+            ]
+        },
+        "SensitivePath":{
+            "/whir_system/module/security/ezEIP_login.aspx":{}
+        },
+        "Icon_Hash":[],
+        "Language":"ASP.NET",
+        "Example":[
+            "https://bps.sangfor.com",
+            "http://www.chinahsf.com.cn/"
+        ]
+    },
+
+    "EmpireCMS":{
+        "Headers":{
+        },
+        "Body":{
+            "/robots.txt":[
+                "robots.txt for EmpireCMS"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Edusoho":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Powered By EduSoho",
+                "ct.edusoho.com",
+                "EduSoho 企培版"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Elasticsearch":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "\"tagline\" : \"You Know, for Search\"",
+                "lucene_version"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "espcms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by espcms",
+                "infolist_fff"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "eYou":{
+        "Headers":{
+            "Server":"eyouws",
+            "Set-Cookie":"emphpsid"
+        },
+        "Body":{
+            "/":[
+                "2012-9-5 eyou.net更新至",
+                "content=\"亿邮电子邮件系统，亿邮邮件整体解决方案\"",
+                "/tpl/public/js/url_control.js",
+                "亿邮邮件网关",
+                "content=\"亿邮大容量电子邮件系统，反垃圾邮件网关"
+            ]
+        },
+        "Icon_Hash":[
+            -1868708145,
+            -80565497,
+            -378323438
+        ],
+        "Language":"PHP",
+        "Dork":{
+            "Fofa":"body=\"亿邮电子邮件系统\""
+        },
+        "SensitivePath": {}
+    },
+
+    // F
+    "FastJson":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "com.alibaba.fastjson.JSON",
+                "js/base/fastjson",
+                "JSON parse error: set property error",
+                "\"status\":500,\n\t\"error\":\"Internal Server Error\",\n\t\"message\":\"unclosed single-quote string\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Finecms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "powered by finecms",
+                "dayrui@gmail.com",
+                "copyright\" content=\"finecms",
+                "/statics/js/dayrui.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "F5 BIG-IP":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "F5_PWS",
+                "this product is licensed from f5 networks.",
+                "BIG-IP® ;- Redirect"
+            ]
+        },
+        "Icon_Hash":[
+            -335242539
+        ],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/tmui/login.jsp/..;/tmui/locallb/workspace/fileRead.jsp?fileName=/etc/passwd":{}
+        }
+
+    },
+
+    "FckEditor":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/fckeditor/",
+                "new fckeditor",
+                "fckeditor -",
+                "www.fckeditor.net",
+                "<currentfolder path="
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/fckeditor/_whatsnew.html":{},
+            "/fckeditor/editor/fckeditor.html":{},
+            "/fckeditor/editor/filemanager/browser/default/connectors/test.html":{},
+            "/fckeditor/editor/filemanager/connectors/test.html":{},
+            "/fckeditor/editor/filemanager/upload/test.html":{},
+            "/fckeditor/editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/php/connector.php":{},
+            "/fckeditor/editor/filemanager/browser/default/browser.html?type=Image&connector=connectors/aspx/connector.aspx":{},
+            "/fckeditor/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connector":{},
+            "/fckeditor/editor/filemanager/connectors/aspx/connector.aspx?Command=GetFolders&Type=File&CurrentFolder=/":{},
+            "/fckeditor/editor/filemanager/browser/default/connectors/aspx/connector.aspx?Command=GetFolders&Type=File&CurrentFolder=/":{},
+            "/fckeditor/editor/filemanager/browser/default/connectors/php/connector.php?Command=GetFolders&Type=File&CurrentFolder=/":{},
+            "/editor/filemanager/browser/default/browser.html?Connector=connectors/jsp/connector":{}
+        }
+    },
+
+    // G
+    "Gerapy":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Using the URLconf defined in <code>gerapy.server.server.urls</code>",
+                "<title>Gerapy</title>",
+                "alt=\"Gerapy\""
+            ]
+        },
+        "Icon_Hash":[
+            -1522411301
+        ],
+        "Language":"Python",
+        "SensitivePath": {}
+    },
+
+    "GitBook":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "gitbook/style.css",
+                "gitbook/gitbook",
+                "content=\"GitBook",
+                "published with gitbook"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "GitLab":{
+        "Headers":{
+            "Set-Cookie":"_gitlab_session=",
+            "X-Gitlab-Feature-Category": "projects"
+        },
+        "Body":{
+            "/":[
+                "gitlab community edition",
+                "content=\"gitlab",
+                "about.gitlab.com",
+                "gitlab_logo",
+                "gitlab is not",
+                "gitlab administrator",
+                "gon.default_issues_tracker",
+                "content=\"gitlab community edition\"",
+                "assets/gitlab_logo"
+            ]
+        },
+        "Icon_Hash":[
+            1278323681
+        ],
+        "Language":"Ruby",
+        "SensitivePath": {}
+    },
+
+    "Grafana":{
+        "Headers":{
+            "Set-Cookie":"grafana",
+            "Location":"/grafana/login"
+        },
+        "Body":{
+            "/":[
+                "<title>Grafana</title>",
+                "app-grafana",
+                "Welcome to Grafana",
+                "grafana-app"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"Go",
+        "SensitivePath":{
+        },
+        "Tips":"默认口令：admin admin"
+    },
+
+    "GlassFish":{
+        "Headers":{
+            "Server":"GlassFish",
+            "X-Powered-By":"GlassFish"
+        },
+        "Body":{
+            "/":[
+                "glassfish community",
+                "GlassFish Server Open Source Edition",
+                "glassfish.dev.java",
+                "GlassFish Server Administration Console",
+                "The Admin Console is already installed, but not yet loaded",
+                "glassfish.java.net",
+                "glassfish server",
+                "log in to sun glassfish",
+                "glassfish (tm)",
+                "glassfish enterprise",
+                "<title>oracle glassfish",
+                "<h3>oracle glassfish"
+            ]
+        },
+        "Icon_Hash":[
+            -547390541
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    // H
+    "Hue":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "欢迎使用 Hue",
+                "Hue 和 Hue 徽标是 Cloudera, Inc. 的商标",
+                "['WARNING: Before you proceed', 'please ensure you have ENABLED webhdfs.'] ",
+                "/hue/accounts/login"
+            ]
+        },
+        "Icon_Hash":[
+            1185550588
+        ],
+        "SensitivePath": {}
+    },
+
+    "Hdwiki":{
+        "Headers":{
+            "Set-Cookie":"hd_sid="
+        },
+        "Body":{
+            "/":[
+                "content=\"hdwiki",
+                "http://kaiyuan.hudong.com?hf=hdwiki_copyright_kaiyuan"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "H3C-Web管理网管用户登陆":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/web/device/login?lang=",
+                "var _g_bDEBUG_MODE = true"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "H3C-SecPath":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<span>H3C SecPath 运维审计系统</span>"
+            ]
+        },
+        "Icon_Hash":[
+            245932412
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/audit/gui_detail_view.php?token=1&id=%5C&uid=%2Cchr(97))%20or%201:%20print%20chr(121)%2bchr(101)%2bchr(115)%0d%0a%23&login=admin":{}
+        }
+    },
+
+    "Hadoop":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Hadoop Administration",
+                "url=dfshealth.html",
+                "Datanode Volume Failures",
+                "Configured Remote Capacity",
+                "Namenode information",
+                "url=jobtracker.jsp",
+                "yarn.dt.plugins.js",
+                "class=\"navbar-brand\">hadoop</div>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "HFS":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "httpfileserver",
+                "www.rejetto.com/hfs"
+            ]
+        },
+        "Icon_Hash":[
+            731374291,
+            2124459909
+        ],
+        "SensitivePath": {}
+    },
+
+    "H3C_IntelligentManagementCenter":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/imc/javax.faces.resource/images/login_help.png.jsf?ln=primefaces-imc-new-webui"
+            ]
+        },
+        "Icon_Hash":[
+            -390328370
+        ],
+        "Language":"JSP",
+        "Example":[],
+        "SensitivePath": {}
+    },
+
+    "Harbor":{
+        "Headers":{
+            "Set-Cookie":"harbor-lang"
+        },
+        "Body":{
+            "/":[
+                "<title>Harbor</title>"
+            ]
+        },
+        "Icon_Hash":[
+            657337228,
+            -1729238086
+        ],
+        "Language":"GO"
+    },
+
+    // I
+    "IceWarp_WebClient":{
+        "Headers":{
+            "Server":"IceWarp/"
+        },
+        "Body":{
+            "/":[
+                "<title>IceWarp WebClient</title>",
+                "IceWarp Server",
+                "\"http://www.icewarp.com\"",
+                "^Display virtual keyboard interface^Select keyboard layout^^On^Off^Close the keyboard^Clear^Clear this input^^Decrease keyboard size^Increase keyboard size"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Dork":{
+            "Fofa":"app=\"IceWarp-公司产品\""
+        },
+        "SensitivePath": {}
+    },
+
+    "ICEFlowVPN":{
+        "Headers":{
+            "Server":"ICEFLOW/tWeb"
+        },
+        "Body":{
+            "/":[
+                "title>ICEFLOW VPN Router</title>",
+                "<td>Copyright&copy;2006 ICEFLOW CORP,All Rights Reserved</td>",
+                "http://www.icevpn.org"
+            ]
+        },
+        "Icon_Hash":[
+            -1483984748
+        ],
+        "SensitivePath":{
+            "/log/system.log":{},
+            "/log/vpn.log":{},
+            "/log/access.log":{},
+            "/log/warn.log":{},
+            "/log/error.log":{},
+            "/log1/debug.log":{},
+            "/log/mobile.log":{},
+            "/log/firewall.log":{}
+        },
+        "Tips":"如果system.log有session，可以伪造登陆 http://xxx.xxx.xxx.xxx/cgi-bin/index?oid=10&session_id=xxxxxxxxxxxxxx&l=0"
+    },
+
+    "IBOS酷办公OA系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "I Doc View":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "i doc view 2014",
+                "www.idocv.com",
+                "/static/idocv/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "iGenus邮件系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<TITLE>iGENUS webmail login</TITLE>",
+                "www.igenus.org",
+                "igenus webmail system"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "imo云办公室":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<a title=\"imo云办公室\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "IBM WebSphere":{
+        "Headers":{
+            "Server":"WebSphere Application"
+        },
+        "Body":{
+            "/":[
+                "content=\"websphere application server",
+                "<title>IBM HTTP Server",
+                "http://www-306.ibm.com/software/webservers/httpservers/support/",
+                "publib.boulder.ibm.com/",
+                "<address>ibm_http_server",
+                "property of ibm",
+                "http_server_styles.css",
+                "com.ibm.websphere.ihs.doc"
+            ]
+        },
+        "Icon_Hash":[
+            -1876283119
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "IBM Lotus iNotes":{
+        "Headers":{
+            "Server":"Lotus-Domino"
+        },
+        "Body":{
+            "/":[
+                "/names.nsf?Login",
+                "/iwaredir.nsf/iNotes-LoginBanner",
+                "/iwaredir.nsf/Login.js",
+                "/redirect.nsf/Login.js",
+                "IBM Lotus iNotes Login",
+                "IBM iNotes Login"
+            ]
+        },
+        "Icon_Hash":[
+            1309078654,
+            -1415265672,
+            728788645
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    // J
+    "Jamf Pro": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "script src=\"ui/jamf.js?",
+                "jamf-pro-color.svg",
+                "content=\"JAMF Software\"",
+                "<title>Jamf Pro Login</title>",
+                "jamfSelect"
+            ]
+        },
+        "Icon_Hash": [
+            1262005940
+        ],
+        "SensitivePath": {}
+    },
+
+    "Jellyfin":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"Jellyfin\"",
+                "jellyfin.media",
+                "<title>Jellyfin</title>"
+            ]
+        },
+        "Icon_Hash":[
+            671349293,
+            -2069226242
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath":{
+            "/Videos/anything/hls/m/..%5Cdata%5Cjellyfin.db":{}
+        }
+    },
+
+    "JBoss":{
+        "Headers":{
+            "Server":"JBoss",
+            "X-Powered-By":"JBoss"
+        },
+        "Body":{
+            "/":[
+                "Welcome to JBoss",
+                "jboss.css",
+                "JBossWeb/",
+                "JBoss JMX Console",
+                "JBoss JMX Management",
+                "HtmlAdaptor?action=displayMBeans",
+                "JMX Agent View",
+                "JMImplementation",
+                "jboss.web.deployment"
+            ]
+        },
+        "Icon_Hash":[
+            -656811182,
+            937999361
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Jspxcms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "- Powered by Jspxcms"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Juniper":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "juniper web device",
+                "www.juniper.net",
+                "juniper networks home"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+
+    "JumpServer":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "We're sorry but JumpServer doesn't",
+                "/core/auth/password/forgot",
+                "welcome to jumpserver"
+            ]
+        },
+        "Icon_Hash":[
+            -1162630024
+        ],
+        "Tips":"默认密码 admin admin",
+        "SensitivePath": {}
+    },
+
+    "Jupyter Notebook":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "About Jupyter Notebook",
+                "Jupyter Notebook requires JavaScript",
+                "ipython_notebook"
+            ]
+        },
+        "Icon_Hash":[
+            -895963602
+        ],
+        "SensitivePath": {}
+    },
+
+    "Joomla":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"Joomla!"
+            ],
+            "/robots.txt":[
+                "If the Joomla site",
+                "/joomla/administrator/"
+            ],
+            "/administrator/":[
+                "Joomla! 管理",
+                "www.joomla.org"
+            ]
+        },
+        "Icon_Hash":[
+            -1950415971,
+            366524387,
+            1627330242
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/administrator/index.php":{}
+        }
+    },
+
+    "Jetty":{
+        "Headers":{
+            "Server":"Jetty"
+        },
+        "Body":{
+            "/":[
+                "Powered by Jetty://"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "JeeSite":{
+        "Headers":{
+            "Set-Cookie": "jeesite.session.id="
+        },
+        "Body":{
+            "/":[
+                "/jeesite.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Jeecms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Powered by JeeCms",
+                "jeecms-auth-token",
+                "/r/cms/www/default/css/",
+                "js/BeatPicker.js",
+                "jeeadmin/",
+                "jeecms&powered by",
+                "content=\"jeecms"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Jeecg":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "window.location.href = \"loginController.do?login\";",
+                "JeecgBoot",
+                "fileview.jeecg.com/onlinePreview"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Jenkins":{
+        "Headers":{
+            "X-Jenkins":" 2.",
+            "x-Hudson": "1."
+        },
+        "Body":{
+            "/":[
+                "Dashboard [Jenkins]",
+                "Jenkins-Crumb",
+                "<title>Jenkins",
+                "hudson.model.Hudson.Administer",
+                "jenkins-agent-protocols",
+                "[Jenkins]"
+            ],
+            "/robots.txt":[
+                "we don\"t want robots to click \"build\" links"
+            ]
+        },
+        "Icon_Hash":[
+            81586312
+        ],
+        "Language":"JSP",
+        "SensitivePath": {
+            "/adjuncts/3a890183/": {},
+            "/script/": {},
+            "/asynchPeople/": {}
+        }
+    },
+
+    // K
+    "KindEditor":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "kindeditor.ready",
+                "kindeditor-min.js",
+                "/kindeditor.js",
+                "/kindEditor/",
+                "* KindEditor - WYSIWYG",
+                "window.KindEditor",
+                "kindeditor_upload_iframe_"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "KodExplorer":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "KodExplorer可道云",
+                "content=\"KodExplorer",
+                "http://kodcloud.com"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    // L
+    "Lanproxy": {
+        "Headers":{
+            "Server": "LPS-0.1"
+        },
+        "Body":{
+            "/":[
+                "<h1>LanProxy.org</h1>",
+                "$('title').html($.i18n.prop('login')+\" - LanProxy\")"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "live800":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "var url = 'loginAction.jsp?'+params+'&t='+new Date();",
+                "com.goldarmor.live800.util"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Laravel":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "style=\"display:inline-block;border-right:1px solid rgba(0, 0, 0,.3);margin:0;margin-right:20px;padding:10px 23px 10px 0;font-size:24px;font-weight:500;vertical-align:top\"",
+                "<div class=\"message\" style=\"padding: 10px;\">",
+                "laravel.com/docs",
+                "/laravel/laravel"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/telescope/schedule":{}
+        }
+    },
+
+    "LNMP":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "lnmp一键",
+                "lnmp.gif",
+                "lnmp.org"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/ftp/install.php":{}
+        }
+    },
+
+    // M
+    "Metabase":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>Metabase</title>",
+                "metabaseBootstrap",
+                "metabase.com",
+                "_metabaseLocalization",
+                "metabase needs"
+            ]
+        },
+        "Icon_Hash":[
+            1487164831
+        ],
+        "Language":"JSP",
+        "SensitivePath":{
+            "/api/geojson?url=file:/etc/passwd":{}
+        }
+    },
+
+    "Micrisoft IIS6.0":{
+        "Headers":{
+            "Server":"Microsoft-IIS/6.0"
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP",
+        "SensitivePath": {}
+    },
+
+    "MetInfo":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "content=\"MetInfo",
+                "metinfo_ui",
+                "powered_by_metinfo"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/admin/login/login.php":{},
+            "/member/login.php":{},
+            "/install/phpinfo.php":{},
+            "/install/sql.sql":{}
+        }
+    },
+
+    "MessageSolution企业邮件归档管理系统":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>MessageSolution Enterprise Archiving System</title>",
+                "MessageSolution Enterprise Email Archiving (EEA)",
+                "该用户无权登录webfolder.",
+                "MessageSolution &copy;"
+            ]
+        },
+        "Icon_Hash":[
+            -257656632,
+            -1623055505
+        ],
+        "SensitivePath":{
+            "/authenticationserverservlet/":{}
+        }
+    },
+
+    "Mongodb":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "It looks like you are trying to access MongoDB over HTTP on the native driver port.",
+                "mongodb ops manager"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "MemAdmin":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Login - MemAdmin"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Matomo":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Sign in - Matomo",
+                "but Matomo could",
+                "matomo.org"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "MeshCentral":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "MeshCentral - Login",
+                "2px #000;\">MeshCentral<sup "
+            ]
+        },
+        "Icon_Hash":[
+            
+        ],
+        "Language":"NodeJS",
+        "Tips":"一款类似teamviewer的工具，开源",
+        "Link":"https://github.com/Ylianst/MeshCentral",
+        "Targets":[
+            "https://vpro.oray.com/"
+        ],
+        "SensitivePath": {}
+    },
+
+    // N
+    // 暂时没什么用，关闭
+//    "NodeJS":{
+//        "Headers":{
+//            "X-Powered-By":"express"
+//        },
+//        "Body":{
+//            "/":[
+//            ]
+//        },
+//        "Icon_Hash":[
+//        ]
+//    },
+
+    "Npoint":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "n点虚拟主机",
+                "powered by npoint",
+                "www.npointhost.com"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"",
+        "Example":[],
+        "SensitivePath":{
+            "/host_date\\%23host%20%23%20date%23196.mdb":{}
+        },
+        "ActiveFingerScanPath":[]
+    },
+
+    "Nexus":{
+        "Headers":{
+            "Set-Cookie":"NX-ANTI-CSRF-TOKEN"
+        },
+        "Body":{
+            "/":[
+                "Nexus Repository Manager",
+                "progressmessage('initializing ...')"
+            ]
+        },
+        "Icon_Hash":[
+            -1643965630
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Nagios":{
+        "Headers":{
+            "Www-Authenticate": "nagios"
+        },
+        "Body":{
+            "/":[
+                "pages require a browser which supports frames",
+                "/nagios/cgi-bin/status.cgi"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    // O
+    "OutLook":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "但已经登录的Outlook使用不受影响"
+            ]
+        },
+        "Icon_Hash":[
+            -397104923
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    "Openfire":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Openfire HTTP Binding Service",
+                "Openfire, 版本:"
+            ],
+            "/login.jsp":[
+                "Openfire Admin Console",
+                "Openfire, Version",
+                "class=\"row justify-content-center\""
+            ]
+        },
+        "Icon_Hash":[
+            1211608009
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "OnlyOffice":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "_onlyoffice_"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    // P
+    "phpUnit":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/phpunit/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "PowerEasy":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "powereasy siteweaver"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath":{
+            "/admin/Login.aspx":{}
+        }
+    },
+
+    "phpcms":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "content=\"phpcms",
+                "<a href=\"http://www.phpcms.cn\" target=\"_blank\">PHPCMS</a>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/index.php?m=admin&c=index&a=login&pc_hash=":{},
+            "/phpsso_server/?m=admin&c=login&a=init&forward=":{},
+            "/admin.php?mod=phpcms&file=login":{}
+        }
+    },
+
+    "phpMyAdmin":{
+        "Headers":{
+            "Set-Cookie":"phpMyAdmin="
+        },
+        "Body":{
+            "/":[
+                "<title>phpMyAdmin</title>",
+                "phpmyadmin.css",
+                "/themes/pmahomme/img/logo_right.png",
+                "pma_password",
+                "href=\"phpmyadmin.css.php"
+            ]
+        },
+        "Icon_Hash":[
+            -476231906
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Plesk面板":{
+        "Headers":{
+            "X-Powered-By":"PleskLin"
+        },
+        "Body":{
+            "/":[
+                "This page was generated by Plesk",
+                "sid-plesk",
+                "www.plesk.com"
+            ]
+        },
+        "Icon_Hash":[
+            -134375033
+        ],
+        "SensitivePath": {}
+    },
+
+    "phpshe":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "Powered by phpshe"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/install/index.php?step=setting":{}
+        }
+    },
+    
+    "Proxool Admin":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "proxool admin",
+                "driver-url"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "phpok":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"phpok"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "phpmywind":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"phpmywind",
+                "phpmywind.com all rights reserved"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "php168":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "php168cms",
+                ">php168"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/do/login.php":{},
+            "/homepage.php/admin/member-profile":{}
+        }
+    },
+
+    "phpwind":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"phpwind",
+                "/pw_api.php",
+                "/pw_ajax.php"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/admin.php":{},
+            "/index.php?m=u&c=login":{},
+            "/install.php":{}
+        }
+    },
+
+    "PageAdmin":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"pageadmin",
+                "PageAdmin CMS",
+                "www.pageadmin.net",
+                "Powered by <a href='http://www.pageadmin.net"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath":{
+            "/e/database/v3.mdb":{},
+            "/e/master/login.aspx":{},
+            "/e/install/index.aspx":{}
+        }
+    },
+
+    "phpems":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"phpems",
+                "phpems无纸化模拟考试系统"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "phpStudy":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "站点创建成功-phpstudy",
+                "www.xp.cn",
+                "www.phpstudy.net",
+                "phpstudy安装目录",
+                "phpStudy 探针",
+                "/phpstudy/",
+                "/phpstudy_pro/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    // R
+    "Oracle E-Business": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "E-Business Suite Home Page Redirect",
+                "/OA_HTML/AppsLogin"
+            ]
+        },
+        "Icon_Hash": [],
+        "Language": "JSP",
+        "SensitivePath": {}
+    },
+
+    "Roundcube WebMail":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "Roundcube Webmail :: 欢迎使用 Roundcube Webmail",
+                "Roundcube Webmail 登录",
+                "roundcube_logo.png"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "RabbitMQ":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "rabbitmq management"
+                
+            ]
+        },
+        "Icon_Hash":[
+            1064742722
+        ],
+        "SensitivePath": {}
+    },
+
+    "Redmine":{
+        "Headers":{
+            "Set-Cookie":"redmine"
+        },
+        "Body":{
+            "/":[
+                "www.redmine.org",
+                ">redmine<",
+                "content=\"Redmine\"",
+                "/plugin_assets/",
+                "redmine_crm",
+                "redmine_subproject"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Resin":{
+        "Headers":{
+            "Server":"Resin/"
+        },
+        "Body":{
+            "/":[
+                "Resin&#174; Default Home Page",
+                "This is the default page for the Resin web server",
+                "<title>Resin Admin Login</title>",
+                "<title>Resin&#174; Default Home Page</title>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    // S
+    "SonarQube":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>SonarQube</title>",
+                "content=\"SonarQube\"",
+                "'SonarQube'"
+            ]
+        },
+        "Icon_Hash":[
+            1485257654
+        ],
+        "SensitivePath":{
+            "/api/components/search_projects":{},
+            "/api/settings/values":{}
+        }
+    },
+
+    "Saltstack":{
+        "Headers":{
+            "Server": "TornadoServer"
+        },
+        "Body":{
+            "/":[
+                "<title>SaltStack</title>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Serv-U":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "由 RhinoSoft.com 开发的 Serv-U",
+                "http://www.Serv-U.com/simplifiedchinese",
+                "look of serv-u",
+                "Serv-U FTP Server"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Seacms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "www.seacms.net",
+                "class=\"sb\" name=\"searchword\"",
+                "/search.php?searchtype",
+                "/search.php?searchword",
+                "content=\"seacms"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Sentry":{
+        "Headers":{
+            "Cookie":"sentrysid="
+        },
+        "Body":{
+            "/":[
+                "/sentry/",
+                "登录 | Sentry",
+                "https://sentry.io/privacy/"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"Python",
+        "SensitivePath": {}
+    },
+
+    "Struts2":{
+        "Headers":{},
+        "Body":{
+            "/struts/webconsole.html":[
+                "struts problem report",
+                "struts2.impl",
+                "content=\"Struts2 Showcase for Apache Struts Project\"",
+                "no result defined for action and result input",
+                "there is no action mapped for namespace",
+                "Struts Problem Report",
+                "org.apache.struts2",
+                "struts.devMode",
+                "struts-tags",
+                "There is no Action mapped for namespace",
+                "Welcome to the OGNL console"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+    "Squid":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "/squid-internal-static/",
+                "GMT by localhost (squid"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "Swagger UI":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Swagger UI</title>",
+                "SwaggerUIBundle",
+                "./swagger-ui.css",
+                "/swaggerui/",
+                "a href=\"./swagger-ui.html"
+            ]
+        },
+        "Icon_Hash":[
+            
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "splunk":{
+        "Headers":{
+            "Server": "Splunkd",
+            "Set-Cookie": "splunkweb_uid"
+        },
+        "Body":{
+            "/":[
+                "<title>splunkd</title>",
+                "content=\"Splunk Inc.\""
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    // 智明 SmartOA
+    "SmartOA":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>智明协同</title>",
+                "DXImageTransform.Microsoft.AlphaImageLoader(src='/content/images/login_background.jpg'",
+                "background-size: cover; /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader",
+                "http://www.smartoa.com/"
+            ]
+        },
+        "Icon_Hash":[
+            -102818842
+        ],
+        "SensitivePath":{
+            "/file/EmailDownload.ashx?url=~/web.config&name=web.config":{}
+        }
+    },
+
+    "SpringBoot":{
+        "Headers":{},
+        "Body":{
+            "/xassdsadas":[
+                "Whitelabel Error Page",
+                "This application has no explicit mapping for /error, so you are seeing this as a fallback",
+                "org.springframework.web.servlet.",
+                "servletContextInitParams"
+            ]
+        },
+        "SensitivePath":{
+            "/swagger":{},
+            "/swagger-ui":{},
+            "/swagger-ui.html":{},
+            "/swagger-resources":{},
+            "/spring-security-rest/api/swagger-ui.html":{},
+            "/env":{},
+            "/actuator/env":{},
+            "/actuator/loggers":{},
+            "/actuator/health":{},
+            "/info":{},
+            "/trace":{},
+            "/api/trace":{},
+            "/health":{},
+            "/v2/api-docs":{},
+            "/beans":{},
+            "/dump":{},
+            "/heapdump":{},
+            "/loggers":{},
+            "/jolokia/list":{},
+            "/actuator/httptrace":{},
+            "/info":{},
+            "/auditevents":{},
+            "/configprops":{},
+            "/autoconfig":{},
+            "/mappings":{},
+            "/metrics":{},
+            "/info.json":{},
+            "/functionRouter":{}
+
+        },
+        "Icon_Hash":[
+            -1128940573,
+            116323821
+        ],
+        "Language":"JSP"
+    },
+
+    "Supervisor":{
+        "Headers":{},
+        "Body":{
+            "/":[
+                "<title>Supervisor Status</title>",
+                "supervisor.css",
+                "supervisord.org",
+                "images/supervisor.gif"
+            ]
+        },
+        "Icon_Hash":[
+            618742440,
+            -401814713
+        ],
+        "SensitivePath": {}
+    },
+
+
+    "shop7z":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "function www_zzjs_net_change",
+                "id=\"www_zzjs_net_loding\""
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "SiteServer":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "http://www.siteserver.cn",
+                "/sitefiles/"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"ASP.NET",
+        "SensitivePath":{
+            "/siteserver/login.aspx":{},
+            "/UserCenter/login.aspx":{}
+        }
+    },
+
+    "SAP NetWeaver":{
+        "Headers":{
+            "Server":"SAP NetWeaver Application Server"
+        },
+        "Body":{
+            "/":[
+                "<title>SAP NetWeaver Application Server Java</title>",
+                "css/graphics/icons/SAP_logo.gif",
+                "SAP NetWeaver Administrator"
+            ]
+        },
+        "Icon_Hash":[
+            -266008933
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+    },
+
+
+    // T
+    "TerraMaster TOS": {
+        "Headers": {},
+        "Body": {
+            "/": [
+                "<title>TOS Loading</title>",
+                "load(\"/databack/complete\",function (response, status, xhr)",
+                "./static/style/bootstrap.css?ver=TOS",
+                "<title>TOS</title>",
+                "/tos/static/"
+            ]
+        },
+        "Icon_Hash": [
+            -1046119708,
+            161308500
+        ],
+        "Language": "PHP",
+        "SensitivePath": {}
+    },
+
+    "TipAsk":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"tipask"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "Typecho":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"Typecho"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "ThinkSAAS":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"qiujun@thinksaas.cn\"",
+                "content=\"ThinkSAAS\""
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "ThinkCMF": {
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"ThinkCMF",
+                "<a href=\"http://www.thinkcmf.com\""
+            ]
+        },
+        "Icon_Hash":[
+            -495975421
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "ThinkPHP":{
+        "Headers":{
+            "X-Powered-By":"thinkphp"
+        },
+        "Body":{
+            "/asdsadsadsa":[
+                "ThinkPHP Constants",
+                "十年磨一剑-为API开发设计的高性能框架",
+                "var ThinkPHP = window.Think",
+                "think_page_trace",
+                "/thinkphp/",
+                "think.class.php",
+                "<h1>:(</h1>",
+                "href=\"http://www.thinkphp.cn\">thinkphp</a>"
+            ]
+        },
+        "Icon_Hash":[
+            1165838194
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "TPShop":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "tpshop.css",
+                "tpshop_config"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "TodayMail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "todaymail anti-spam police",
+                "todaynic.com,inc."
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "TurboMail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "TurboMail邮件系统",
+                "tmw/1/getpassword.jsp",
+                "Powered by TurboMail",
+                "www.turbomail.org",
+                "alt=\"turbomail 电子邮件系统\"/>",
+                "<a href=\"http://www.turbomail.org\">powered by turbomail</a>"
+            ]
+        },
+        "Icon_Hash":[
+            1401244333
+        ],
+        "SensitivePath": {}
+    },
+
+    // U
+    "u-mail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "u-mail webadmin 要求启用 javascript",
+                "power by <a href=\"http://www.comingchina.com\">u-mail邮件服务器</a>",
+                "<meta http-equiv=\"refresh\" content=\"0;url=./webmail/\">",
+                "<body link=\"white\" vlink=\"white\" alink=\"white\">"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    "UEditor":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "没有指定抓取源",
+                "参数错误：没有指定抓取源",
+                "ueditor.all.js"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"ASP.NET",
+        "SensitivePath": {}
+    },
+
+    // V
+    "V2 Conference":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "window.location.href=\"/Conf/index.jsp\"",
+                "<title>V2 Conference</title>",
+                "/Conf/jsp/main/images/",
+                "V2 Conference 视频会议系统",
+                "conference/currentConfAction.do"
+            ]
+        },
+        "Icon_Hash":[
+            339134995,
+            -1580872658
+        ],
+        "SensitivePath":{
+            "/Conf/proxoolAdmin":{}
+        },
+        "Language":"JSP"
+
+    },
+
+    "VisualSVN":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+            ]
+        },
+        "Icon_Hash":[
+            706602230
+        ],
+        "SensitivePath": {}
+    },
+
+    "Vmware vSphere":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "./en/welcomeRes.js",
+                "VMware vSphere is virtual infrastructure software for partitioning",
+                "document.write(ID_LogInH5Client);"
+            ],
+            "/en/welcomeRes.js":[
+                "Welcome to VMware vSphere"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "Language":"JSP",
+        "SensitivePath": {}
+
+    },
+
+    "vBulletin":{
+        "Headers":{
+            "Set-Cookie":"bbsessionhash="
+        },
+        "Body":{
+            "/":[
+                "content=\"vbulletin",
+                "www.vbulletin.com",
+                ">vbulletin",
+                "vbulletin solutions",
+                "<!-- do not remove this copyright notice -->powered by < a href=\"https://www.vbulletin.com\" id=\"vbulletinlink\">",
+                "powered by vbulletin&trade;"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath": {}
+    },
+
+    // W
+    "weiphp":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"weiphp",
+                "title=\"WeiPHP\"",
+                "http://weiphp.cn"
+            ]
+        },
+        "Icon_Hash":[
+            37052027
+        ],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/public/index.php/home/index/bind_follow/?publicid=1&is_ajax=1&uid[0]=exp&uid[1]=)%20and%20updatexml(1,concat(0x7e,md5(%271%27),0x7e),1)--+":{}
+        }
+    },
+
+    "Webmin":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<title>Login to Webmin</title>",
+                "/session_login.cgi",
+                "/unauthenticated/gray",
+                "/webmin/",
+                "登陆到 Webmin",
+                "login to the webmin server"
+            ]
+        },
+        "Icon_Hash":[
+            479413330,
+            -372107208
+        ],
+        "SensitivePath": {}
+    },
+
+    "WinWebMail":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "欢迎使用WinWebMail邮件系统",
+                "mailto:webeasymail@51webmail.com"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "Wordpress":{
+        "Headers":{
+            "Set-Cookie":"wordpress"
+        },
+        "Body":{
+            "/":[
+                "content=\"wordpress",
+                "wp-includes",
+                "/wp-content/themes/"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/xmlrpc.php":{},
+            "/wp-login.php":{},
+            "/wp-admin/":{},
+            "/wordpress/wp-login.php": {},
+            "/wordpress/wp-admin/": {}
+        }
+    },
+
+    "WebLogic":{
+        "Headers":{
+            "Server":"WebLogic",
+            "X-Powered-By":"servlet/2.4 jsp/2.0"
+        },
+        "Body":{
+            "/":[
+                "10.4.5 404 not found",
+                "Welcome to Weblogic Application Server",
+                "Oracle WebLogic Server Administration Console",
+                "Log in to work with the WebLogic Server domain",
+                "WebLogic Server Version",
+                "<div id=\"tab_text\">WebLogic Server</div>",
+                "<i>Hypertext Transfer Protocol -- HTTP/1.1</i>",
+                "/console/framework/skins/wlsconsole/images/login_WebLogic_branding.png"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"JSP",
+        "SensitivePath": {
+            "/uddiexplorer/SearchPublicRegistries.jsp": {},
+            "/wls-wsat/CoordinatorPortType": {},
+            "/wls-wsat/RegistrationPortTypeRPC":{},
+            "/wls-wsat/ParticipantPortType":{},
+            "/wls-wsat/RegistrationRequesterPortType":{},
+            "/wls-wsat/CoordinatorPortType11":{},
+            "/wls-wsat/RegistrationPortTypeRPC11":{},
+            "/wls-wsat/ParticipantPortType11":{},
+            "/wls-wsat/RegistrationRequesterPortType11": {}
+        },
+        "Tips": "http://wiki.peiqi.tech/wiki/webserver/Weblogic/Weblogic%20SSRF%E6%BC%8F%E6%B4%9E%20CVE-2014-4210.html"
+    },
+
+    "Wingsoft财务综合服务平台":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/WFManager/login.jsp",
+                "/wfmanager/js/"
+            ]
+        },
+        "Icon_Hash":[
+            -622756582,
+            -485687512
+        ],
+        "SensitivePath": {}
+    },
+
+    "WDCP云主机":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "www.wdlinux.cn",
+                "content=\"wdcp",
+                "www.wdlinux.cn/bbs/index.php",
+                "name=\"vkcode\" height=\"20\" border=\"0\" align=\"absmiddle\" id=\"vkcode\""
+            ]
+        },
+        "Icon_Hash":[
+            1786752597
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "WAMPSERVER":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "WAMPSERVER Homepage",
+                "http://www.wampserver.com"
+            ]
+        },
+        "Icon_Hash":[
+            443944613
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "WebPlus":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "webplusex",
+                "webplus 2008",
+                "网站群管理平台",
+                "webplus pro",
+                "个性化门户集群平台"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+
+    // X
+    "xycms":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "advfile/ad12.js"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "xampp":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"xampp ",
+                "font-size: 1.2em; color: red;\">new xampp"
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    "XAMPP":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "welcome to xampp",
+                "XAMPP is an easy to install",
+                "xampp, apache, php"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+    },
+
+    "XXL-JOB":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "/xxl-job/",
+                "<span class=\"logo-mini\"><b>XXL</b></span>",
+                "分布式任务调度平台XXL-JOB",
+                "<a><b>XXL</b>JOB</a>",
+                "glyphicon glyphicon-lock form-control-feedback",
+                "/static/adminlte/bower_components/jquery/jquery.min.js",
+                "login_username_placeholder",
+                "jobconf_route_consistenthash",
+                "misfire_strategy_fire_once_now",
+                "jobinfo_field_executorBlockStrategy"
+            ]
+        },
+        "Icon_Hash":[
+            1691956220
+        ],
+        "SensitivePath": {}
+    },
+
+    // Y
+    "YApi":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "YAPi-高效、易用",
+                "yapi接口管理",
+                "YApi 是高效、易用",
+                "id=\"yapi\""
+            ]
+        },
+        "Icon_Hash":[],
+        "SensitivePath": {}
+    },
+
+    // Z
+    "ZBlog":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "content=\"z-blog"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath":{
+            "/zb_system/login.php":{}
+        }
+    },
+
+    "Zentao":{
+        "Headers":{
+            "Set-Cookie":"zentaosid"
+        },
+        "Body":{
+            "/":[
+                "self.location='/zentao/",
+                "用户登录 - 禅道",
+                "/zentao/theme/",
+                "欢迎使用禅道集成运行环境",
+                "'/adminer/' target='_blank'>数据库管理",
+                "/theme/default/images/main/zt-logo.png",
+                "$('#zentao').addClass('btn-success');",
+                "<a id='zentaopro' href='/pro/'",
+                "powered by <a href='http://www.zentao.net' target='_blank'>zentaopms",
+                "href='/zentao/favicon.ico"
+            ]
+        },
+        "Icon_Hash":[],
+        "Language":"PHP",
+        "SensitivePath": {}
+
+    },
+
+    "Zabbix":{
+        "Headers":{
+            "Set-Cookie":"zbx_sessionid"
+        },
+        "Body":{
+            "/":[
+                "images/general/zabbix.ico",
+                "Zabbix SIA",
+                "Sign in with Single Sign-On (SAML)"
+            ]
+        },
+        "Icon_Hash":[
+            892542951
+        ],
+        "Language":"PHP",
+        "SensitivePath": {}
+
+    },
+
+    "Zimbra":{
+        "Headers":{
+            "Set-Cookie":"ZM_TEST=true"
+        },
+        "Body":{
+            "/":[
+                "ZLoginAppName",
+                "ZLoginButton DwtButton",
+                "ZLoginInfoMessage",
+                "/css/common,login,zhtml,skin.css?",
+                "Zimbra 网络客户端登录",
+                "ImgZimbraIcon",
+                "window._zimbramail",
+                "content=\"zimbra"
+            ]
+        },
+        "Icon_Hash":[
+            1624375939
+        ],
+        "SensitivePath": {}
+    },
+
+    "ZKTime考勤管理系统":{
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "ZKTime8.0 考勤管理系统",
+                "ZKSoftware Inc.",
+                "ZKTeco Inc. "
+            ]
+        },
+        "Icon_Hash":[
+            235734775
+        ],
+        "SensitivePath": {}
+    }
+}

@@ -1,0 +1,58 @@
+{
+  "ASP": {},
+  "ASP.NET": {
+    "UEditor": [
+      "/ueditor/net/controller.ashx?action=catchimage&encode=utf-8"
+    ]
+  },
+  "PHP": {
+    "Cacti": [
+      "/cacti/index.php"
+    ],
+    "phpMyAdmin": [
+      "/phpmyadmin/index.php",
+      "/phpMyAdmin/index.php",
+      "/_phpmyadmin/index.php",
+      "/pma/index.php"
+    ],
+    "Zentao": [
+      "/zentao/"
+    ],
+    "Zabbix": [
+      "/zabbix/index.php"
+    ]
+
+  },
+  "JSP": {
+    "Axis2":[
+      "/axis2/"
+    ],
+    "Atlassian Jira":[
+      "/jira/login.jsp"
+    ],
+    "Apache Solr":[
+      "/solr/"
+    ],
+    "Apache Druid":[
+      "/druid/login.html"
+    ],
+    "Hadoop":[
+      "/hadoop/"
+    ],
+    "live800":[
+      "/live800/login.jsp"
+    ],
+    "Jenkins":[
+      "/jenkins/login"
+    ],
+    "JBoss":[
+      "/jmx-console/"
+    ],
+    "Nexus":[
+      "/nexus/"
+    ],
+    "Openfire":[
+      "/openfire/login.jsp"
+    ]
+  }
+}

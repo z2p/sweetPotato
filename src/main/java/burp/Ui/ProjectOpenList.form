@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="burp.Ui.ProjectOpenList">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <splitpane id="1413b" binding="listAndButtonPanel">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <orientation value="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="18c03" binding="rootListPanel">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <component id="df312" class="javax.swing.JList" binding="rootList">
+                <constraints/>
+                <properties/>
+                <clientProperties>
+                  <List.isFileList class="java.lang.Boolean" value="true"/>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="7b005" binding="buttonPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="etched"/>
+            <children>
+              <component id="b7e5e" class="javax.swing.JButton" binding="addSingleRootButton">
+                <constraints/>
+                <properties>
+                  <text value="添加（单个）↵"/>
+                </properties>
+              </component>
+              <component id="921d9" class="javax.swing.JButton" binding="andRootsButton">
+                <constraints/>
+                <properties>
+                  <text value="添加（多个）"/>
+                </properties>
+              </component>
+              <component id="fed9d" class="javax.swing.JButton" binding="removeButton">
+                <constraints/>
+                <properties>
+                  <text value="移除"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>

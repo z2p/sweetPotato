@@ -1,0 +1,296 @@
+{
+    "OSSKey泄漏":{
+        "type":"str",
+        "keys":[
+            "ACCESSID",
+            "ACCESSKEY",
+            "accessKeyId",
+            "accessKeySecret",
+            "ALIYUN_ACCESS_ID",
+            "ALIYUN_ACCESS_KEY",
+            "securityToken",
+            "SSOusername",
+            "SSOpassword",
+            "oss://",
+            "appsecret"
+        ]
+    },
+
+    "UCKey泄漏":{
+        "type":"str",
+        "keys":[
+            "UC_DBHOST",
+            "UC_DBUSER",
+            "UC_KEY",
+            "UC_API"
+        ]
+    },
+
+    "JDBC泄漏":{
+        "type":"str",
+        "keys":[
+            "jdbc:mysql:",
+            "jdbc:h2:",
+            "jdbc:oracle:",
+            "jdbc:sqlserver:",
+            "jdbc:jtds:sqlserver",
+            "System.Data.SqlClient",
+            "Data.PassportContext",
+            "mysql.username",
+            "mysql.password",
+            "mysql.url",
+            "jdbc.username",
+            "jdbc.password",
+            "mysql:host",
+            "mssql.jdbc.",
+            "mssql.user",
+            "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        ]
+    },
+
+    "邮箱凭证泄漏":{
+        "type":"str",
+        "keys":[
+            "EMAIL_HOST_USER",
+            "EMAIL_HOST_PASSWORD",
+            "mail.username",
+            "mail.password",
+            "mail.user.name",
+            "sender.username",
+            "sender.password",
+            "mailUserPwd",
+            "mailUserName",
+            "smtplib.SMTP",
+            "mail_user",
+            "mail_pass",
+            "EMAIL_PSWD",
+            "EMAIL_USER",
+            "EMAIL_LOGIN_NAME",
+            "EMAIL_LOGIN_PASSWD",
+            "email_username",
+            "email_password",
+            "smtp_username",
+            "smtp_password",
+            "mailuser",
+            "mailPassword",
+            "mailServerUsername",
+            "mailServerPassword",
+            "WebMail.UserName",
+            "WebMail.Password"
+        ]
+    },
+
+    "FTP泄漏":{
+        "type":"str",
+        "keys":[
+            "ftpUsername",
+            "ftpPassword",
+            "FTP_USER",
+            "FTP_ADDR",
+            "FTP_PASS"
+        ]
+    },
+
+    "SSH泄漏":{
+        "type":"str",
+        "keys":[
+            "ssh://"
+        ]
+    },
+
+    "管理员凭证泄漏":{
+        "type":"str",
+        "keys":[
+            "admin_password",
+            "admin_user"
+        ]
+    },
+
+    "PHPINFO泄漏":{
+        "type":"str",
+        "keys":[
+            "PHP Version"
+        ]
+    },
+    
+    "ProcessOn泄漏":{
+        "type":"str",
+        "keys":[
+            "processon.com/view/link/"
+        ]
+    },
+
+    "飞书协同泄漏":{
+        "type":"str",
+        "keys":[
+            "feishu.cn/file/",
+            "feishu.cn/drive/",
+            "feishu.cn/sheets/"
+        ]
+    },
+
+    "钉钉文档泄漏":{
+        "type":"str",
+        "keys":[
+            "https://alidocs.dingtalk.com/document/",
+            "https://alidocs.dingtalk.com/spreadsheetv2/",
+            "https://alidocs.dingtalk.com/mind/"
+        ]
+    },
+
+    "腾讯文档泄漏":{
+        "type":"str",
+        "keys":[
+            "docs.qq.com/sheet/",
+            "docs.qq.com/doc/",
+            "docs.qq.com/slide/",
+            "docs.qq.com/form/",
+            "docs.qq.com/mind/",
+            "docs.qq.com/flowchart/"
+        ]
+    },
+
+    "Google协作文档泄漏":{
+        "type":"str",
+        "keys":[
+            "docs.google.com/presentation/",
+            "docs.google.com/document/",
+            "docs.google.com/spreadsheets/"
+        ]
+    },
+
+    "语雀文档泄漏":{
+        "type":"str",
+        "keys":[
+            "www.yuque.com/docs/share/",
+            "www.yuque.com/g/"
+        ]
+    },
+    
+    "gitmind泄漏":{
+        "type":"str",
+        "keys":[
+            "gitmind.cn/app/doc/"
+        ]
+    },
+
+    "百度云盘泄漏":{
+        "type":"str",
+        "keys":[
+            "pan.baidu.com/s/"
+        ]
+    },
+
+    "幕布文档泄漏":{
+        "type":"str",
+        "keys":[
+            "mubucm.com/doc/",
+            "mubu.com/doc/"
+        ]
+    },
+
+    "有道云笔记泄漏":{
+        "type":"str",
+        "keys":[
+            "note.youdao.com/s/"
+        ]
+    },
+
+    "石墨文档泄漏":{
+        "type":"str",
+        "keys":[
+            "shimo.im/docs/"
+        ]
+    },
+
+    "金山文档泄漏":{
+        "type":"str",
+        "keys":[
+            "kdocs.cn/l/"
+        ]
+    },
+
+    "问卷星泄漏":{
+        "type":"str",
+        "keys":[
+            "www.wjx.cn/"
+        ]
+    },
+
+    "腾讯问卷泄漏":{
+        "type":"str",
+        "keys":[
+            "wj.qq.com/s"
+        ]
+    },
+
+    "内网地址泄漏":{
+        "type":"regex",
+        "regex":"[^0-9]((10\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})|(172\\.((1[6-9])|(2\\d)|(3[01]))\\.\\d{1,3}\\.\\d{1,3})|(192\\.168\\.\\d{1,3}\\.\\d{1,3}))",
+        "isIgnoreCase":false,
+        "isLoopMatch":false
+    },
+
+    "系统绝对路径泄漏":{
+        "type":"regex",
+        "regex":"[A-Z]{1}[:]{1}[\\\\]{1}[a-zA-Z0-9._-]{2,}[\\\\]{1}[a-zA-Z0-9._-]*",
+        "isIgnoreCase":true,
+        "isLoopMatch":false
+    },
+
+    "Linux私钥泄漏":{
+        "type":"regex",
+        "regex":"[-]+BEGIN [^\\s]+ PRIVATE KEY[-]",
+        "isIgnoreCase":false,
+        "isLoopMatch":false
+    },
+
+    "AJAX接口调用泄漏":{
+        "type":"regex",
+        "regex":"\\$\\.ajax\\(\\{[\\s\\w,.;:'\\(\\)\\{\\}/\\? +\"\\$\\#=]*",
+        "isIgnoreCase":true,
+        "isLoopMatch":true
+    },
+
+    "SQL语法报错":{
+        "type":"str",
+        "keys":[
+            "java.sql.SQLSyntaxErrorException",
+            "java.sql.SQLException",
+            "System.Data.SqlClient.SqlException",
+            "System.Data.SqlClient.SqlConnection.OnError",
+            "[SqlException（0x80131904）",
+            "SQLHelper.TSQLExecuteDataTable",
+            "在将 nvarchar 值",
+            "SQL 命令未正确结束",
+            "SQL Execute Error",
+            "You have an error in your SQL syntax",
+            "无法执行 SQL 语句",
+            "ORA-00911",
+            "MySQL server error report",
+            "MySQL Error",
+            "XPATH syntax error",
+            "选择列表中的列 ",
+            "因为该列没有包含在聚合函数或 GROUP BY 子句中"
+        ]
+    },
+
+    "/etc/passwd泄漏":{
+        "type":"str",
+        "keys":[
+            "root:*:0:0:",
+            "root:x:0:0",
+            "root:/root:/bin/bash",
+            "bin:x:1:1:bin:/bin",
+            "nobody:x:99:99"
+        ]
+    },
+
+    "可疑错误":{
+        "type":"str",
+        "keys":[
+            "系统发生未知错误"
+        ]
+    }
+
+}
