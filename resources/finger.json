@@ -1590,7 +1590,7 @@
         },
         "Body": {
             "/": [
-                "\"error_msg\":\"404 Route Not Found\"}",
+                "\"error_msg\":\"404 Route Not Found\"}"
             ]
         },
         "Icon_Hash": [],
@@ -2137,6 +2137,24 @@
             "/admin%20/server-settings":{},
             "/admin%20/authentication":{},
             "/admin%20/avatars":{}
+        }
+    },
+
+    "博达站群管理系统": {
+        "Headers":{
+        },
+        "Body":{
+            "/":[
+                "<script language='javascript' src='/_mobile/resource/js/mobiledevice.js'></script>",
+                "/system/resource/js/counter.js",
+                "/system/resource/js/formfunc.js",
+                "<p>您访问的页面未找到， 5秒后自动跳转到首页</p>"
+            ]
+        },
+        "Icon_Hash":[
+        ],
+        "SensitivePath":{
+            "/system/login.jsp":{}
         }
     },
 
