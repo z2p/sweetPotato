@@ -246,10 +246,10 @@
     },
 
     "AJAX接口调用泄漏":{
-        "type":"regex",
-        "regex":"\\$\\.ajax\\(\\{[\\s\\w,.;:'\\(\\)\\{\\}/\\? +\"\\$\\#=]*",
-        "isIgnoreCase":true,
-        "isLoopMatch":true
+        "type":"str",
+        "keys":[
+            "$.ajax({"
+        ]
     },
 
     "SQL语法报错":{

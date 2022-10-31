@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="burp.Ui.Main2TagUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1483" height="784"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="9be33" binding="globalPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d1d90" class="javax.swing.JCheckBox" binding="globalCheckBox">
+            <constraints border-constraint="West"/>
+            <properties>
+              <selected value="true"/>
+              <text value="全局配置"/>
+            </properties>
+          </component>
+          <component id="36c93" class="javax.swing.JButton" binding="helpButton">
+            <constraints border-constraint="East"/>
+            <properties>
+              <text value="帮助"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <splitpane id="e03cb" binding="AllSpiltPanel">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <orientation value="0"/>
+          <resizeWeight value="0.5"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <splitpane id="9baec" binding="northSplitPanel">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <resizeWeight value="0.5"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="6cf1c" binding="northLeftPanel" layout-manager="FormLayout">
+                <rowspec value="center:d:noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <colspec value="fill:max(d;4px):noGrow"/>
+                <colspec value="left:4dlu:noGrow"/>
+                <colspec value="fill:d:grow"/>
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties/>
+                <border type="etched"/>
+                <children>
+                  <grid id="66129" binding="addRememberMePanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="3b609" class="javax.swing.JCheckBox" binding="addRememberMeButton">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="添加RememberMe到Cookie"/>
+                        </properties>
+                      </component>
+                      <component id="aa327" class="javax.swing.JLabel" binding="addRememberMeHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  cookie增加remember字段，同个host只会修改一次"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="ff156" binding="responseBeautyPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="5690d" class="javax.swing.JCheckBox" binding="responseBeautyCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="响应包美化（会影响浏览器内容显示）"/>
+                        </properties>
+                      </component>
+                      <component id="1d155" class="javax.swing.JLabel" binding="responseBeautyHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  自动进行json美化、unicode自动解码等美化工作"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <vspacer id="152c8">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-vert="false"/>
+                    </constraints>
+                  </vspacer>
+                  <grid id="18047" binding="statusTo200Panel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="769ae" class="javax.swing.JCheckBox" binding="statusTo200CheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="修改任意状态码为200"/>
+                        </properties>
+                      </component>
+                      <component id="9a186" class="javax.swing.JLabel" binding="statusTo200Help">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  主要用于解决302跳转等问题"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="5e4b8" binding="wechatFakePanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="82aff" class="javax.swing.JCheckBox" binding="wechatFakeCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="伪造微信客户端打开网页（待开发）"/>
+                        </properties>
+                      </component>
+                      <component id="28dd8" class="javax.swing.JLabel" binding="wechatFakeHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  主要解决部分微信客户端能打开的网页，在电脑浏览器打不开的问题"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="f0984" binding="disbleJSPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="77a0d" class="javax.swing.JCheckBox" binding="disableJSCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="禁用js跳转（待开发）"/>
+                        </properties>
+                      </component>
+                      <component id="3c08d" class="javax.swing.JLabel" binding="disableJSHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="使其禁止js类的跳转"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="f0505" binding="chunkedPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="d42b1" class="javax.swing.JCheckBox" binding="chunkedBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="数据自动chunked（待开发）"/>
+                        </properties>
+                      </component>
+                      <component id="8f9f9" class="javax.swing.JLabel" binding="chunkedLabel">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  对经过的数据自动进行chunked分片，主要应用于类似sql注入的场景"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="89923" binding="browserSettingPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="e3426" class="javax.swing.JLabel" binding="browserLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="浏览器地址： "/>
+                        </properties>
+                      </component>
+                      <component id="75fa6" class="javax.swing.JTextField" binding="browserPathTextField">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                            <preferred-size width="400" height="25"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="/Applications/Firefox.app/Contents/MacOS/firefox"/>
+                        </properties>
+                      </component>
+                      <component id="f475d" class="javax.swing.JLabel" binding="browserHelp">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="浏览器启动的地址"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="85ec9" binding="fingerPathSettingPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="cc4ac" class="javax.swing.JLabel" binding="fingerPathLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="指纹文件地址："/>
+                        </properties>
+                      </component>
+                      <component id="77d2" class="javax.swing.JTextField" binding="fingerPathTextField">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="400" height="25"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="/Users/z2p/notes2/开发项目/public/finger.json"/>
+                        </properties>
+                      </component>
+                      <component id="936ac" class="javax.swing.JLabel" binding="fingerPathHelp">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="指纹识别的配置文件地址"/>
+                        </properties>
+                      </component>
+                      <component id="5c859" class="javax.swing.JLabel" binding="fingerChangeTips">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-8080897"/>
+                          <text value="要重新加载才可生效"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="3236d" binding="infoPathPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="30ddb" class="javax.swing.JLabel" binding="infoPathLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="敏感信息文件："/>
+                        </properties>
+                      </component>
+                      <component id="8bc31" class="javax.swing.JTextField" binding="infoPathTextField">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="400" height="25"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="/Users/z2p/notes2/开发项目/public/infoLeakFinger.json"/>
+                        </properties>
+                      </component>
+                      <component id="6b53c" class="javax.swing.JLabel" binding="infoPathHelp">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="敏感信息的配置文件地址"/>
+                        </properties>
+                      </component>
+                      <component id="7e053" class="javax.swing.JLabel" binding="infoChangeTips">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-8080897"/>
+                          <text value="要重新加载才可生效"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="51a3e" binding="pocPathPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="8c7ac" class="javax.swing.JLabel" binding="pocPathLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="漏洞配置文件："/>
+                        </properties>
+                      </component>
+                      <component id="e2f1d" class="javax.swing.JTextField" binding="pocPathTextField">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="400" height="25"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="/Users/z2p/notes2/开发项目/public/pocFinger.json"/>
+                        </properties>
+                      </component>
+                      <component id="2ab40" class="javax.swing.JLabel" binding="pocPathHelp">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="漏洞信息的配置文件地址"/>
+                        </properties>
+                      </component>
+                      <component id="84c77" class="javax.swing.JLabel" binding="pocChangeTips">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-8080897"/>
+                          <text value="要重新加载才可生效"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="f7f38" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="24" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="c86f" class="javax.swing.JButton" binding="reloadConfigButton">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="重新加载配置文件"/>
+                        </properties>
+                      </component>
+                      <component id="17c69" class="javax.swing.JLabel" binding="Status">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="当前状态：指纹成功加载x条，xxxxx"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="551a9" binding="flushBrowserPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="f6253" class="javax.swing.JCheckBox" binding="flushBrowserCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="浏览器清除缓存访问"/>
+                        </properties>
+                      </component>
+                      <component id="15aff" class="javax.swing.JLabel" binding="flushBrowserHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="  主要解决浏览器重复访问一个网页的时候，会返回缓存的问题"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="6bc20" binding="backupPathPanel" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="d22a3" class="javax.swing.JLabel" binding="backupPathLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <text value="备份扫描文件："/>
+                        </properties>
+                      </component>
+                      <component id="39f00" class="javax.swing.JTextField" binding="backupPathTextField">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="400" height="25"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <text value="/Users/z2p/notes2/开发项目/public/backupFileDict.json"/>
+                        </properties>
+                      </component>
+                      <component id="508ed" class="javax.swing.JLabel" binding="backupPathHelp">
+                        <constraints>
+                          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="备份扫描的配置文件地址"/>
+                        </properties>
+                      </component>
+                      <component id="d0e7e" class="javax.swing.JLabel" binding="backupChangeTips">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-8080897"/>
+                          <text value="要重新加载才可生效"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="eb90a" binding="northRightPanel" layout-manager="FormLayout">
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <rowspec value="top:3dlu:noGrow"/>
+                <rowspec value="center:max(d;4px):noGrow"/>
+                <colspec value="fill:d:grow"/>
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <alignmentX value="1.0"/>
+                  <alignmentY value="1.0"/>
+                </properties>
+                <border type="etched"/>
+                <children>
+                  <grid id="cad50" binding="activeProxyPanel" layout-manager="FormLayout">
+                    <rowspec value="center:d:grow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="3e3bd" class="javax.swing.JLabel" binding="activeProxyLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties>
+                          <text value="  主动分析代理: (待开发)"/>
+                        </properties>
+                      </component>
+                      <component id="4b0b" class="javax.swing.JComboBox" binding="activeProxyComboBox">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                          <forms/>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <model>
+                            <item value="不开启"/>
+                            <item value="sock5"/>
+                            <item value="http"/>
+                            <item value="https"/>
+                          </model>
+                        </properties>
+                      </component>
+                      <component id="eccd2" class="javax.swing.JTextField" binding="activeProxyTextField">
+                        <constraints>
+                          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                            <minimum-size width="345" height="-1"/>
+                            <preferred-size width="150" height="-1"/>
+                            <maximum-size width="345" height="-1"/>
+                          </grid>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties>
+                          <editable value="false"/>
+                          <enabled value="false"/>
+                          <preferredSize width="300" height="30"/>
+                          <visible value="true"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="aabb4" binding="dirHeaderPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="78817" binding="dirHeaderOptionPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+                        <constraints border-constraint="North"/>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="8c344" class="javax.swing.JCheckBox" binding="dirHeaderCheckBox">
+                            <constraints/>
+                            <properties>
+                              <enabled value="true"/>
+                              <text value="自定义头部字段"/>
+                              <visible value="true"/>
+                            </properties>
+                          </component>
+                          <hspacer id="f137f">
+                            <constraints/>
+                          </hspacer>
+                          <component id="5fa83" class="javax.swing.JRadioButton" binding="dirHeaderAddButton">
+                            <constraints/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="追加"/>
+                            </properties>
+                          </component>
+                          <component id="9a3b" class="javax.swing.JRadioButton" binding="dirHeaderRecoverButton">
+                            <constraints/>
+                            <properties>
+                              <text value="覆盖"/>
+                            </properties>
+                          </component>
+                          <component id="c2f35" class="javax.swing.JCheckBox" binding="dirHeaderWrap">
+                            <constraints/>
+                            <properties>
+                              <text value="自动换行"/>
+                            </properties>
+                          </component>
+                          <component id="a57be" class="javax.swing.JLabel" binding="dirHeaderHelp">
+                            <constraints/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="输入的头部加入到请求头部里，如果追加则追加，如果覆盖则覆盖"/>
+                              <visible value="false"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <scrollpane id="fe248" binding="dirHeaderScrollPane">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <enabled value="false"/>
+                          <visible value="true"/>
+                        </properties>
+                        <border type="etched"/>
+                        <children>
+                          <component id="689b8" class="javax.swing.JTextArea" binding="dirHeaderTextArea">
+                            <constraints/>
+                            <properties>
+                              <columns value="12"/>
+                              <editable value="false"/>
+                              <enabled value="false"/>
+                              <rows value="8"/>
+                              <visible value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                    </children>
+                  </grid>
+                  <grid id="19ed7" binding="userAgentPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                      <forms defaultalign-horz="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="4ee27" class="javax.swing.JCheckBox" binding="userAgentCheckBox">
+                        <constraints/>
+                        <properties>
+                          <text value="修改User-Agent"/>
+                        </properties>
+                      </component>
+                      <component id="ffb9" class="javax.swing.JRadioButton" binding="chromeRadioButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="Chrome"/>
+                        </properties>
+                      </component>
+                      <component id="bdf9b" class="javax.swing.JRadioButton" binding="firefoxRadioButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="Firefox"/>
+                        </properties>
+                      </component>
+                      <component id="fd17f" class="javax.swing.JRadioButton" binding="IE7RadioButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="IE7"/>
+                        </properties>
+                      </component>
+                      <component id="2100c" class="javax.swing.JRadioButton" binding="iphoneRadioButton" default-binding="true">
+                        <constraints/>
+                        <properties>
+                          <text value="iphone"/>
+                        </properties>
+                      </component>
+                      <component id="ecf00" class="javax.swing.JLabel" binding="userAgentHelp">
+                        <constraints/>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="对每个请求进行修改"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </splitpane>
+          <splitpane id="dce0f" binding="southSpiltPanel">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <resizeWeight value="0.5"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="13a6a" binding="southLeftPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties/>
+                <border type="etched"/>
+                <children>
+                  <grid id="f9779" binding="passiveAllPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="etched"/>
+                    <children>
+                      <component id="b4654" class="javax.swing.JCheckBox" binding="passiveAllCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="被动分析配置"/>
+                        </properties>
+                      </component>
+                      <component id="abea5" class="javax.swing.JLabel" binding="passiveHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="   所有分析动作均根据经过代理流量，不会主动发包"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="78df7" binding="passiveDetailPanel" layout-manager="FormLayout">
+                    <rowspec value="center:d:noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="d5de3" binding="sensitivePathPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="94fa7" class="javax.swing.JCheckBox" binding="sensitiveCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="敏感路径识别"/>
+                            </properties>
+                          </component>
+                          <component id="e9ec9" class="javax.swing.JLabel" binding="sensitiveHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据网页中的链接识别是否有敏感目录"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="987f7" binding="fingerPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="f5acb" class="javax.swing.JCheckBox" binding="fingerCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="指纹识别"/>
+                            </properties>
+                          </component>
+                          <component id="97a" class="javax.swing.JLabel" binding="fingerHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据报文内容进行指纹匹配"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="5c182" binding="languagePanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="62325" class="javax.swing.JCheckBox" binding="languageCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="编程语言识别"/>
+                            </properties>
+                          </component>
+                          <component id="16f64" class="javax.swing.JLabel" binding="languageHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据网页特征以及指纹对语言进行识别"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="d3fab" binding="infoLeakPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="75e52" class="javax.swing.JCheckBox" binding="infoLeakCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="信息泄漏分析"/>
+                            </properties>
+                          </component>
+                          <component id="70c9" class="javax.swing.JLabel" binding="infoLeakHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据报文里的敏感字段进行匹配，如root:xx"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="72b76" binding="listDirectoryPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="fc082" class="javax.swing.JCheckBox" binding="listDirectoryCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="列目录分析"/>
+                            </properties>
+                          </component>
+                          <component id="54193" class="javax.swing.JLabel" binding="listDirectoryHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据index of /之类的判断是否存在列目录"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="3fdec" binding="SSRFPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="5f712" class="javax.swing.JCheckBox" binding="SSRFCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <text value="SSRF分析"/>
+                            </properties>
+                          </component>
+                          <component id="a6f83" class="javax.swing.JLabel" binding="SSRFHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据请求报文参数里的url进行判断"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="1cf97" binding="wafPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                        <constraints>
+                          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="36e56" class="javax.swing.JCheckBox" binding="wafCheckBox">
+                            <constraints border-constraint="West"/>
+                            <properties>
+                              <text value="WAF识别（待开发）"/>
+                            </properties>
+                          </component>
+                          <component id="648e9" class="javax.swing.JLabel" binding="wafHelp">
+                            <constraints border-constraint="Center"/>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="根据流量分析是否存在WAF"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <vspacer id="51134">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-vert="false"/>
+                        </constraints>
+                      </vspacer>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <grid id="b6179" binding="southRightPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties/>
+                <border type="etched"/>
+                <children>
+                  <grid id="7b835" binding="activeAllPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="North"/>
+                    <properties/>
+                    <border type="etched"/>
+                    <children>
+                      <component id="c164a" class="javax.swing.JCheckBox" binding="activeAllCheckBox">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <selected value="true"/>
+                          <text value="主动分析配置"/>
+                        </properties>
+                      </component>
+                      <component id="b3be5" class="javax.swing.JLabel" binding="activePanelHelp">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <foreground color="-65536"/>
+                          <text value="   会主动发包，会根据目标做去重，减少重复发包"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                  <grid id="1fa2c" binding="activeDetailPanel" layout-manager="FormLayout">
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <rowspec value="top:3dlu:noGrow"/>
+                    <rowspec value="center:max(d;4px):noGrow"/>
+                    <colspec value="fill:max(d;4px):noGrow"/>
+                    <colspec value="left:4dlu:noGrow"/>
+                    <colspec value="fill:d:grow"/>
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="fbd76" binding="exceptionParaPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="a8a98" class="javax.swing.JCheckBox" binding="exceptionParaCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="异常参数测试（待开发）"/>
+                            </properties>
+                          </component>
+                          <component id="a0f47" class="javax.swing.JLabel" binding="exceptionParaHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="对用户传递的参数进行异常修改，尝试分析报错异常页面"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="583a5" binding="backupFilePanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="e87a0" class="javax.swing.JCheckBox" binding="backupFileCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="压缩文件扫描（待开发）"/>
+                            </properties>
+                          </component>
+                          <component id="5f7c9" class="javax.swing.JLabel" binding="backupFileHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="扫描压缩文件，不会重复发包"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="3dff3" binding="infoFilePanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="786fe" class="javax.swing.JCheckBox" binding="infoFileCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="敏感文件扫描（待开发）"/>
+                            </properties>
+                          </component>
+                          <component id="2264c" class="javax.swing.JLabel" binding="infoFileHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="扫描敏感文件，不会重复发包"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="c18be" binding="activeFingerPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="6fe94" class="javax.swing.JCheckBox" binding="activeFingerCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="主动指纹识别（待开发）"/>
+                            </properties>
+                          </component>
+                          <component id="5433d" class="javax.swing.JLabel" binding="activeFingerHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="对目标发起扫描进行指纹匹配"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="60957" binding="knownFingerDirScanPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="214cd" class="javax.swing.JCheckBox" binding="knownFingerDirScanCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <text value="已识别组件的目录扫描"/>
+                            </properties>
+                          </component>
+                          <component id="c557e" class="javax.swing.JLabel" binding="knownFingerDirScanHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="针对已识别的组件进行特定目录扫描，不会重复发包"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="6a53a" binding="unexistsPathPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="8be45" class="javax.swing.JCheckBox" binding="unexistsPathCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="不存在的路径访问"/>
+                            </properties>
+                          </component>
+                          <component id="c9b5f" class="javax.swing.JLabel" binding="unexistsPathHelp">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="访问一个不存在的路径，通过响应给被动引擎做分析"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="f9040" binding="activeListDirectoryPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="86cc7" class="javax.swing.JCheckBox" binding="activeListDirectoryCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="主动列目录分析"/>
+                            </properties>
+                          </component>
+                          <component id="ae86" class="javax.swing.JLabel" binding="activeListDirectoryLabel">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="当发现目标存在目录后，会尝试访问3个目录进行分析，不会重复发包"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="493be" binding="activeJsonErrorTestPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="0">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints>
+                          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+                          <forms defaultalign-horz="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="9a059" class="javax.swing.JCheckBox" binding="activeJsonErrorTestCheckBox">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <selected value="true"/>
+                              <text value="json报错测试"/>
+                            </properties>
+                          </component>
+                          <component id="bd994" class="javax.swing.JLabel" binding="activeJsonErrorTestLabel">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-65536"/>
+                              <text value="发送一个不符合json格式的报文，不会重复发包"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+            </children>
+          </splitpane>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>

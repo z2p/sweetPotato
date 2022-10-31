@@ -244,9 +244,10 @@ public class FingerTag extends TagClass implements IMessageEditorController {
 
     public int add(String url, String host, String title,String server,int length,
                    int status, String finger,String language, IHttpRequestResponse messageInfo) {
-        // 使finger的标签变色
-        if(this.tabs.getSelectedIndex()!=1){
-            this.tabs.setForegroundAt(1,new Color(255,102,51));
+
+        int index = (int)this.tags.getTabsName().get("指纹");
+        if(this.tabs.getSelectedIndex()!=index){
+            this.tabs.setForegroundAt(index,new Color(255,102,51));
         }
 
         synchronized (this.Udatas) {

@@ -105,7 +105,6 @@ public class CustomBurpUrl {
 
     /**
      * 获取-请求域名名称，哪怕发送失败也可以拿到 http://xxxxx:xxx
-     *
      * @return
      */
     public static String getRequestDomainName(IHttpRequestResponse messageInfo) {
@@ -117,6 +116,7 @@ public class CustomBurpUrl {
         if(port != 80 && port != 443){
             requestDomainName += ":" + port;
         }
+//        requestDomainName += "/";
         return requestDomainName;
     }
 

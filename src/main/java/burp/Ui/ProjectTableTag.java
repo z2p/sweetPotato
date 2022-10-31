@@ -655,10 +655,9 @@ public class ProjectTableTag implements IMessageEditorController {
             // 切换项目时，将历史的任务都清空掉
             config.getProjectManagerUrls().clear();
 
-
         } catch (Exception e1) {
-            e1.printStackTrace();
-            JOptionPane.showMessageDialog(null, "加载异常");
+            e1.printStackTrace(config.getStderr());
+            JOptionPane.showMessageDialog(null, "加载异常 " + e1.getMessage());
             status.setText("加载异常：" + userChoiceFile.toString());
             status.setForeground(Color.red);
             buttonEnableChange(false);
@@ -967,9 +966,9 @@ public class ProjectTableTag implements IMessageEditorController {
      */
     public int add(HTTPResponse httpResponse, IHttpRequestResponse messageInfo) {
 
-        // 使finger的标签变色
-        if (this.tabs.getSelectedIndex() != 5) {
-            this.tabs.setForegroundAt(5, new Color(255, 102, 51));
+        int index = (int)this.tags.getTabsName().get("项目管理");
+        if (this.tabs.getSelectedIndex() != index) {
+            this.tabs.setForegroundAt(index, new Color(255, 102, 51));
         }
 
         synchronized (this.Udatas) {
@@ -1007,9 +1006,9 @@ public class ProjectTableTag implements IMessageEditorController {
      */
     public int add(String url, String domain, int status, int length, String title, String server, String finger, String isCheck, String assetType, String comments, String ip, String time, IHttpRequestResponse messageInfo) {
 
-        // 使finger的标签变色
-        if (this.tabs.getSelectedIndex() != 5) {
-            this.tabs.setForegroundAt(5, new Color(255, 102, 51));
+        int index = (int)this.tags.getTabsName().get("项目管理");
+        if(this.tabs.getSelectedIndex()!=index){
+            this.tabs.setForegroundAt(index,new Color(255,102,51));
         }
 
         synchronized (this.Udatas) {

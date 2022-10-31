@@ -98,11 +98,10 @@ public class HTTPResponse {
         this.strResponseRaw = Tools.byteToString(byteResponseRaw,headers);
         // 标题
         this.title = Tools.getTitle(strResponseRaw);
-        // 如果标题为空，并且头部存在location
-        if(title.length() == 0 && headers.containsKey("Location")){
+        // 逻辑调整，带有location并且状态码为301或302就显示location
+        if(headers.containsKey("Location") && (this.status == 302 || this.status == 301)){
             title = "---> " + StringEscapeUtils.unescapeHtml4(headers.get("Location").toString());
         }
-
         // 响应体
         this.byteBody = Tools.getBody(false,byteResponseRaw, callbacks.getHelpers());
         this.domain = CustomBurpUrl.getDomain(host);

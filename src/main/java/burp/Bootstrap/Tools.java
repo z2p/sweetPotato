@@ -187,7 +187,6 @@ public class Tools {
                 sb.append(line);
                 sb.append(ls);
             }
-
             return sb.toString();
 
         } catch (Exception e){
@@ -197,7 +196,7 @@ public class Tools {
                 br.close();
             } catch (Exception e){}
         }
-        return "";
+        return null;
     }
 
     public static String readFile(File file,boolean isIgnoreNotesLine){
@@ -251,16 +250,22 @@ public class Tools {
     /**
      * 打开json文件并将其内容解析，把json对象返回
      */
-    public static JSONObject getJSONObject(String filePath){
+    public static JSONObject getJSONObject(String filePath) throws Exception{
 
-        String fileRaw = readFile(filePath,true);
         JSONObject json = null;
-        try {
-            json = JSONObject.parseObject(fileRaw);
-        } catch (Exception e){
-            json = new JSONObject();
-            System.out.println("Json文件加载异常：" + filePath);
-            e.printStackTrace();
+        // 读取文件中的内容
+        String fileRaw = readFile(filePath,true);
+        // 如果读取的对象为null，则应该是出现了异常
+        if(fileRaw == null){
+            throw new Exception("Json文件加载异常，文件不存在该路径：" + filePath);
+        }
+        else{
+            // 将内容转化成json格式，如果转化出现异常，则是json格式有问题
+            try{
+                json = JSONObject.parseObject(fileRaw);
+            } catch (Exception e){
+                throw new Exception("Json解析出现异常：" + filePath + " " + e.getMessage());
+            }
         }
         return json;
     }

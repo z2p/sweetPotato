@@ -1,10 +1,8 @@
 package burp;
-import java.text.SimpleDateFormat;
 import java.util.*;
 import java.io.PrintWriter;
 import java.util.List;
 import java.util.concurrent.*;
-import java.util.stream.Collectors;
 
 import burp.Bootstrap.*;
 import burp.Controller.*;
@@ -18,6 +16,8 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
     private Tags tags;
     private Config config;
     private TagPopMenu tagPopMenu;
+    private PrintWriter stdout;
+    private PrintWriter stderr;
     final int threadNum = 10;   // 项目里的线程数量，默认10个
 
     /**
@@ -25,20 +25,23 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
      * @param callbacks
      */
     @Override
-    public void registerExtenderCallbacks(IBurpExtenderCallbacks callbacks) {
+    public void registerExtenderCallbacks(IBurpExtenderCallbacks callbacks){
 
         this.config = new Config();
         this.callbacks = callbacks;
         this.helpers = callbacks.getHelpers();
+        // 创建输出流
+        this.stdout = new PrintWriter(callbacks.getStdout(),true);
+        this.stderr = new PrintWriter(callbacks.getStderr(),true);
         // 表格右键公用菜单
         this.tagPopMenu = new TagPopMenu();
         // helper和callback存储
         config.setHelpers(callbacks.getHelpers());
         config.setCallbacks(callbacks);
         config.setJarPath(Tools.getExtensionFilePath(callbacks));
-
-        // 标签界面
-        this.tags = new Tags(callbacks, NAME,config);
+        // 定义输出和错误流
+        config.setStdout(this.stdout);
+        config.setStderr(this.stderr);
 
         // 设置扩展名称
         callbacks.setExtensionName(NAME);
@@ -50,11 +53,24 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
         callbacks.registerExtensionStateListener(this);
         // 注册扫描监听器
         callbacks.registerScannerCheck(this);
+        // 标签界面，并将配置文件加载和初始化，如果出现了异常，会直接结束
+        try{
+            this.tags = new Tags(callbacks, NAME,config);
+        } catch (Exception e){
+            this.stderr.println(e);
+            this.stderr.println("当前存在配置文件加载失败，请将配置文件放置对应位置后，再重新加载插件！");
+            return;
+        }
 
         // 全局面板的状态做初始化
         this.tags.getMain2Tag().getStatus().setText("当前状态：指纹成功加载 " + config.getFingerJsonInfo().size() + "条");
+
+        // 加载成功，进行信息的打印
+        this.stdout.println("状态：插件加载成功！\n作者：z2p\n联系方式：z2p0721@gmail.com\n项目地址：https://github.com/z2p/sweetPotato\n其他：如果使用存在问题，可在github与作者取得联系");
+
         // 为项目管理的模块创建线程池，死循环监听和执行
         projectThreadManager(threadNum);
+
     }
 
     /**
@@ -199,7 +215,11 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
     public void extensionUnloaded() {
         config.setExtensionUnload(true);
         // 将数据库给关掉，可能会导致抛异常，因为卸载程序后，线程并未及时结束，线程的结果会做入库，所以会在这个时候导致异常 TODO：
-        DBHelper.connectionClose(config.getDbHelper().getConn());
+        if(config.getDbHelper() != null && config.getDbHelper().getConn() != null){
+            DBHelper.connectionClose(config.getDbHelper().getConn());
+        }
+        // 打印提示
+        this.stdout.println("插件已经卸载，db conn关闭");
     }
 
     /**
@@ -219,7 +239,6 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
         new VulnsController().activeScanController(httpRequests,httpResponse,tags,config);
         // 项目管理的逻辑
         projectManager(httpResponse,config,messageInfo,tags);
-
         return null;
     }
 

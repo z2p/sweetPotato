@@ -35,6 +35,7 @@ public class DirScanTag extends TagClass implements IMessageEditorController {
     private JLabel scanStatusLabel;
     private JTextField scanTargetTextField;
     private JComboBox scanTypeComboBox;
+    private Tags tags;
 
 
     public DirScanTag(IBurpExtenderCallbacks callbacks, JTabbedPane tabs, Config config) {
@@ -43,6 +44,7 @@ public class DirScanTag extends TagClass implements IMessageEditorController {
         this.config = config;
         this.main2Tag = config.getTags().getMain2Tag();;
         this.tabs = tabs;
+        this.tags = config.getTags();
         // 总面板
         JPanel mainPanel = new JPanel(new BorderLayout());
         // 主面板的内容设置间隔
@@ -322,9 +324,10 @@ public class DirScanTag extends TagClass implements IMessageEditorController {
 
     public int add(String url, String title,String server,String language,int length,
                    int status, String type, IHttpRequestResponse messageInfo) {
-        // 使finger的标签变色
-        if(this.tabs.getSelectedIndex()!=3){
-            this.tabs.setForegroundAt(3,new Color(255,102,51));
+
+        int index = (int)this.tags.getTabsName().get("目录扫描");
+        if(this.tabs.getSelectedIndex()!=index){
+            this.tabs.setForegroundAt(index,new Color(255,102,51));
         }
 
         synchronized (this.Udatas) {

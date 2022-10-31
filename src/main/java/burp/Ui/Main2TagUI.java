@@ -1,8 +1,5 @@
 package burp.Ui;
 
-import burp.Bootstrap.Config;
-import burp.Bootstrap.Tools;
-import burp.IBurpExtenderCallbacks;
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
 import com.intellij.uiDesigner.core.Spacer;
@@ -12,15 +9,8 @@ import com.jgoodies.forms.layout.FormLayout;
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.awt.event.*;
-import java.io.File;
 
-public class Main2Tag {
-
-    private IBurpExtenderCallbacks callbacks;
-    private Config config;
-    private boolean helpButtonStatus = false;
-
+public class Main2TagUI {
     private JPanel mainPanel;
     private JCheckBox globalCheckBox;
     private JButton helpButton;
@@ -154,362 +144,28 @@ public class Main2Tag {
     private JLabel pocChangeTips;
     private JLabel backupChangeTips;
 
-
-    public Main2Tag(JTabbedPane tabs, Config config){
-        this.config = config;
-        this.callbacks = config.getCallbacks();
-
-        $$$setupUI$$$(); // 模版自动化生成界面
-        this.Status.setText("当前状态：指纹成功加载x条，xxxxx");
-        this.fingerPathTextField.setText(config.getJarPath() + "resources" + File.separator + "finger.json");
-        this.infoPathTextField.setText(config.getJarPath() + "resources"  + File.separator + "infoLeakFinger.json");
-        this.pocPathTextField.setText(config.getJarPath() + "resources"  + File.separator + "pocFinger.json");
-        this.backupPathTextField.setText(config.getJarPath() + "resources"  + File.separator + "backupFileDict.json");
-
-        this.activeListDirectoryCheckBox.setSelected(true);
-
-        // 设置分隔距离
-        northSplitPanel.setDividerLocation(0.5);
-        northSplitPanel.addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                northSplitPanel.setDividerLocation(0.5);
-            }
-
-            @Override
-            public void componentMoved(ComponentEvent e) {
-                super.componentMoved(e);
-            }
-
-            @Override
-            public void componentShown(ComponentEvent e) {
-                super.componentShown(e);
-            }
-
-            @Override
-            public void componentHidden(ComponentEvent e) {
-                super.componentHidden(e);
-            }
-        });
-        southSpiltPanel.setDividerLocation(0.5);
-        southSpiltPanel.addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                southSpiltPanel.setDividerLocation(0.5);
-            }
-
-            @Override
-            public void componentMoved(ComponentEvent e) {
-                super.componentMoved(e);
-            }
-
-            @Override
-            public void componentShown(ComponentEvent e) {
-                super.componentShown(e);
-            }
-
-            @Override
-            public void componentHidden(ComponentEvent e) {
-                super.componentHidden(e);
-            }
-        });
-        AllSpiltPanel.setDividerLocation(0.5);
-        AllSpiltPanel.addComponentListener(new ComponentAdapter() {
-            @Override
-            public void componentResized(ComponentEvent e) {
-                AllSpiltPanel.setDividerLocation(0.5);
-            }
-
-            @Override
-            public void componentMoved(ComponentEvent e) {
-                super.componentMoved(e);
-            }
-
-            @Override
-            public void componentShown(ComponentEvent e) {
-                super.componentShown(e);
-            }
-
-            @Override
-            public void componentHidden(ComponentEvent e) {
-                super.componentHidden(e);
-            }
-        });
-
-        // 设置所有提示，初始化都不展示
-        browserHelp.setVisible(helpButtonStatus);
-        disableJSHelp.setVisible(helpButtonStatus);
-        fingerPathHelp.setVisible(helpButtonStatus);
-        infoPathHelp.setVisible(helpButtonStatus);
-        wechatFakeHelp.setVisible(helpButtonStatus);
-        flushBrowserHelp.setVisible(helpButtonStatus);
-        statusTo200Help.setVisible(helpButtonStatus);
-        responseBeautyHelp.setVisible(helpButtonStatus);
-        addRememberMeHelp.setVisible(helpButtonStatus);
-        listDirectoryHelp.setVisible(helpButtonStatus);
-        SSRFHelp.setVisible(helpButtonStatus);
-        infoLeakHelp.setVisible(helpButtonStatus);
-        fingerHelp.setVisible(helpButtonStatus);
-        activePanelHelp.setVisible(helpButtonStatus);
-        unexistsPathHelp.setVisible(helpButtonStatus);
-        backupFileHelp.setVisible(helpButtonStatus);
-        infoFileHelp.setVisible(helpButtonStatus);
-        dirHeaderHelp.setVisible(helpButtonStatus);
-        chunkedLabel.setVisible(helpButtonStatus);
-        wafHelp.setVisible(helpButtonStatus);
-        languageHelp.setVisible(helpButtonStatus);
-        sensitiveHelp.setVisible(helpButtonStatus);
-        exceptionParaHelp.setVisible(helpButtonStatus);
-        activeFingerHelp.setVisible(helpButtonStatus);
-        knownFingerDirScanHelp.setVisible(helpButtonStatus);
-        passiveHelp.setVisible(helpButtonStatus);
-        activeListDirectoryLabel.setVisible(helpButtonStatus);
-        pocPathHelp.setVisible(helpButtonStatus);
-        backupPathHelp.setVisible(helpButtonStatus);
-        activeJsonErrorTestLabel.setVisible(helpButtonStatus);
-        userAgentHelp.setVisible(helpButtonStatus);
-
-        // 帮助按钮设置监听器 helpButton，当用户按下时给提示
-        helpButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                browserHelp.setVisible(!helpButtonStatus);
-                disableJSHelp.setVisible(!helpButtonStatus);
-                fingerPathHelp.setVisible(!helpButtonStatus);
-                infoPathHelp.setVisible(!helpButtonStatus);
-                wechatFakeHelp.setVisible(!helpButtonStatus);
-                flushBrowserHelp.setVisible(!helpButtonStatus);
-                statusTo200Help.setVisible(!helpButtonStatus);
-                responseBeautyHelp.setVisible(!helpButtonStatus);
-                addRememberMeHelp.setVisible(!helpButtonStatus);
-                listDirectoryHelp.setVisible(!helpButtonStatus);
-                SSRFHelp.setVisible(!helpButtonStatus);
-                infoLeakHelp.setVisible(!helpButtonStatus);
-                fingerHelp.setVisible(!helpButtonStatus);
-                activePanelHelp.setVisible(!helpButtonStatus);
-                unexistsPathHelp.setVisible(!helpButtonStatus);
-                backupFileHelp.setVisible(!helpButtonStatus);
-                infoFileHelp.setVisible(!helpButtonStatus);
-                dirHeaderHelp.setVisible(!helpButtonStatus);
-                chunkedLabel.setVisible(!helpButtonStatus);
-                wafHelp.setVisible(!helpButtonStatus);
-                languageHelp.setVisible(!helpButtonStatus);
-                sensitiveHelp.setVisible(!helpButtonStatus);
-                exceptionParaHelp.setVisible(!helpButtonStatus);
-                activeFingerHelp.setVisible(!helpButtonStatus);
-                knownFingerDirScanHelp.setVisible(!helpButtonStatus);
-                passiveHelp.setVisible(!helpButtonStatus);
-                activeListDirectoryLabel.setVisible(!helpButtonStatus);
-                pocPathHelp.setVisible(!helpButtonStatus);
-                backupPathHelp.setVisible(!helpButtonStatus);
-                activeJsonErrorTestLabel.setVisible(!helpButtonStatus);
-                userAgentHelp.setVisible(!helpButtonStatus);
-
-                if(helpButtonStatus==true){
-                    helpButtonStatus = false;
-                }else{
-                    helpButtonStatus = true;
-                }
-            }
-        });
-        // 加载状态置灰展示
-        Status.setEnabled(false);
-        // 全局配置初始化 以及 监听器动作
-        {
-            // 默认勾选全局配置总开关
-            globalCheckBox.setSelected(true);
-            // 设置全局开关的影响，当全局配置开关被关闭时，全局配置下的所有按钮均失效，失效定义：不能修改 同时 全部为false
-            globalCheckBox.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    setGlobalSetting(globalCheckBox.isSelected());
-                }
-            });
-
-            // 当全局表格中的【自定义头部】被勾选时
-            dirHeaderCheckBox.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    dirHeaderAction(dirHeaderCheckBox.isSelected());
-                }
-            });
-
-            dirHeaderWrap.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    dirHeaderTextArea.setLineWrap(dirHeaderWrap.isSelected());
-                }
-            });
-
-            // 默认不开启
-            dirHeaderAddButton.setEnabled(false);
-            dirHeaderRecoverButton.setEnabled(false);
-            dirHeaderWrap.setEnabled(false);
-            chromeRadioButton.setEnabled(false);
-            firefoxRadioButton.setEnabled(false);
-            IE7RadioButton.setEnabled(false);
-            iphoneRadioButton.setEnabled(false);
-            changeTips(false);
-
-            fingerPathTextField.addKeyListener(new KeyListener() {
-                @Override
-                public void keyTyped(KeyEvent e) {
-                    fingerChangeTips.setVisible(true);
-                }
-
-                @Override
-                public void keyPressed(KeyEvent e) {
-
-                }
-
-                @Override
-                public void keyReleased(KeyEvent e) {
-
-                }
-            });
-
-            infoPathTextField.addKeyListener(new KeyListener() {
-                @Override
-                public void keyTyped(KeyEvent e) {
-                    infoChangeTips.setVisible(true);
-                }
-
-                @Override
-                public void keyPressed(KeyEvent e) {
-
-                }
-
-                @Override
-                public void keyReleased(KeyEvent e) {
-
-                }
-            });
-
-            pocPathTextField.addKeyListener(new KeyListener() {
-                @Override
-                public void keyTyped(KeyEvent e) {
-                    pocChangeTips.setVisible(true);
-                }
-
-                @Override
-                public void keyPressed(KeyEvent e) {
-
-                }
-
-                @Override
-                public void keyReleased(KeyEvent e) {
-
-                }
-            });
-
-            backupPathTextField.addKeyListener(new KeyListener() {
-                @Override
-                public void keyTyped(KeyEvent e) {
-                    backupChangeTips.setVisible(true);
-                }
-
-                @Override
-                public void keyPressed(KeyEvent e) {
-
-                }
-
-                @Override
-                public void keyReleased(KeyEvent e) {
-
-                }
-            });
-
-            // 全局 自定义头部的一些配置
-            ButtonGroup bg = new ButtonGroup();
-            bg.add(dirHeaderAddButton);
-            bg.add(dirHeaderRecoverButton);
-
-            // 修改User-agent的buttongroup
-            ButtonGroup userAgentbg = new ButtonGroup();
-            userAgentbg.add(chromeRadioButton);
-            userAgentbg.add(firefoxRadioButton);
-            userAgentbg.add(IE7RadioButton);
-            userAgentbg.add(iphoneRadioButton);
-
-            // User-Agent的操作
-            userAgentCheckBox.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    userAgentAction(userAgentCheckBox.isSelected());
-                }
-            });
-
-            //
-            /**
-             * 点击了重新加载配置文件后的操作逻辑，当前会影响2个配置；
-             * 1、指纹
-             * 2、敏感信息
-             *
-             * 这2个配置的重新加载
-             * 3、弹窗提示，当前的更新状态，成功/失败
-             */
-            reloadConfigButton.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try{
-                        config.setFingerJsonInfo(Tools.getJSONObject(getFingerPathTextField().getText()));
-                        config.setInfoLeakJsonInfo(Tools.getJSONObject(getInfoPathTextField().getText()));
-                        Status.setText("当前状态：指纹成功加载 " + config.getFingerJsonInfo().size() + "条");
-                        // 修改状态提示
-                        changeTips(false);
-
-                    }catch (Exception e1){
-                        Status.setText("当前状态：配置文件加载异常！" + e1.getMessage());
-                    }
-
-                }
-            });
-
-        }
-        // 被动配置初始化 以及 监听器动作
-        {
-            // 设置被动扫描的全局开关
-            passiveAllCheckBox.setSelected(true);
-            // 设置默认开启的被动扫描功能
-            sensitiveCheckBox.setSelected(true);
-            listDirectoryCheckBox.setSelected(true);
-            infoLeakCheckBox.setSelected(true);
-            fingerCheckBox.setSelected(true);
-            languageCheckBox.setSelected(true);
-            // 设置默认关闭的被动扫描功能
-            SSRFCheckBox.setSelected(false);
-
-            passiveAllCheckBox.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    setPassiveSetting(passiveAllCheckBox.isSelected());
-                }
-            });
-        }
-        // 主动配置初始化 以及 监听器动作
-        {
-            // 下述4个功能，暂时关闭
-            // 设置主动扫描的全局开关
-            activeAllCheckBox.setSelected(false);
-            // 设置主动扫描 默认开启的功能
-            unexistsPathCheckBox.setSelected(false);
-            // 默认开启 json
-            activeJsonErrorTestCheckBox.setSelected(false);
-            // 默认开 主动列目录
-            activeListDirectoryCheckBox.setSelected(false);
-
-            activeAllCheckBox.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    setActiveSetting(activeAllCheckBox.isSelected());
-                }
-            });
-        }
-
-        // 添加到全局tag
-        tabs.addTab("配置中心",mainPanel);
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("test5");
+        frame.setContentPane(new Main2TagUI().mainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
     }
 
+    {
+// GUI initializer generated by IntelliJ IDEA GUI Designer
+// >>> IMPORTANT!! <<<
+// DO NOT EDIT OR ADD ANY CODE HERE!
+        $$$setupUI$$$();
+    }
+
+    /**
+     * Method generated by IntelliJ IDEA GUI Designer
+     * >>> IMPORTANT!! <<<
+     * DO NOT edit this method OR call it in your code!
+     *
+     * @noinspection ALL
+     */
     private void $$$setupUI$$$() {
         mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout(0, 0));
@@ -973,6 +629,7 @@ public class Main2Tag {
         activeListDirectoryPanel.setLayout(new GridLayoutManager(1, 2, new Insets(0, 0, 0, 0), 2, 0));
         activeDetailPanel.add(activeListDirectoryPanel, cc.xy(3, 5, CellConstraints.LEFT, CellConstraints.DEFAULT));
         activeListDirectoryCheckBox = new JCheckBox();
+        activeListDirectoryCheckBox.setSelected(true);
         activeListDirectoryCheckBox.setText("主动列目录分析");
         activeListDirectoryPanel.add(activeListDirectoryCheckBox, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         activeListDirectoryLabel = new JLabel();
@@ -992,223 +649,14 @@ public class Main2Tag {
         activeJsonErrorTestPanel.add(activeJsonErrorTestLabel, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
-    public void dirHeaderAction(boolean status){
-        dirHeaderScrollPane.setEnabled(status);
-        dirHeaderTextArea.setEnabled(status);
-        dirHeaderTextArea.setEditable(status);
-        dirHeaderAddButton.setEnabled(status);
-        dirHeaderRecoverButton.setEnabled(status);
-        dirHeaderWrap.setEnabled(status);
-    }
-
-    public void userAgentAction(boolean status){
-        chromeRadioButton.setEnabled(status);
-        firefoxRadioButton.setEnabled(status);
-        IE7RadioButton.setEnabled(status);
-        iphoneRadioButton.setEnabled(status);
-    }
-
-    public void changeTips(boolean status){
-        backupChangeTips.setVisible(status);
-        fingerChangeTips.setVisible(status);
-        infoChangeTips.setVisible(status);
-        pocChangeTips.setVisible(status);
-    }
-
-    public JCheckBox getActiveListDirectoryCheckBox() {
-        return activeListDirectoryCheckBox;
-    }
-
-    public JCheckBox getActiveJsonErrorTestCheckBox() {
-        return activeJsonErrorTestCheckBox;
-    }
-
-    public JCheckBox getKnownFingerDirScanCheckBox() {
-        return knownFingerDirScanCheckBox;
-    }
-
-    public JCheckBox getLanguageCheckBox() {
-        return languageCheckBox;
-    }
-
-    public JTextArea getDirHeaderTextArea() {
-        return dirHeaderTextArea;
-    }
-
-    public JCheckBox getDirHeaderCheckBox() {
-        return dirHeaderCheckBox;
-    }
-
-    public JPanel getMainPanel() {
+    /**
+     * @noinspection ALL
+     */
+    public JComponent $$$getRootComponent$$$() {
         return mainPanel;
-    }
-
-    public JTextField getPocPathTextField() {
-        return pocPathTextField;
-    }
-
-    public JTextField getBackupPathTextField() {
-        return backupPathTextField;
-    }
-
-    public JCheckBox getAddRememberMeButton() {
-        return addRememberMeButton;
-    }
-
-    public JCheckBox getResponseBeautyCheckBox() {
-        return responseBeautyCheckBox;
-    }
-
-    public JTextField getBrowserPathTextField() {
-        return browserPathTextField;
-    }
-
-    public JCheckBox getSSRFCheckBox() {
-        return SSRFCheckBox;
-    }
-
-    public JCheckBox getListDirectoryCheckBox() {
-        return listDirectoryCheckBox;
-    }
-
-    public JCheckBox getUnexistsPathCheckBox() {
-        return unexistsPathCheckBox;
-    }
-
-    public JTextField getFingerPathTextField() {
-        return fingerPathTextField;
-    }
-
-    public JTextField getInfoPathTextField() {
-        return infoPathTextField;
-    }
-
-    public JCheckBox getInfoFileCheckBox() {
-        return infoFileCheckBox;
-    }
-
-    public JCheckBox getStatusTo200CheckBox() {
-        return statusTo200CheckBox;
-    }
-
-    public JCheckBox getFlushBrowserCheckBox() {
-        return flushBrowserCheckBox;
-    }
-
-    public JCheckBox getFingerCheckBox() {
-        return fingerCheckBox;
-    }
-
-    public JLabel getStatus() {
-        return Status;
-    }
-
-    private void setGlobalSetting(boolean status){
-        // 如果为true，只打开开关让用户可以配置，并不会把下级帮用户自动勾选；如果为false，不允许配置并且全部设置为false
-        if(status==false){
-            addRememberMeButton.setSelected(status);
-            flushBrowserCheckBox.setSelected(status);
-            wechatFakeCheckBox.setSelected(status);
-            statusTo200CheckBox.setSelected(status);
-            responseBeautyCheckBox.setSelected(status);
-            chunkedBox.setSelected(status);
-            dirHeaderCheckBox.setSelected(status);
-            dirHeaderAction(status);
-            userAgentAction(status);
-        }
-        addRememberMeButton.setEnabled(status);
-        flushBrowserCheckBox.setEnabled(status);
-        wechatFakeCheckBox.setEnabled(status);
-        statusTo200CheckBox.setEnabled(status);
-        responseBeautyCheckBox.setEnabled(status);
-        browserPathTextField.setEnabled(status);
-        fingerPathTextField.setEnabled(status);
-        infoPathTextField.setEnabled(status);
-        activeProxyComboBox.setEnabled(status);
-        reloadConfigButton.setEnabled(status);
-        activeProxyTextField.setEnabled(status);
-        chunkedBox.setEnabled(status);
-        dirHeaderCheckBox.setEnabled(status);
-        disableJSCheckBox.setEnabled(status);
-        dirHeaderAddButton.setEnabled(status);
-        dirHeaderRecoverButton.setEnabled(status);
-        dirHeaderWrap.setEnabled(status);
-    }
-
-    private void setActiveSetting(boolean status){
-        if(status==false){
-            unexistsPathCheckBox.setSelected(status);
-            backupFileCheckBox.setSelected(status);
-            infoFileCheckBox.setSelected(status);
-            exceptionParaCheckBox.setSelected(status);
-            activeFingerCheckBox.setSelected(status);
-            knownFingerDirScanCheckBox.setSelected(status);
-            activeListDirectoryCheckBox.setSelected(status);
-            activeJsonErrorTestCheckBox.setSelected(status);
-        }
-        unexistsPathCheckBox.setEnabled(status);
-        backupFileCheckBox.setEnabled(status);
-        infoFileCheckBox.setEnabled(status);
-        exceptionParaCheckBox.setEnabled(status);
-        activeFingerCheckBox.setEnabled(status);
-        knownFingerDirScanCheckBox.setEnabled(status);
-        activeListDirectoryCheckBox.setEnabled(status);
-        activeJsonErrorTestCheckBox.setEnabled(status);
-    }
-
-    private void setPassiveSetting(boolean status){
-        if(status==false){
-            SSRFCheckBox.setSelected(status);
-            listDirectoryCheckBox.setSelected(status);
-            infoLeakCheckBox.setSelected(status);
-            fingerCheckBox.setSelected(status);
-            wafCheckBox.setSelected(status);
-            languageCheckBox.setSelected(status);
-            sensitiveCheckBox.setSelected(status);
-        }
-        SSRFCheckBox.setEnabled(status);
-        listDirectoryCheckBox.setEnabled(status);
-        infoLeakCheckBox.setEnabled(status);
-        fingerCheckBox.setEnabled(status);
-        wafCheckBox.setEnabled(status);
-        languageCheckBox.setEnabled(status);
-        sensitiveCheckBox.setEnabled(status);
-    }
-
-    public JCheckBox getInfoLeakCheckBox() {
-        return infoLeakCheckBox;
-    }
-
-    public JCheckBox getSensitiveCheckBox() {
-        return sensitiveCheckBox;
-    }
-
-    public JRadioButton getDirHeaderAddButton() {
-        return dirHeaderAddButton;
-    }
-
-    public JCheckBox getUserAgentCheckBox() {
-        return userAgentCheckBox;
-    }
-
-    public JRadioButton getChromeRadioButton() {
-        return chromeRadioButton;
-    }
-
-    public JRadioButton getIphoneRadioButton() {
-        return iphoneRadioButton;
-    }
-
-    public JRadioButton getIE7RadioButton() {
-        return IE7RadioButton;
-    }
-
-    public JRadioButton getFirefoxRadioButton() {
-        return firefoxRadioButton;
     }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
     }
-
 }

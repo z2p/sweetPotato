@@ -95,6 +95,7 @@ public class BurpSuiteRequests {
                     newLocation = httpResponse.getHost() + location;
                 }
                 else{
+                    // TODO
                     System.out.println("Location是相对路径，需要研究一下！！！" + location);
                 }
 
@@ -105,7 +106,7 @@ public class BurpSuiteRequests {
             }
 
         } catch (RuntimeException e){
-            System.out.println(String.format("[-] %s 无法访问",url));
+            config.getStdout().println(String.format("[-] %s\t无法访问",url));
         } catch (Exception e){
             e.printStackTrace();
         }

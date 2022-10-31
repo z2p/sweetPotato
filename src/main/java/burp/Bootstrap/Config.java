@@ -8,6 +8,7 @@ import burp.Ui.Tags;
 import com.alibaba.fastjson.JSONObject;
 
 import javax.swing.*;
+import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -38,6 +39,24 @@ public class Config {
     private Vector<String> projectManagerUrls = new Vector<String>();
     private Set<String> projectIPRecord = Collections.synchronizedSet(new HashSet<>()); // 保存符合域名的所有IP
     private ProjectOtherOptionMenu projectOtherOptionMenu;
+    private PrintWriter stdout;
+    private PrintWriter stderr;
+
+    public PrintWriter getStdout() {
+        return stdout;
+    }
+
+    public void setStdout(PrintWriter stdout) {
+        this.stdout = stdout;
+    }
+
+    public PrintWriter getStderr() {
+        return stderr;
+    }
+
+    public void setStderr(PrintWriter stderr) {
+        this.stderr = stderr;
+    }
 
     public Set<String> getProjectIPRecord() {
         return projectIPRecord;

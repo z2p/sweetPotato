@@ -20,25 +20,19 @@ public class DBHelper {
     private String dbFilePath;
     private Connection conn;
 
-    public DBHelper(String dbFilePath){
+    public DBHelper(String dbFilePath) throws Exception{
 
         this.dbFilePath = dbFilePath;
-        try{
-            Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection(String.format("jdbc:sqlite:%s",dbFilePath));
-            conn.setAutoCommit(true);
-        } catch (Exception e){
-            e.printStackTrace();
-        }
+        Class.forName("org.sqlite.JDBC");
+        conn = DriverManager.getConnection(String.format("jdbc:sqlite:%s",dbFilePath));
+        conn.setAutoCommit(true);
     }
 
     public static void connectionClose(Connection conn){
         if(conn == null) return;
         try{
             conn.close();
-        } catch (Exception e){
-            e.printStackTrace();
-        }
+        } catch (Exception e){ }
     }
 
 

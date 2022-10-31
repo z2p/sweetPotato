@@ -2,7 +2,6 @@ package burp.Controller;
 
 import burp.*;
 import burp.Bootstrap.*;
-import burp.Poc.PocClass;
 import burp.Ui.Tags;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -232,7 +231,7 @@ public class VulnsController {
         }
 
         // 是否启动被动信息泄漏分析
-        if(tags.getMain2Tag().getInfoFileCheckBox().isSelected()){
+        if(tags.getMain2Tag().getInfoLeakCheckBox().isSelected()){
             // 敏感信息匹配
             ArrayList<String> messages = passiveInfoLeakCheck(httpResponse, config);
             for (String message : messages) {
@@ -396,6 +395,7 @@ public class VulnsController {
      * 被动：列目录识别
      */
     public boolean passiveListDirectoryCheck(HTTPResponse httpResponse){
+        // 应用于直接的关键字匹配
         ArrayList<String> matchList = new ArrayList<String>(Arrays.asList(
             "转到父目录",
             "parent directory",
@@ -404,6 +404,7 @@ public class VulnsController {
             "directory listing for",
             "directory of /"
         ));
+        // 应用于正则匹配，例如： 10.1.1.1 - /
         ArrayList<String> regexList = new ArrayList<>(Arrays.asList(
             "[a-zA-Z]{0,62}(\\.[a-zA-Z][a-zA-Z]{0,62})+\\.?" + " - /",
             "[0-9]{0,62}(\\.[0-9][0-9]{0,62})+\\.?" + " - /"
@@ -426,7 +427,6 @@ public class VulnsController {
                 }
             }
         }
-
         return false;
     }
 

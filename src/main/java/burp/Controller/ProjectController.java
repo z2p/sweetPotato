@@ -20,7 +20,6 @@ public class ProjectController implements Callable<String> {
     private IBurpExtenderCallbacks callbacks;
     final long sleepTime = 5000;    // 线程睡眠时间，当没任务 或 用户暂停都会触发，默认为5秒
 
-
     public ProjectController(Config config,String name){
         // 变量初始化
         this.name = name;
@@ -35,12 +34,12 @@ public class ProjectController implements Callable<String> {
 //    @Override
     public void run(){
 
-        System.out.println("[" + name + "] ID: " + this.hashCode()+ " 启动了！");
+        config.getStdout().println("[" + name + "] ID: " + this.hashCode()+ "\t启动了！");
         a:
         while(true){
             // 当用户卸载掉插件后，要关闭所有线程，退出循环
             if(config.isExtensionUnload()){
-                System.out.println("[" + name + "] ID: " + this.hashCode()+ " 用户关闭了插件，终止线程！");
+                config.getStdout().println("[" + name + "] ID: " + this.hashCode()+ "\t用户关闭了插件，终止线程！");
                 // 清空掉全局vector
                 urls.clear();
                 // 将所有线程结束，直到重新加载为止
@@ -60,7 +59,6 @@ public class ProjectController implements Callable<String> {
             // 当用户勾选暂停后，
             if(config.getTags().getProjectTableTag().getRecursionCheckBox().isSelected()){
                 try{
-//                    System.out.println("[" + name + "] 用户暂停了爬虫功能，不往下执行");
                     Thread.sleep(sleepTime);
                 }catch (Exception e){
                     e.printStackTrace();
@@ -71,8 +69,8 @@ public class ProjectController implements Callable<String> {
             // 取数据和分析
             String scanUrl = urls.remove(0);
 
+            config.getStdout().println("[" + name + "] ID: " + this.hashCode()+ "\t当前准备访问:" + scanUrl);
             // 不需要遍历了，直接将这些url进行访问，然后再解析，再评估哪一些要放到vector供下次扫描使用
-            System.out.println("[" + name + "] ID: " + this.hashCode()+ " 当前准备访问:" + scanUrl);
             uncontainUrlFlow(scanUrl);
         }
     }
@@ -90,6 +88,7 @@ public class ProjectController implements Callable<String> {
         IHttpRequestResponse newMessageInfo = null;
 
         newMessageInfo = BurpSuiteRequests.get(host, null, callbacks,true,config,5);
+
         // 如果访问目标出现了失败，可能是什么情况？ 例如：http://www.baidu.com 上存在一个链接 http://qq.baidu.com，该链接已经无法访问
         if (newMessageInfo == null || newMessageInfo.getResponse() == null) {
             newHTTPResponse = new HTTPResponse(host);

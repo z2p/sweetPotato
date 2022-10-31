@@ -5,6 +5,7 @@ import java.awt.event.FocusEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.io.File;
+import java.util.HashMap;
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
@@ -26,22 +27,21 @@ public class Tags implements ITab {
     private PocTag pocTag;
     private ProjectTableTag projectTableTag;
     private Config config;
+    private HashMap tabsName;
 
-    public Tags(IBurpExtenderCallbacks callbacks, String name, Config config) {
+    public Tags(IBurpExtenderCallbacks callbacks, String name, Config config) throws Exception{
 
         this.tagName = name;
         this.config = config;
         // 将自己放到config中
         this.config.setTags(this);
-
         // 定义tab标签页
         tabs = new JTabbedPane();
         // 全局配置-窗口
         this.main2Tag = new Main2Tag(tabs,config);
-
         // 加载json配置文件
         // 指纹配置文件
-        System.out.println("指纹配置文件地址：" + getMain2Tag().getFingerPathTextField().getText());
+//        System.out.println("指纹配置文件地址：" + getMain2Tag().getFingerPathTextField().getText());
         this.config.setFingerJsonInfo(Tools.getJSONObject(getMain2Tag().getFingerPathTextField().getText()));
         // 敏感信息配置文件
         this.config.setInfoLeakJsonInfo(Tools.getJSONObject(getMain2Tag().getInfoPathTextField().getText()));
@@ -54,6 +54,8 @@ public class Tags implements ITab {
         // TODO 语言文件的路径
         this.config.setLanguageFingerJsonInfo(Tools.getJSONObject(config.getJarPath() + "resources" + File.separator+ "languageFinger.json"));
 
+        // 项目管理-窗口
+        this.projectTableTag = new ProjectTableTag(callbacks,tabs,this,config);
         // 指纹-窗口
         this.fingerTag = new FingerTag(callbacks, tabs,this,config);
         // 脆弱性-窗口
@@ -62,14 +64,11 @@ public class Tags implements ITab {
         this.dirScanTag = new DirScanTag(callbacks,tabs,this.config);
         // 漏洞利用-窗口 TODO：暂时不开放
         this.pocTag = new PocTag(tabs,config);
-        // 项目管理-窗口
-        this.projectTableTag = new ProjectTableTag(callbacks,tabs,this,config);
 
         // tab做监听器
         tabs.addChangeListener(new ChangeListener() {
             @Override
             public void stateChanged(ChangeEvent e) {
-
                 String selectTabsName = tabs.getTitleAt(tabs.getSelectedIndex());
                 if(selectTabsName.equals("项目管理")){
                     // 设置项目管理，默认聚焦组件
@@ -86,6 +85,25 @@ public class Tags implements ITab {
         callbacks.customizeUiComponent(tabs);
         // 将自定义选项卡添加到Burp的UI
         callbacks.addSuiteTab(Tags.this);
+
+        tabsName = new HashMap();
+        setTabsName(tabsName);
+    }
+
+    /**
+     *  定义字典，方便检索对应的tab
+     * @param tabsName
+     */
+    public void setTabsName(HashMap tabsName){
+        int count = tabs.getTabCount();
+        for(int i=0;i<count;i++){
+            String name = tabs.getTitleAt(i);
+            tabsName.put(name,i);
+        }
+    }
+
+    public HashMap getTabsName() {
+        return tabsName;
     }
 
     public PocTag getPocTag() {
