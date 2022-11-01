@@ -13,6 +13,7 @@ public class ProjectOtherOptionMenu {
     private JMenuItem exportItem;
     private JMenuItem globalSearchItem;
     private JMenuItem copySelectItem;
+    private JMenuItem quickFofaItem;
 
     public ProjectOtherOptionMenu(){
         menu = new JPopupMenu();
@@ -22,6 +23,7 @@ public class ProjectOtherOptionMenu {
         exportItem = new JMenuItem("导出");
         globalSearchItem = new JMenuItem("全局搜索");
         copySelectItem = new JMenuItem("批量复制");
+        quickFofaItem = new JMenuItem("快速FoFa");
 
         menu.add(setTargetItem);
         menu.add(freshTitleItem);
@@ -29,6 +31,11 @@ public class ProjectOtherOptionMenu {
         menu.add(exportItem);
         menu.add(globalSearchItem);
         menu.add(copySelectItem);
+        menu.add(quickFofaItem);
+    }
+
+    public JMenuItem getQuickFofaItem() {
+        return quickFofaItem;
     }
 
     public JMenuItem getCopySelectItem() {

@@ -61,6 +61,8 @@ public class ProjectTableTag implements IMessageEditorController {
     private Set<String> urlHashSet = Collections.synchronizedSet(new HashSet<>());     // 用来存放表格里的关键字，关键字为url根目录，如 http://www.baidu.com:8080/
     private DBHelper dbHelper;
     private MyTableModel myTableModel;
+    private QuickFofa quickFofa;
+
     // 用来存放各个键的顺序，方便后面查找和使用
     ArrayList<String> tableSortList = new ArrayList<String>();
     // combo box
@@ -131,6 +133,9 @@ public class ProjectTableTag implements IMessageEditorController {
 
         // 目标设置管理的UI界面
         projectOpenList = new ProjectOpenList(targetHashSet, config);
+
+        // 快速fofa的UI界面 TODO:quickfofa
+        quickFofa = new QuickFofa(config);
 
         // 请求面板
         this.requestTab = new JTabbedPane();
@@ -256,6 +261,14 @@ public class ProjectTableTag implements IMessageEditorController {
             @Override
             public void actionPerformed(ActionEvent e) {
                 projectOpenList.setVisible(true);
+            }
+        });
+
+        // 当用户点击【快速fofa】的操作 TODO: 快速fofa
+        config.getProjectOtherOptionMenu().getQuickFofaItem().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                quickFofa.setVisible(true);
             }
         });
 
@@ -949,6 +962,9 @@ public class ProjectTableTag implements IMessageEditorController {
         config.getProjectOtherOptionMenu().getFreshTitleItem().setEnabled(status);
         config.getProjectOtherOptionMenu().getSetTargetItem().setEnabled(status);
         config.getProjectOtherOptionMenu().getGlobalSearchItem().setEnabled(status);
+        config.getProjectOtherOptionMenu().getQuickFofaItem().setEnabled(status);
+        config.getProjectOtherOptionMenu().getCopySelectItem().setEnabled(status);
+
         searchField.setEnabled(status);
         searchButton.setEnabled(status);
     }
