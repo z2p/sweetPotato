@@ -490,9 +490,9 @@ public class Main2Tag {
         {
             // 下述4个功能，暂时关闭
             // 设置主动扫描的全局开关
-            activeAllCheckBox.setSelected(false);
-            // 设置主动扫描 默认开启的功能
-            unexistsPathCheckBox.setSelected(false);
+            activeAllCheckBox.setSelected(true);
+            // 默认开启不存在的文件访问
+            unexistsPathCheckBox.setSelected(true);
             // 默认开启 json
             activeJsonErrorTestCheckBox.setSelected(false);
             // 默认开 主动列目录

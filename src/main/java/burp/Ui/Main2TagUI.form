@@ -273,7 +273,7 @@
                       <component id="75fa6" class="javax.swing.JTextField" binding="browserPathTextField">
                         <constraints>
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="1" use-parent-layout="false">
-                            <preferred-size width="400" height="25"/>
+                            <preferred-size width="500" height="25"/>
                           </grid>
                         </constraints>
                         <properties>
@@ -311,10 +311,12 @@
                       <component id="77d2" class="javax.swing.JTextField" binding="fingerPathTextField">
                         <constraints>
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="400" height="25"/>
+                            <preferred-size width="500" height="25"/>
+                            <maximum-size width="500" height="-1"/>
                           </grid>
                         </constraints>
                         <properties>
+                          <editable value="false"/>
                           <text value="/Users/z2p/notes2/开发项目/public/finger.json"/>
                         </properties>
                       </component>
@@ -358,7 +360,7 @@
                       <component id="8bc31" class="javax.swing.JTextField" binding="infoPathTextField">
                         <constraints>
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="400" height="25"/>
+                            <preferred-size width="500" height="25"/>
                           </grid>
                         </constraints>
                         <properties>
@@ -405,7 +407,7 @@
                       <component id="e2f1d" class="javax.swing.JTextField" binding="pocPathTextField">
                         <constraints>
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="400" height="25"/>
+                            <preferred-size width="500" height="25"/>
                           </grid>
                         </constraints>
                         <properties>
@@ -508,7 +510,7 @@
                       <component id="39f00" class="javax.swing.JTextField" binding="backupPathTextField">
                         <constraints>
                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                            <preferred-size width="400" height="25"/>
+                            <preferred-size width="500" height="25"/>
                           </grid>
                         </constraints>
                         <properties>

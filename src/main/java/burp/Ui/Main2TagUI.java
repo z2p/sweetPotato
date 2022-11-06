@@ -261,7 +261,7 @@ public class Main2TagUI {
         browserSettingPanel.add(browserLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         browserPathTextField = new JTextField();
         browserPathTextField.setText("/Applications/Firefox.app/Contents/MacOS/firefox");
-        browserSettingPanel.add(browserPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(400, 25), null, 1, false));
+        browserSettingPanel.add(browserPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(500, 25), null, 1, false));
         browserHelp = new JLabel();
         browserHelp.setForeground(new Color(-65536));
         browserHelp.setText("浏览器启动的地址");
@@ -273,8 +273,9 @@ public class Main2TagUI {
         fingerPathLabel.setText("指纹文件地址：");
         fingerPathSettingPanel.add(fingerPathLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         fingerPathTextField = new JTextField();
+        fingerPathTextField.setEditable(false);
         fingerPathTextField.setText("/Users/z2p/notes2/开发项目/public/finger.json");
-        fingerPathSettingPanel.add(fingerPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(400, 25), null, 0, false));
+        fingerPathSettingPanel.add(fingerPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(500, 25), new Dimension(500, -1), 0, false));
         fingerPathHelp = new JLabel();
         fingerPathHelp.setForeground(new Color(-65536));
         fingerPathHelp.setText("指纹识别的配置文件地址");
@@ -291,7 +292,7 @@ public class Main2TagUI {
         infoPathPanel.add(infoPathLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         infoPathTextField = new JTextField();
         infoPathTextField.setText("/Users/z2p/notes2/开发项目/public/infoLeakFinger.json");
-        infoPathPanel.add(infoPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(400, 25), null, 0, false));
+        infoPathPanel.add(infoPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(500, 25), null, 0, false));
         infoPathHelp = new JLabel();
         infoPathHelp.setForeground(new Color(-65536));
         infoPathHelp.setText("敏感信息的配置文件地址");
@@ -308,7 +309,7 @@ public class Main2TagUI {
         pocPathPanel.add(pocPathLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         pocPathTextField = new JTextField();
         pocPathTextField.setText("/Users/z2p/notes2/开发项目/public/pocFinger.json");
-        pocPathPanel.add(pocPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(400, 25), null, 0, false));
+        pocPathPanel.add(pocPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(500, 25), null, 0, false));
         pocPathHelp = new JLabel();
         pocPathHelp.setForeground(new Color(-65536));
         pocPathHelp.setText("漏洞信息的配置文件地址");
@@ -345,7 +346,7 @@ public class Main2TagUI {
         backupPathPanel.add(backupPathLabel, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         backupPathTextField = new JTextField();
         backupPathTextField.setText("/Users/z2p/notes2/开发项目/public/backupFileDict.json");
-        backupPathPanel.add(backupPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(400, 25), null, 0, false));
+        backupPathPanel.add(backupPathTextField, new GridConstraints(0, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(500, 25), null, 0, false));
         backupPathHelp = new JLabel();
         backupPathHelp.setForeground(new Color(-65536));
         backupPathHelp.setText("备份扫描的配置文件地址");

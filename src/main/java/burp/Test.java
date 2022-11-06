@@ -3,8 +3,11 @@ import burp.Bootstrap.HTTPResponse;
 import burp.Bootstrap.Tools;
 import com.alibaba.fastjson.JSONObject;
 
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.net.Inet4Address;
+import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -17,9 +20,9 @@ public class Test
 {
     public static void main(String args[]) throws Exception
     {
-        String domainName = "www.baidu.com";
-        for(InetAddress inetAddress:InetAddress.getAllByName(domainName)){
-            System.out.println(inetAddress.getHostAddress());
-        }
+        Color test = new Color(197,138,249);
+        System.out.println(test.getRed());
+        System.out.println(test.getGreen());
+        System.out.println(test.getBlue());
     }
 }

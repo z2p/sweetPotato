@@ -7,6 +7,8 @@ import java.net.MalformedURLException;
 import burp.IExtensionHelpers;
 import burp.IHttpRequestResponse;
 import burp.IBurpExtenderCallbacks;
+import org.apache.commons.lang3.StringUtils;
+import org.jsoup.internal.StringUtil;
 
 public class CustomBurpUrl {
     private IBurpExtenderCallbacks callbacks;
@@ -170,12 +172,39 @@ public class CustomBurpUrl {
      * @return xxx.com
      */
     public static String getDomain(String host){
-        String domain = host.replace("https://","").replace("http://","");
-        if (domain.contains(":")){
-            domain = domain.split(":")[0];
+
+        String url = host.replace("https://","").replace("http://","");
+        String domain = "";
+        if(url.contains("/")){
+            url = url.split("/")[0];
         }
-        if(domain.contains("/")){
-            domain = domain.split("/")[0];
+        /*
+            google.com:80
+            google.com
+            123.123.123.123:80
+            123.123.123.123
+            2001:250:580d:85:0:0:0:111
+            2001:250:580d:85:0:0:0:111:90
+         */
+        if(url.contains(":")){
+            String[] tempUrl = url.split(":");
+
+            // 等于8 说明是ipv6
+            if(tempUrl.length == 8){
+                domain = url;
+            }
+            // 等于9 说明是ipv6 + 端口
+            else if(tempUrl.length == 9){
+                domain = StringUtils.join(tempUrl,":",0,7);
+            }
+            // 等于2 说明是ipv4 + 端口
+            else if(tempUrl.length == 2){
+                domain = tempUrl[0];
+            }
+        }
+        else{
+            // 可能是ipv4
+            domain = url;
         }
         return domain;
     }

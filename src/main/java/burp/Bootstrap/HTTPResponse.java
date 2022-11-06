@@ -7,6 +7,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
+import java.net.Inet4Address;
+import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.*;
@@ -203,7 +205,6 @@ public class HTTPResponse {
         {
             Elements srcLinks = doc.select("script[src]");
             for(int i=0;i<srcLinks.size();i++){
-//                System.out.println(srcLinks.get(i).attr("src"));
                 temp.add(srcLinks.get(i).attr("src"));
             }
         }
@@ -211,8 +212,8 @@ public class HTTPResponse {
         {
             Elements hrefLinks = doc.select("a[href]");
             for(int i=0;i<hrefLinks.size();i++){
-//                System.out.println(hrefLinks.get(i).attr("href"));
-                temp.add(hrefLinks.get(i).attr("href"));
+                String href = hrefLinks.get(i).attr("href");
+                temp.add(href);
             }
         }
         // 3. <img>里的src提取
@@ -291,7 +292,10 @@ public class HTTPResponse {
         // 先对提取的数据初步筛选和处理，这里拿到的是 所有当前目录的路径
         for(String tempStr:temp){
             // 如果打头是http 或者 https，那就不需要操作； 👌
-            if(tempStr.startsWith("https://") || tempStr.startsWith("http://")){}
+            if(tempStr.startsWith("https://") || tempStr.startsWith("http://")){
+                // 做多一层过滤
+                if(Tools.isIllegalCharInUrl(tempStr)) continue;
+            }
             // 如果打头是//，拼接http: 👌 TODO：看是不是需要优化，会不会存在 //结果后面是443端口之类的
             else if(tempStr.startsWith("//")){
                 tempStr = "http:" + tempStr;
@@ -310,6 +314,10 @@ public class HTTPResponse {
             }
             // 如果是data base64的图片，也做忽略
             else if(tempStr.startsWith("data:image/png;base64")){
+                continue;
+            }
+            // 如果其中带有特殊字符也做过滤，该函数判断如果存在不合法的字符会返回true
+            else if(Tools.isIllegalCharInUrl(tempStr)){
                 continue;
             }
             // 剩余就先当作是 aaa.html 直接是文件名的情况处理
@@ -523,7 +531,7 @@ public class HTTPResponse {
 
     public static String getIP(String domain){
         try{
-            String ips = InetAddress.getByName(domain).getHostAddress();
+            String ips = Inet4Address.getByName(domain).getHostAddress();
             return ips;
         } catch (UnknownHostException e){
 
@@ -539,17 +547,33 @@ public class HTTPResponse {
 
     public static boolean isIP(String domain){
 
-        try{
-            String[] eachSplits = domain.split("\\.");
-            for(String eachOne:eachSplits){
-                Integer.parseInt(eachOne);
-            }
-        } catch (NumberFormatException e){
-            return false;
-        } catch (Exception e){
-            e.printStackTrace();
+        String type = "";
+        // 先初步判断是否存在关键字，例如ipv4是用.拼接，ipv6是用:拼接，如果都不存在则直接返回
+        if(domain.contains("\\.")){
+            type = "ipv4";
+        }
+        else if(domain.contains(":")){
+            type = "ipv6";
+        }
+        else{
             return false;
         }
+
+        if(type.equals("ipv4")){
+            try {
+                return Inet4Address.getByName(domain).getHostAddress().equals(domain);
+            }catch (Exception e){
+                return false;
+            }
+        }
+        else if(type.equals("ipv6")){
+            try{
+                return Inet6Address.getByName(domain).getHostAddress().equals(domain);
+            }catch (Exception e){
+                return false;
+            }
+        }
+
         return true;
     }
 

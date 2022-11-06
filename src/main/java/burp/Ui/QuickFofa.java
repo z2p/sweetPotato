@@ -96,8 +96,8 @@ public class QuickFofa extends JDialog {
                 String base64Dork = Base64.getEncoder().encodeToString(dork.getBytes(StandardCharsets.UTF_8));
 
                 // 检查是否有参数为空，如果没有，则不允许往下的逻辑
-                if(dork.length() == 0 || url.length() == 0 || key.length() == 0 || maxSizeTextField.getText().length() == 0 || email.length() == 0){
-                    JOptionPane.showMessageDialog(mainPanel,"不允许有参数为空！","参数为空！",JOptionPane.ERROR_MESSAGE);
+                if (dork.length() == 0 || url.length() == 0 || key.length() == 0 || maxSizeTextField.getText().length() == 0 || email.length() == 0) {
+                    JOptionPane.showMessageDialog(mainPanel, "不允许有参数为空！", "参数为空！", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -110,7 +110,7 @@ public class QuickFofa extends JDialog {
                 t.start();
 
                 // 展示确定之后的提示
-                JOptionPane.showMessageDialog(mainPanel,"正在进行查询，查询结果的流量将提供进行分析！请确保提供的Key和搜索语法正确！","执行成功！",JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(mainPanel, "正在进行查询，查询结果的流量将提供进行分析！请确保提供的Key和搜索语法正确！", "执行成功！", JOptionPane.INFORMATION_MESSAGE);
                 // 清空dork
                 dorkTextField.setText("");
                 // 隐藏窗口

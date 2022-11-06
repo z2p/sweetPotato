@@ -11,6 +11,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -83,7 +84,22 @@ public class DBHelper {
         String finger = httpResponse.getFingers().stream().map(integer -> integer.toString()).collect(Collectors.joining(","));
 
         String sql = "insert into url (id,url,content) values('%d','%s','%s')";
-        String content = "{\"domain\":\"%s\",\"status\":\"%d\",\"length\":\"%d\",\"title\":\"%s\",\"server\":\"%s\",\"finger\":\"%s\",\"isCheck\":\"%s\",\"assetType\":\"%s\",\"comments\":\"%s\",\"ip\":\"%s\",\"updateTime\":\"%s\",\"request\":\"%s\",\"response\":\"%s\"}";
+        String content = "{" +
+                "\"domain\":\"%s\"," +
+                "\"status\":\"%d\"," +
+                "\"length\":\"%d\"," +
+                "\"title\":\"%s\"," +
+                "\"server\":\"%s\"," +
+                "\"finger\":\"%s\"," +
+                "\"isCheck\":\"%s\"," +
+                "\"assetType\":\"%s\"," +
+                "\"comments\":\"%s\"," +
+                "\"ip\":\"%s\"," +
+                "\"opened\":\"false\"," +   // 默认未被用户点击打开过
+                "\"updateTime\":\"%s\"," +
+                "\"request\":\"%s\"," +
+                "\"response\":\"%s\"" +
+                "}";
         content = String.format(
                 content,
                 httpResponse.getDomain(),
@@ -116,7 +132,7 @@ public class DBHelper {
     }
 
     /**
-     * 当用户更新了comment的内容，写库
+     * 用于更新表格中的数据
      */
     public void updateUrlTable(String url,String keyName,String keyValue){
 
@@ -180,7 +196,7 @@ public class DBHelper {
     /**
      * url表里的数据管理
      */
-    public void getInfoFromUrlTable(Set<String> urlHashSet, Set<String> ipRecord,ProjectTableTag projectTableTag) throws Exception{
+    public void getInfoFromUrlTable(Set<String> urlHashSet, Set<String> ipRecord, ProjectTableTag projectTableTag, ArrayList<Integer> highlightRows) throws Exception{
 
         String sql = "select * from url order by id";
         Statement statement = conn.createStatement();
@@ -195,6 +211,9 @@ public class DBHelper {
             // 判断一下，哪一些是IP，要录入到iprecord里的
             if(Tools.isIP(json.getString("domain"))){
                 ipRecord.add(url);
+            }
+            if (json.getString("opened").equals("true")){
+                highlightRows.add(id);
             }
 
             IHttpRequestResponse messageInfo = new IHttpRequestResponse() {
@@ -263,6 +282,7 @@ public class DBHelper {
                     json.getString("updateTime"),
                     messageInfo
             );
+
         }
 
         statmentClose(statement);

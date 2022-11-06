@@ -42,6 +42,7 @@ public class ProjectTableTag implements IMessageEditorController {
     private JButton otherOptionButton;
 
     private TableRowSorter<AbstractTableModel> sorter;
+    private DefaultTableCellRenderer render;
 
     public List<TablesData> Udatas = new ArrayList<TablesData>();
     private IHttpRequestResponse currentlyDisplayedItem;
@@ -62,6 +63,7 @@ public class ProjectTableTag implements IMessageEditorController {
     private DBHelper dbHelper;
     private MyTableModel myTableModel;
     private QuickFofa quickFofa;
+    private ArrayList<Integer> highlightRows; // 存放高亮的行下标
 
     // 用来存放各个键的顺序，方便后面查找和使用
     ArrayList<String> tableSortList = new ArrayList<String>();
@@ -96,6 +98,8 @@ public class ProjectTableTag implements IMessageEditorController {
     }
 
     public void init() {
+
+        highlightRows = new ArrayList();
 
         // otherOption的监听器
         otherOptionButton.addMouseListener(new MouseListener() {
@@ -177,30 +181,46 @@ public class ProjectTableTag implements IMessageEditorController {
             this.tableSortList.add("updateTime");
 
             // table美化
-            DefaultTableCellRenderer render = new DefaultTableCellRenderer() {
+            render = new DefaultTableCellRenderer() {
                 public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+
                     Component cell = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                    // TODO: 这里后面要改一下
+                    // TODO: 这里后面要改一下，表格变色的代码并不是非常规范
                     if ((table.getColumnName(column).equals("finger") || table.getColumnName(column).equals("title")) && !table.getValueAt(row, column).toString().equals("Exception")) {
                         cell.setForeground(new Color(9, 109, 217));
-                    } else if (table.getValueAt(row, column).toString().equals("Exception")) {
+                    }
+                    else if (table.getValueAt(row, column).toString().equals("Exception")) {
                         cell.setForeground(new Color(252, 25, 68));
-                    } else {
+                    }
+                    else {
                         cell.setForeground(new Color(0, 0, 0));
                     }
 
                     if (isSelected) {
                         cell.setBackground(new Color(255, 197, 153));
-                    } else {
+                    }
+                    else {
                         if (row % 2 == 0) {
                             cell.setBackground(new Color(255, 255, 255));
-                        } else {
+                        }
+                        else {
                             cell.setBackground(new Color(242, 242, 242));
                         }
                     }
+
+                    if(table.getColumnName(column).equals("url")){
+                        if(highlightRows.contains(row)){
+                            cell.setForeground(new Color(0,0,255));
+                        }
+                        else{
+                            cell.setForeground(getForeground());
+                        }
+                    }
+
                     return cell;
                 }
             };
+
             render.setHorizontalAlignment(SwingConstants.CENTER);
             int columnCount = this.myTableModel.getColumnCount();
             for (int i = 0; i < columnCount; i++) {
@@ -264,7 +284,7 @@ public class ProjectTableTag implements IMessageEditorController {
             }
         });
 
-        // 当用户点击【快速fofa】的操作 TODO: 快速fofa
+        // 当用户点击【快速fofa】的操作
         config.getProjectOtherOptionMenu().getQuickFofaItem().addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -631,6 +651,7 @@ public class ProjectTableTag implements IMessageEditorController {
             // 如果能走到这里，说明肯定是选择了一个文件
             // 0、当用户切换项目的时候，清空projectOpenList里的内容和table里的内容
             {
+                highlightRows.clear();
                 projectOpenList.cleanJlistALLInfo();
                 // 清空掉url set
                 config.getTags().getProjectTableTag().getUrlHashSet().clear();
@@ -651,7 +672,7 @@ public class ProjectTableTag implements IMessageEditorController {
             // 3、将db里的数据刷新到界面里
             // 刷新的内容：表格里的数据，目标管理里的数据
             dbHelper.getInfoFromTargetTable(projectOpenList.getDlm(), targetHashSet);
-            dbHelper.getInfoFromUrlTable(urlHashSet, config.getProjectIPRecord(),tags.getProjectTableTag());
+            dbHelper.getInfoFromUrlTable(urlHashSet, config.getProjectIPRecord(),tags.getProjectTableTag(),highlightRows);
 
             // 如果发现加载的targettable没数据，那直接弹出框，让用户
             if (projectOpenList.getDlm().size() == 0) {
@@ -660,7 +681,7 @@ public class ProjectTableTag implements IMessageEditorController {
             }
 
             // 2、重新刷新sorter
-            // 1、先取消排序
+            // 1、先取消排序，再进行排序
             sorter = null;
             sorter = new TableRowSorter(this.myTableModel);
             targetTable.setRowSorter(sorter);
@@ -936,13 +957,40 @@ public class ProjectTableTag implements IMessageEditorController {
         }
 
         public void tableLeftDoubleClickAction(MouseEvent e, Main2Tag main2Tag) {
-            int row = getSelectedRow();
-            String url = this.getValueAt(row, 1).toString();
+
+            int currentRow = getSelectedRow();
+            String url = this.getValueAt(currentRow, 1).toString();
+            // 打开浏览器
             try {
                 Tools.openBrowser(url, main2Tag.getBrowserPathTextField().getText());
             } catch (Exception e1) {
                 e1.printStackTrace();
             }
+
+            // 说明用户之前已经点击过了，不需要做处理
+            if(highlightRows.contains(currentRow)){
+                return;
+            }
+            highlightRows.add(currentRow);
+            // 改这一行的颜色
+            DefaultTableCellRenderer openColorRender = new DefaultTableCellRenderer(){
+                @Override
+                public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+                    Component cell = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                    if(highlightRows.contains(row)){
+                        cell.setForeground(new Color(0,0,255));
+                    }
+                    else{
+                        cell.setForeground(targetTable.getForeground());
+                    }
+
+                    return cell;
+                }
+            };
+            openColorRender.setHorizontalAlignment(SwingConstants.CENTER);
+            targetTable.getColumn(myTableModel.getColumnName(1)).setCellRenderer(openColorRender);
+            // 更新一下数据库
+            config.getDbHelper().updateUrlTable(targetTable.getValueAt(currentRow,1).toString(), "opened", "true");
         }
     }
 

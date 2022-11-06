@@ -16,8 +16,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     compile('net.portswigger.burp.extender:burp-extender-api:1.7.13')
     compile('com.intellij:forms_rt:7.0.3')
-    compile('com.alibaba:fastjson:+')
     compile group:'org.xerial', name:'sqlite-jdbc', version:'3.8.11.2'
+    compile('com.alibaba:fastjson:+')
     implementation"com.google.guava:guava:16+"
     implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'org.apache.commons:commons-lang3:3.12.0'

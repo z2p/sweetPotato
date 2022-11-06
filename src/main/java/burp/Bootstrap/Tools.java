@@ -350,11 +350,25 @@ public class Tools {
     }
 
     /**
+     * 用于判断一个url中是否包含了不合法的字符，如果存在不合法字符，则返回true；否则返回false
+     * @return
+     */
+    public static boolean isIllegalCharInUrl(String url){
+
+        String illegalChars[] = {"<","'","\""};
+        for(String _char:illegalChars){
+            if(url.contains(_char)) return true;
+        }
+
+        return false;
+    }
+
+    /**
      * 获取标题
      */
     public static String getTitle(String responseRaw){
         String regex = "<title.*?>(.+?)</title>";
-        Pattern r = Pattern.compile(regex);
+        Pattern r = Pattern.compile(regex,Pattern.CASE_INSENSITIVE);
         Matcher m = r.matcher(responseRaw);
         String title = "";
         if (m.find()){
@@ -362,7 +376,7 @@ public class Tools {
         }
 
         // 做一次html实体编码解码
-        title = StringEscapeUtils.unescapeHtml4(title);
+        title = StringEscapeUtils.unescapeHtml4(title).trim();
         return title;
     }
 

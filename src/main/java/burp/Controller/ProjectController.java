@@ -157,6 +157,7 @@ public class ProjectController implements Callable<String> {
 
         // 下面是准备做入库的逻辑
         // 判断是否为IP
+        // TODO: 需要兼容ipv6的场景
         if(newHTTPResponse.isIP(newHTTPResponse.getDomain())){
             // 如果是ip，表示getDomain也是IP，不用转化可以直接用了
             newHTTPResponse.setIp(newHTTPResponse.getDomain());

@@ -18,7 +18,7 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
     private TagPopMenu tagPopMenu;
     private PrintWriter stdout;
     private PrintWriter stderr;
-    final int threadNum = 10;   // 项目里的线程数量，默认10个
+    final int threadNum = 20;   // 项目里的线程数量，默认10个
 
     /**
      * 关键函数，bp调用入口
