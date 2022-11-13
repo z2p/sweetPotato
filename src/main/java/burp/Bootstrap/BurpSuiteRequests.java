@@ -17,6 +17,7 @@ public class BurpSuiteRequests {
      * @param callbacks
      * @param allow_redirects
      * @param config
+     * @param redirect_count
      *
      * @return
      */

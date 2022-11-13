@@ -31,7 +31,6 @@ public class ProjectController implements Callable<String> {
         this.callbacks = config.getCallbacks();
     }
 
-//    @Override
     public void run(){
 
         config.getStdout().println("[" + name + "] ID: " + this.hashCode()+ "\t启动了！");
@@ -68,7 +67,6 @@ public class ProjectController implements Callable<String> {
 
             // 取数据和分析
             String scanUrl = urls.remove(0);
-
             config.getStdout().println("[" + name + "] ID: " + this.hashCode()+ "\t当前准备访问:" + scanUrl);
             // 不需要遍历了，直接将这些url进行访问，然后再解析，再评估哪一些要放到vector供下次扫描使用
             uncontainUrlFlow(scanUrl);
@@ -153,11 +151,12 @@ public class ProjectController implements Callable<String> {
         if (newHTTPResponse.getStatus() != -1) {
             HTTPRequests newHTTPRequests = new HTTPRequests(callbacks, newMessageInfo);
             new VulnsController().passiveScanController(newHTTPRequests, newHTTPResponse, newMessageInfo, tags, config);
+            // 增加主动分析的流程
+            new VulnsController().activeScanController(newHTTPRequests,newHTTPResponse,tags,config);
         }
 
         // 下面是准备做入库的逻辑
         // 判断是否为IP
-        // TODO: 需要兼容ipv6的场景
         if(newHTTPResponse.isIP(newHTTPResponse.getDomain())){
             // 如果是ip，表示getDomain也是IP，不用转化可以直接用了
             newHTTPResponse.setIp(newHTTPResponse.getDomain());

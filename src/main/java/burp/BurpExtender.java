@@ -92,7 +92,7 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
     }
 
     /**
-     * http proxy监听器，所有流量都会到该函数
+     * http proxy监听器，所有流量都会到该函数，这里只负责对请求和响应的流量进行修改
      * @param toolFlag
      * @param messageIsRequest
      * @param messageInfo
@@ -102,7 +102,6 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
 
         Main2Tag main2Tag = this.tags.getMain2Tag();
         byte[] newResponse = messageInfo.getResponse();
-        byte[] newRequests = messageInfo.getRequest();
 
         // 可以增加url黑白名单的过滤
         // 可以增加文件类型的过滤
@@ -114,71 +113,8 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
 
         // 如果是请求，按请求逻辑走
         if (messageIsRequest){
-            HTTPRequests httpRequests = new HTTPRequests(this.callbacks, messageInfo);
-            List<String> requestsHeaders = this.helpers.analyzeRequest(newRequests).getHeaders();
-
-            // 是否要增加shiro到cookie中
-            if (main2Tag.getAddRememberMeButton().isSelected() && !config.getPassiveRememberMeRecord().contains(httpRequests.getHost())){
-                requestsHeaders = Tools.setHeaders(requestsHeaders,"Cookie","rememberMe=0",0);
-                // 加入到历史清单里，下次不再增加header
-                config.getPassiveRememberMeRecord().add(httpRequests.getHost());
-            }
-
-            // 当用户勾选了强制刷新浏览器，不使用缓存时
-            if(main2Tag.getFlushBrowserCheckBox().isSelected()){
-                requestsHeaders = Tools.setHeaders(requestsHeaders,"Cache-Control","no-cache",1);
-                requestsHeaders = Tools.deleteHeader(requestsHeaders,"If-Modified-Since");
-                requestsHeaders = Tools.deleteHeader(requestsHeaders,"If-None-Match");
-            }
-
-            // 当用户勾选了修改User-Agent
-            if(main2Tag.getUserAgentCheckBox().isSelected()){
-                String user_agent_value = "";
-                if(main2Tag.getChromeRadioButton().isSelected()){
-                    user_agent_value = GlobalKeys.CHROME_UA;
-                }
-                else if(main2Tag.getFirefoxRadioButton().isSelected()){
-                    user_agent_value = GlobalKeys.FIREFOX_UA;
-                }
-                else if(main2Tag.getIE7RadioButton().isSelected()){
-                    user_agent_value = GlobalKeys.IE7_UA;
-                }
-                else if(main2Tag.getIphoneRadioButton().isSelected()){
-                    user_agent_value = GlobalKeys.IPHONE_UA;
-                }
-                requestsHeaders = Tools.setHeaders(requestsHeaders,"User-Agent",user_agent_value,1);
-            }
-
-            // 自定义头部的功能开启逻辑
-            if(main2Tag.getDirHeaderCheckBox().isSelected()){
-                // 1. 获取面板里用户填写的内容
-                String dirHeaderText = main2Tag.getDirHeaderTextArea().getText().trim();
-                // 2. 解析内容
-                HashMap<String,String> newHeader = Tools.changeStrToHeader(dirHeaderText);
-                // 3. 替换请求报文里的内容
-                for(Map.Entry<String,String> entry: newHeader.entrySet()){
-                    String key = entry.getKey();
-                    String value = entry.getValue();
-                    // cookie走追加，其他走的是覆盖逻辑
-                    if(key.equals("Cookie")){
-                        requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,0);
-                    }
-                    // 如果按了追加按钮，则追加，否则覆盖
-                    if(main2Tag.getDirHeaderAddButton().isSelected()){
-                        requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,0);
-                    }
-                    else{
-                        requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,1);
-                    }
-                }
-            }
-
-            // 获取当前数据包的数据，追加内容，重组新的数据包
-            byte[] byteBody = Tools.getBody(messageIsRequest,newRequests,this.helpers);
-            // 将重组的数据包更新，并赋值到newRequests中
-            newRequests = this.helpers.buildHttpMessage(requestsHeaders,byteBody);
             // 更新数据包
-            messageInfo.setRequest(newRequests);
+            messageInfo.setRequest(getNewRequests(this.callbacks,messageInfo,main2Tag));
         }
         // 响应的才走下面的逻辑
         else {
@@ -194,6 +130,82 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
             // 更新数据包
             messageInfo.setResponse(newResponse);
         }
+    }
+
+    /**
+     * 用于生成请求数据包
+     * @param callbacks
+     * @param messageInfo
+     * @param main2Tag
+     * @return
+     */
+    public byte[] getNewRequests(IBurpExtenderCallbacks callbacks,IHttpRequestResponse messageInfo,Main2Tag main2Tag){
+
+        byte[] newRequests = messageInfo.getRequest();
+        HTTPRequests httpRequests = new HTTPRequests(callbacks, messageInfo);
+        List<String> requestsHeaders = this.helpers.analyzeRequest(newRequests).getHeaders();
+
+        // 是否要增加shiro到cookie中
+        if (main2Tag.getAddRememberMeButton().isSelected() && !config.getPassiveRememberMeRecord().contains(httpRequests.getHost())){
+            requestsHeaders = Tools.setHeaders(requestsHeaders,"Cookie","rememberMe=0",0);
+            // 加入到历史清单里，下次不再增加header
+            config.getPassiveRememberMeRecord().add(httpRequests.getHost());
+        }
+
+        // 当用户勾选了强制刷新浏览器，不使用缓存时
+        if(main2Tag.getFlushBrowserCheckBox().isSelected()){
+            requestsHeaders = Tools.setHeaders(requestsHeaders,"Cache-Control","no-cache",1);
+            requestsHeaders = Tools.deleteHeader(requestsHeaders,"If-Modified-Since");
+            requestsHeaders = Tools.deleteHeader(requestsHeaders,"If-None-Match");
+        }
+
+        // 当用户勾选了修改User-Agent
+        if(main2Tag.getUserAgentCheckBox().isSelected()){
+            String user_agent_value = "";
+            if(main2Tag.getChromeRadioButton().isSelected()){
+                user_agent_value = GlobalKeys.CHROME_UA;
+            }
+            else if(main2Tag.getFirefoxRadioButton().isSelected()){
+                user_agent_value = GlobalKeys.FIREFOX_UA;
+            }
+            else if(main2Tag.getIE7RadioButton().isSelected()){
+                user_agent_value = GlobalKeys.IE7_UA;
+            }
+            else if(main2Tag.getIphoneRadioButton().isSelected()){
+                user_agent_value = GlobalKeys.IPHONE_UA;
+            }
+            requestsHeaders = Tools.setHeaders(requestsHeaders,"User-Agent",user_agent_value,1);
+        }
+
+        // 自定义头部的功能开启逻辑
+        if(main2Tag.getDirHeaderCheckBox().isSelected()){
+            // 1. 获取面板里用户填写的内容
+            String dirHeaderText = main2Tag.getDirHeaderTextArea().getText().trim();
+            // 2. 解析内容
+            HashMap<String,String> newHeader = Tools.changeStrToHeader(dirHeaderText);
+            // 3. 替换请求报文里的内容
+            for(Map.Entry<String,String> entry: newHeader.entrySet()){
+                String key = entry.getKey();
+                String value = entry.getValue();
+                // cookie走追加，其他走的是覆盖逻辑
+                if(key.equals("Cookie")){
+                    requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,0);
+                }
+                // 如果按了追加按钮，则追加，否则覆盖
+                if(main2Tag.getDirHeaderAddButton().isSelected()){
+                    requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,0);
+                }
+                else{
+                    requestsHeaders = Tools.setHeaders(requestsHeaders,key,value,1);
+                }
+            }
+        }
+
+        // 获取当前数据包的数据，追加内容，重组新的数据包
+        byte[] byteBody = Tools.getBody(true,newRequests,this.helpers);
+        // 将重组的数据包更新，并赋值到newRequests中
+        newRequests = this.helpers.buildHttpMessage(requestsHeaders,byteBody);
+        return newRequests;
     }
 
     /**
@@ -232,6 +244,8 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
     public List<IScanIssue> doPassiveScan(IHttpRequestResponse messageInfo) {
         // 主动和被动的分析的分析流程
         HTTPRequests httpRequests = new HTTPRequests(this.callbacks, messageInfo);
+        httpRequests.setByteRequestsRaw(getNewRequests(callbacks,messageInfo, tags.getMain2Tag()));
+
         HTTPResponse httpResponse = new HTTPResponse(this.callbacks, messageInfo);
         // 整个被动的流程都放这里
         new VulnsController().passiveScanController(httpRequests,httpResponse,messageInfo,tags,config);

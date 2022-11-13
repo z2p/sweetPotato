@@ -55,4 +55,8 @@ public class HTTPRequests {
     public List<IParameter> getParameterList() {
         return parameterList;
     }
+
+    public void setByteRequestsRaw(byte[] byteRequestsRaw) {
+        this.byteRequestsRaw = byteRequestsRaw;
+    }
 }

@@ -438,6 +438,8 @@ public class Main2Tag {
                     userAgentAction(userAgentCheckBox.isSelected());
                 }
             });
+            userAgentCheckBox.setSelected(true);
+            userAgentAction(true);
 
             //
             /**
@@ -494,9 +496,9 @@ public class Main2Tag {
             // 默认开启不存在的文件访问
             unexistsPathCheckBox.setSelected(true);
             // 默认开启 json
-            activeJsonErrorTestCheckBox.setSelected(false);
+            activeJsonErrorTestCheckBox.setSelected(true);
             // 默认开 主动列目录
-            activeListDirectoryCheckBox.setSelected(false);
+            activeListDirectoryCheckBox.setSelected(true);
 
             activeAllCheckBox.addActionListener(new ActionListener() {
                 @Override

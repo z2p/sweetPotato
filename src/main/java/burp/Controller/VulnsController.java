@@ -33,11 +33,12 @@ public class VulnsController {
         if(tags.getMain2Tag().getUnexistsPathCheckBox().isSelected() && !activeScanRecord.contains(key)){
             try{
                 String scanUrl = httpResponse.getHost() + "/askdjkiuczxvio123asdas.html";
-                URL scanURL = new URL(scanUrl);
                 // 获取之前访问的头部字段信息
                 List<String> requestsHeaders = helpers.analyzeRequest(httpRequests.getByteRequestsRaw()).getHeaders();
-                // 替换其头部字段为上个数据包的头部字段信息
-                requestsHeaders.set(0,helpers.analyzeRequest(helpers.buildHttpRequest(scanURL)).getHeaders().get(0));
+                // remove移除请求行和host
+                requestsHeaders.remove(0);
+                requestsHeaders.remove(0);
+
                 IHttpRequestResponse messageInfo = BurpSuiteRequests.get(scanUrl,requestsHeaders,callbacks,false,config,5);
                 // 获取新的对象
                 HTTPRequests newHttpRequest = new HTTPRequests(callbacks,messageInfo);
