@@ -1,0 +1,19 @@
+{
+	"upload":{
+		"key":[
+			"upload",
+			"uploadfile"
+		],
+		"level":"低",
+		"message":"存在可疑上传目录："
+	},
+	"admin":{
+		"key":[
+			"admin",
+			"system",
+			"manage"
+		],
+		"level":"中",
+		"message":"存在可疑管理后台："
+	}
+}

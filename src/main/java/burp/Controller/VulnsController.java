@@ -2,11 +2,11 @@ package burp.Controller;
 
 import burp.*;
 import burp.Bootstrap.*;
+import burp.Ui.ProjectTableTag;
 import burp.Ui.Tags;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import java.net.URL;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -47,6 +47,9 @@ public class VulnsController {
                 // 将流量给到被动分析的所有引擎
                 passiveScanController(newHttpRequest,newHttpResponse,messageInfo,tags,config);
 
+                // 更新被动的指纹到主动的对象里，采用追加和去重的方式操作
+                httpResponse.setFingers(Tools.arrayListAddArrayList(httpResponse.getFingers(),newHttpResponse.getFingers()));
+
             } catch (Exception e){
                 e.printStackTrace();;
             } finally {
@@ -59,22 +62,8 @@ public class VulnsController {
         if(tags.getMain2Tag().getKnownFingerDirScanCheckBox().isSelected() && !activeScanRecord.contains(key)){
             System.out.println("正在对 " + httpResponse.getHost() + " 进行已识别的目录扫描");
             try{
-                ArrayList<String> scanUrls = new ArrayList<String>();
                 String type = "已识别组件扫描";
-                // 1、取一下当前主机的指纹
-                ArrayList<String> fingers = httpResponse.getFingers();
-                for(int i=0;i< fingers.size();i++){
-                    String finger = fingers.get(i);
-                    // 2、取一下该指纹的字典
-                    JSONObject pathsInfo = config.getFingerJsonInfo().getJSONObject(finger).getJSONObject("SensitivePath");
-                    // 3、for循环拼接成urls
-                    for (Map.Entry<String,Object> pathInfo: pathsInfo.entrySet()){
-                        String path = pathInfo.getKey();
-                        scanUrls.add(httpResponse.getHost() + path);
-                    }
-                }
-                // 4、对每个url进行访问
-                DirScanThread dirScanThread = new DirScanThread(scanUrls,tags,config,type);
+                DirScanThread dirScanThread = new DirScanThread(httpResponse.getHost(), httpResponse.getFingers(), tags,config,type);
                 Thread t = new Thread(dirScanThread);
                 t.start();
             } catch (Exception e){
@@ -191,6 +180,51 @@ public class VulnsController {
                 );
                 fingerResult.add(key);
             }
+            // 更新项目管理上的指纹逻辑
+            {
+                if(tags.getProjectTableTag().getProjectOpenList().getDlm().size() == 0) return;
+                b:
+                for(int j=0;j<tags.getProjectTableTag().getUdatas().size();j++){
+                    ProjectTableTag.TablesData tablesData = tags.getProjectTableTag().getUdatas().get(j);
+                    String url = tablesData.getUrl();
+                    String finger = tablesData.getFinger();
+                    if(url.equals(httpResponse.getHost())){
+                        String newFinger = "";
+                        // 如果表格中，当前的行的指纹为空
+                        if(finger.isEmpty()){
+                            newFinger = httpResponse.getFingers().get(i);
+                        }
+                        // 如果表格中，当前的行的指纹不为空
+                        else{
+                            // 判断当前的指纹和即将补充的指纹是否有重复
+                            if(finger.contains(",")){
+                                String[] fingers = finger.split(",");
+                                List<String> temp = Arrays.asList(fingers);
+                                // 如果包含
+                                if (temp.contains(httpResponse.getFingers().get(i))){
+                                    break b;
+                                }
+                                // 如果不包含
+                            }
+                            else{
+                                // 如果包含
+                                if(finger.contains(httpResponse.getFingers().get(i))){
+                                    break b;
+                                }
+                                // 如果不包含
+                            }
+                            newFinger = finger + "," + httpResponse.getFingers().get(i);
+                        }
+                        tablesData.setFinger(newFinger);
+                        // TODO：刷新数据库
+                        config.getDbHelper().updateUrlTable(url,"finger",newFinger);
+                        // 刷新表格
+                        tags.getProjectTableTag().getTargetTable().repaint();
+                        // 退出循环
+                        break b;
+                    }
+                }
+            }
         }
     }
 
@@ -256,14 +290,6 @@ public class VulnsController {
                 Tools.addInfoToVulnTags(config,tags,httpResponse,message,level,key,messageInfo);
             }
         }
-
-        // TODO：在被动流程最后，增加将结果更新到项目管理列表
-        // 1、判断是否有获得指纹
-//        if(httpResponse.getFingers().size() == 0) return;
-        // 2、如果有指纹，判断该指纹的url是否在目标里
-//        if(httpResponse.getHost())
-        // 3、如果在，取出该行数据
-        // 4、判断是否要更新数据
     }
 
     /**
@@ -447,8 +473,9 @@ public class VulnsController {
                 lable1:
                 for(Object key:keys){
                     // 说明body命中了关键字
-                    if(httpResponse.getStrBody().toLowerCase().indexOf((String)key) != -1){
+                    if(httpResponse.getStrBody().toLowerCase().indexOf(((String)key).toLowerCase(Locale.ROOT)) != -1){
                         String message = "存在敏感数据泄漏，类型为：" + vulnsTypeName + "，匹配到关键字："+key;
+                        System.out.println(message);
                         messages.add(message);
                         break lable1;
                     }

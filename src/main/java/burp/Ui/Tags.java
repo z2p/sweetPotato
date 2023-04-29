@@ -53,6 +53,8 @@ public class Tags implements ITab {
         this.config.setSensitivePathJsonInfo(Tools.getJSONObject(config.getJarPath() + "resources" + File.separator+ "sentitivePathFinger.json"));
         // TODO 语言文件的路径
         this.config.setLanguageFingerJsonInfo(Tools.getJSONObject(config.getJarPath() + "resources" + File.separator+ "languageFinger.json"));
+        // TODO 配置文件的路径-保存 功能开关 以及 fofa帐号等信息
+//        config.getJarPath() + "config.json";
 
         // 项目管理-窗口
         this.projectTableTag = new ProjectTableTag(callbacks,tabs,this,config);

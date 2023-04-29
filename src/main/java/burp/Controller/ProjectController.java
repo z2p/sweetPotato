@@ -55,7 +55,7 @@ public class ProjectController implements Callable<String> {
                 continue;
             }
 
-            // 当用户勾选暂停后，
+            // 当用户勾选暂停后
             if(config.getTags().getProjectTableTag().getRecursionCheckBox().isSelected()){
                 try{
                     Thread.sleep(sleepTime);
@@ -147,7 +147,7 @@ public class ProjectController implements Callable<String> {
             newHTTPResponse = new HTTPResponse(callbacks, newMessageInfo);
         }
 
-        // 将内容调用一次被动分析的流程，如果状态码为-1，说明是异常，当不为-1时才做被动分析；现在做被动的原因，因为要去修改finger的内容，这样表格入库才会更新数据
+        // 如果状态码为-1，说明是异常，当不为-1时才触发主动分析和被动分析的逻辑
         if (newHTTPResponse.getStatus() != -1) {
             HTTPRequests newHTTPRequests = new HTTPRequests(callbacks, newMessageInfo);
             new VulnsController().passiveScanController(newHTTPRequests, newHTTPResponse, newMessageInfo, tags, config);

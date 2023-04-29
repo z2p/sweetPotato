@@ -1,0 +1,30 @@
+{
+  "package":[
+    "/web.rar",
+    "/admin.rar",
+    "/backup.rar",
+    "/data.rar",
+    "/ftp.rar",
+    "/log.rar",
+    "/www.rar",
+    "/log.rar",
+    "/sql.rar",
+    "/admin.zip",
+    "/backup.zip",
+    "/wwwroot.rar",
+    "/default.rar",
+    "/data.zip",
+    "/ftp.zip",
+    "/web.zip",
+    "/www.zip",
+    "/log.zip",
+    "/code.zip",
+    "/code.rar",
+    "/wwwroot.zip",
+    "/log.zip",
+    "/sql.zip",
+    "/default.zip",
+    "/%domain%.zip",
+    "/%domain%.rar"
+  ]
+}

@@ -168,6 +168,23 @@ public class Tools {
     }
 
     /**
+     * 合并并去重两个arraylist
+     */
+    public static ArrayList arrayListAddArrayList(ArrayList<String> a,ArrayList<String> b){
+
+        ArrayList<String> c = new ArrayList<String>();
+
+        for(String temp:a){
+            if(!c.contains(temp)) c.add(temp);
+        }
+        for(String temp:b){
+            if(!c.contains(temp)) c.add(temp);
+        }
+
+        return c;
+    }
+
+    /**
      * 读取文件，并将内容转化成string返回，适合读取文本文件
      * @param filePath
      * @param isIgnoreNotesLine 如果为true，则当该行是以 // 打头就不加入

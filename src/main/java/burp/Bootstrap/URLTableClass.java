@@ -172,16 +172,17 @@ public class URLTableClass extends JTable {
                 // 2. 拿出当前行数的信息，给到目录扫描的逻辑
                 String host = CustomBurpUrl.getRequestDomainName(getValueAt(focusedRowIndex,1).toString());
                 String finger = getValueAt(focusedRowIndex,4).toString();
+
                 String type = "已识别组件扫描";
-                // 3. 给到目录扫描的模块
-                // 3.1 组装好所有需要扫描的url地址
-                ArrayList<String> scanUrls = new ArrayList<>();
-                for (Map.Entry<String,Object> info:config.getFingerJsonInfo().getJSONObject(finger).getJSONObject("SensitivePath").entrySet()){
-                    scanUrls.add(host+info.getKey());
+                try{
+                    ArrayList<String> fingers = new ArrayList<String>();
+                    fingers.add(finger);
+                    DirScanThread dirScanThread = new DirScanThread(host,fingers, config.getTags(), config,type);
+                    Thread t = new Thread(dirScanThread);
+                    t.start();
+                } catch (Exception e1){
+                    e1.printStackTrace();
                 }
-                DirScanThread dirScanThread = new DirScanThread(scanUrls,config.getTags(),config,type);
-                Thread t = new Thread(dirScanThread);
-                t.start();
             }
         });
 

@@ -1,0 +1,59 @@
+{
+	"ASP":{
+		"Headers":{
+
+		},
+		"Body": []
+	},
+	"ASP.NET":{
+		"Headers":{
+			"Server":[
+				"Microsoft-IIS/7.5",
+				"Microsoft-IIS/8.5",
+				"Microsoft-IIS/10.0"
+			],
+			"X-Powered-By":[
+				"ASP.NET"
+			],
+			"Set-Cookie":[
+				"ASP.NET_SessionId",
+				"ASPNet.Session"
+			]
+		},
+		"Body": [
+			"__VIEWSTATE",
+			"__VIEWSTATEGENERATOR"
+		]
+	},
+	"PHP":{
+		"Headers":{
+			"X-Powered-By":[
+				"PHP/"
+			],
+			"Server":[
+				"PHP/"
+			],
+			"Set-Cookie":[
+				"PHPSESSID",
+				"phpsession"
+			]
+		},
+		"Body": []
+	},
+	"JSP":{
+		"Headers":{
+			"Set-Cookie": [
+				"JSESSIONID"
+			]
+		},
+		"Body": []
+	},
+	"Python":{
+		"Headers":{
+			"Server":[
+				"Python/3"
+			]
+		},
+		"Body": []
+	}
+}

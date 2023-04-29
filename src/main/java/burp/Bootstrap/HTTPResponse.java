@@ -42,6 +42,7 @@ public class HTTPResponse {
     String assetType = "未分类";
     String comments = "";
     String ip = "";
+    boolean isRootPath = false; // 当前是否根路径，http://xxxx.xxxxx/ 这种算；http://xxx.xxxx/index.jsp、http://xxx.xxxx/wwww/ 这类的不算
 
     HashMap<String,Object> headers = new HashMap<>();   // ok
     HashSet<String> currentAllLinks = new HashSet<>();   // 当前页面的所有链接
@@ -137,6 +138,14 @@ public class HTTPResponse {
             // 响应长度
             this.length = this.byteBody.length;
         }
+
+        if(url.substring(host.length()).equals("/")){
+            isRootPath = true;
+        }
+    }
+
+    public boolean isRootPath() {
+        return isRootPath;
     }
 
     public HashSet<String> getResponseDomain() {

@@ -593,6 +593,10 @@ public class ProjectTableTag implements IMessageEditorController {
 //        targetTable.repaint();
     }
 
+    public ProjectOpenList getProjectOpenList() {
+        return projectOpenList;
+    }
+
     public void clickChoiceProjectAction() {
 
         // 用户对文件的选择 0:不处理 1:覆盖 2:打开 3:创建
@@ -1119,6 +1123,18 @@ public class ProjectTableTag implements IMessageEditorController {
             this.messageInfo = messageInfo;
         }
 
+        public void setFinger(String finger) {
+            this.finger = finger;
+        }
+
+        public String getFinger() {
+            return finger;
+        }
+
+        public String getDomain() {
+            return domain;
+        }
+
         public int getId() {
             return id;
         }
@@ -1243,6 +1259,10 @@ public class ProjectTableTag implements IMessageEditorController {
 
     public JLabel getCopyTips() {
         return copyTips;
+    }
+
+    public JTable getTargetTable() {
+        return targetTable;
     }
 
     public JLabel getBackGroundProjectCount() {

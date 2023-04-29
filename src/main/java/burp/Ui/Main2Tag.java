@@ -499,6 +499,8 @@ public class Main2Tag {
             activeJsonErrorTestCheckBox.setSelected(true);
             // 默认开 主动列目录
             activeListDirectoryCheckBox.setSelected(true);
+            // 默认开 已识别组件目录扫描
+            knownFingerDirScanCheckBox.setSelected(true);
 
             activeAllCheckBox.addActionListener(new ActionListener() {
                 @Override

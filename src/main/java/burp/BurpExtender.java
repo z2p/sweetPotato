@@ -103,13 +103,8 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
         Main2Tag main2Tag = this.tags.getMain2Tag();
         byte[] newResponse = messageInfo.getResponse();
 
-        // 可以增加url黑白名单的过滤
-        // 可以增加文件类型的过滤
-
         // toolFlag设置只保留一部分模块的流量引入，如：proxy、repeater、扩展程序的流量
-        if(toolFlag != IBurpExtenderCallbacks.TOOL_PROXY && toolFlag != IBurpExtenderCallbacks.TOOL_REPEATER) {
-            return;
-        }
+        if(toolFlag != IBurpExtenderCallbacks.TOOL_PROXY && toolFlag != IBurpExtenderCallbacks.TOOL_REPEATER) return;
 
         // 如果是请求，按请求逻辑走
         if (messageIsRequest){
@@ -245,8 +240,11 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
         // 主动和被动的分析的分析流程
         HTTPRequests httpRequests = new HTTPRequests(this.callbacks, messageInfo);
         httpRequests.setByteRequestsRaw(getNewRequests(callbacks,messageInfo, tags.getMain2Tag()));
-
         HTTPResponse httpResponse = new HTTPResponse(this.callbacks, messageInfo);
+
+        // 加一个前置的过滤判断，减少无效数据进入分析，占用系统资源；如果后缀是
+        if(Tools.fileSuffixIsInBlackList(httpResponse.getFileSuffix())) return null;
+
         // 整个被动的流程都放这里
         new VulnsController().passiveScanController(httpRequests,httpResponse,messageInfo,tags,config);
         // 主动探测
@@ -276,22 +274,22 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
         // 0、先做一个判断，如果【目标管理】的hashset为空，就不往下走
         if(targetHashSet.size() == 0) return;
 
-        // 1、先判断当前用户访问的页面，是否是根目录，以及是否是在【目标管理】里；如果是在，判断下当前表格有没有数据，如果也有，那就录入到表格里
-        if(httpResponse.getCurrentPath().equals("/")){
-            // 判断当前目标是否在项目管理里
-            boolean isInDomain = false;
-            for(String domain:targetHashSet){
-                if (httpResponse.getHost().contains(domain)){
-                    isInDomain = true;
-                    break;
-                }
+        // 1、判断当前目标是否在项目管理里
+        // 判断当前目标是否在项目管理里
+        boolean isInDomain = false;
+        for(String domain:targetHashSet){
+            if (httpResponse.getHost().contains(domain)){
+                isInDomain = true;
+                break;
             }
+        }
 
+        // 1、先判断当前用户访问的页面，是否是根目录，以及是否是在【目标管理】里；如果是在，判断下当前表格有没有数据，如果也有，那就录入到表格里
+        if(httpResponse.isRootPath()){
             // 如果在项目管理的目标里，并且不在urlHashSet里，那才要处理
             if(isInDomain && !urlHashSet.contains(httpResponse.getHost())){
                 // 将它们更新到urlhashset里，并且录入到数据库、表格里
                 urlHashSet.add(httpResponse.getHost());
-                // 下面是准备做入库的逻辑
                 // 判断是否为IP
                 if(httpResponse.isIP(httpResponse.getDomain())){
                     // 如果是ip，表示getDomain也是IP，不用转化可以直接用了
@@ -307,6 +305,15 @@ public class BurpExtender implements IBurpExtender, IHttpListener, IMessageEdito
                         httpResponse,
                         messageInfo
                 );
+            }
+        }
+        // 如果不是根目录
+        else{
+            if(isInDomain && !urlHashSet.contains(httpResponse.getHost())) {
+                // 将它们更新到urlhashset里，并且录入到数据库、表格里
+                urlHashSet.add(httpResponse.getHost());
+                // TODO: 加入到待生产的队列中
+                config.getProjectManagerUrls().add(httpResponse.getHost());
             }
         }
 
